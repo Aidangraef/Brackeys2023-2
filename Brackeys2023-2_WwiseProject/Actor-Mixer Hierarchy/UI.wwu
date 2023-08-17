@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}" SchemaVersion="110" RootDocumentID="{FB57250A-2ABF-446B-89A9-EB6A13B33204}" ParentDocumentID="{FB57250A-2ABF-446B-89A9-EB6A13B33204}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}" OwnerID="{0C6CB56B-7409-442F-BFF2-2CFEAD03FD8A}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="UI" ID="{2B7FDEFF-7FE6-46BD-9C9D-C2E03DE92869}" ShortID="320434698">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{9B9A0E03-EBA9-4B24-898B-B8247DE4B6F8}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="testSounds" ID="{2A65C78F-E549-4F4D-A3CC-326A37C45AE9}" ShortID="696955393">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="testDing" ID="{D831B580-D243-455C-98EA-0DC499A1B63B}" ShortID="443046660">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mailReady" ID="{EBA03E1E-D868-4E6F-8D88-551C8D9AE52F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.175421105193076"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.60207972703063"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mailReady.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="226020652"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="mailReady" ID="{EBA03E1E-D868-4E6F-8D88-551C8D9AE52F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="testComplete" ID="{DE00C374-FCBB-42B5-8377-AC9C57C1329A}" ShortID="222115496">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DeliverComplete" ID="{1AE465E2-D4F2-486F-8A10-E7F0EF4DBE53}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.161555648024856"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.00281487183755"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>DeliverComplete.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="137141922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DeliverComplete" ID="{1AE465E2-D4F2-486F-8A10-E7F0EF4DBE53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="testFail" ID="{99A927C8-5C87-41C4-93B7-652E353F568B}" ShortID="85183524">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-800</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Failure_01-10_Ensemble-Small_DRY" ID="{4F4E1BE6-374A-4260-AD88-B3C57D847CF8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0459708144243051"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.761391613902552"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Failure_01-10_Ensemble-Small_DRY.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="895541830"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Failure_01-10_Ensemble-Small_DRY" ID="{4F4E1BE6-374A-4260-AD88-B3C57D847CF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

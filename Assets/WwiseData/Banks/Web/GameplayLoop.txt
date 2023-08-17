@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1336322353	testDing			\Default Work Unit\UI\testDing	
+	1435302941	testFail			\Default Work Unit\UI\testFail	
+	1776921608	testComplete			\Default Work Unit\UI\testComplete	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	137141922	testComplete	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Web\SFX\DeliverComplete_024042DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testComplete		32806
+	226020652	testDing	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Web\SFX\mailReady_5004E827.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testDing		40827
+	895541830	testFail	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Web\SFX\Failure_01-10_Ensemble-Small_DRY_8549DCFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		12444
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BCE6222B-54A7-498E-869E-A220B544BBD5}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
+	<Events>
+		<WorkUnit Name="Ambient" ID="{BCE6222B-54A7-498E-869E-A220B544BBD5}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+	</Events>
+</WwiseDocument>

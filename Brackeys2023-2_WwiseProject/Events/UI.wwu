@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
+	<Events>
+		<WorkUnit Name="UI" ID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="testDing" ID="{0C961428-884D-4008-B7B0-C2D098BD920F}">
+					<ChildrenList>
+						<Action Name="" ID="{B924AB6A-2D0C-495F-99FD-72ACD93A1659}" ShortID="71073573">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testDing" ID="{D831B580-D243-455C-98EA-0DC499A1B63B}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testComplete" ID="{61CFB72B-375B-4B59-AE73-9D657F0DE60D}">
+					<ChildrenList>
+						<Action Name="" ID="{7821EE95-3BB8-4C6F-B16B-E1024190E103}" ShortID="314800027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testComplete" ID="{DE00C374-FCBB-42B5-8377-AC9C57C1329A}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testFail" ID="{0BB6097A-49D7-418A-9097-6BD0BE673BCF}">
+					<ChildrenList>
+						<Action Name="" ID="{19E52FDA-11BB-4D92-A28F-97CE081E0B8C}" ShortID="879022294">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testFail" ID="{99A927C8-5C87-41C4-93B7-652E353F568B}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

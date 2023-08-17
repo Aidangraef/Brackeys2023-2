@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C33FF188-62FD-4E72-A4E5-4BAE284ACBAB}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{C33FF188-62FD-4E72-A4E5-4BAE284ACBAB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="General" ID="{FAE5A9F5-964B-4325-AE91-712DCBA1C0F9}" ShortID="937067510">
+					<ChildrenList>
+						<SoundBank Name="GameplayLoop" ID="{29848C7B-3575-4E82-8437-C137E9980C07}">
+							<ObjectInclusionList>
+								<ObjectRef Name="testDing" ID="{0C961428-884D-4008-B7B0-C2D098BD920F}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="testFail" ID="{0BB6097A-49D7-418A-9097-6BD0BE673BCF}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="testComplete" ID="{61CFB72B-375B-4B59-AE73-9D657F0DE60D}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB57250A-2ABF-446B-89A9-EB6A13B33204}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{FB57250A-2ABF-446B-89A9-EB6A13B33204}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Non-World" ID="{0C6CB56B-7409-442F-BFF2-2CFEAD03FD8A}" ShortID="280967559">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="UI" ID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="World" ID="{A890F687-DD08-47CB-8474-A882AD18EC65}" ShortID="1025988662">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="Ambient" ID="{C37FEA52-9570-4D19-B916-0634D5B57326}" PersistMode="Reference"/>
+						<WorkUnit Name="NPCs" ID="{00266615-5F6D-492B-A842-52B3CB2DB2E5}" PersistMode="Reference"/>
+						<WorkUnit Name="Objects" ID="{0A78D8E9-11FB-4851-B542-590DC4185521}" PersistMode="Reference"/>
+						<WorkUnit Name="Player" ID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
