@@ -573,7 +573,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1401010650, guid: f93265c42416ce947ad51d0c49929999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -926,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.dialogueUI
       value: 
-      objectReference: {fileID: 101180, guid: 5ba51781a19f8a843abeb2d304d0d26e, type: 3}
+      objectReference: {fileID: 196456, guid: d1b7749dcc0beaf4f8d455f24cc4f0f7, type: 3}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.subtitleSettings.minSubtitleSeconds
       value: 1
@@ -973,10 +973,8 @@ MonoBehaviour:
   mainPanel: {fileID: 0}
   showingActiveQuestsHeading:
     m_uiText: {fileID: 0}
-    m_textMeshProUGUI: {fileID: 0}
   showingCompletedQuestHeading:
     m_uiText: {fileID: 0}
-    m_textMeshProUGUI: {fileID: 0}
   activeQuestsButton: {fileID: 0}
   completedQuestsButton: {fileID: 0}
   questSelectionContentContainer: {fileID: 0}
@@ -999,7 +997,6 @@ MonoBehaviour:
   abandonQuestPanel: {fileID: 0}
   abandonQuestTitleText:
     m_uiText: {fileID: 0}
-    m_textMeshProUGUI: {fileID: 0}
   onOpen:
     m_PersistentCalls:
       m_Calls: []
