@@ -1,0 +1,82 @@
+DIALOGUES
+
+
+
+
+DIALOGUES WITH CHARACTERS:
+
+
+BEN
+3 clues:
+- Ben is trigger happy
+- Ben was plastered the day of the murder
+- Ben's gun was missing
+
+Opening Line: *Grunt*
+
+"Notice anyone unusual the night of the murder?"
+	"Not that I let in. I do my job well. Sniff 'em out quicker than a cyber-hound. It'd be impossible to watch everybody all the time, but I get pretty damn close. In fact, I'd even say I was EXTRA vigilant that night."
+	(DIVE HERE TO FIND OUT THAT BEN GOT DRUNK WITH WALLY)
+
+"Have you always been a bouncer?"
+	"No, sir. This is my retirement. I served in the Space Marines, fought on the front lines of Terra Kai back in 6011. You see some shit out there. See a lotta shit out there. But this gig? This job's easy as moon-pie."
+
+"Why do they call you 'Big Shot'"?
+	"None of your damn business. That's why"
+	(DIVE HERE TO FIND OUT THAT BEN WAS TRIGGER HAPPY WHEN HE WAS IN THE SPACE MARINES)
+
+"I see you're armed?"
+	"HA! If you call carrying this peashooter around being 'armed', then remind me to get you a real gun. A good detective should have a REAL gun. But yeah, this piece here is a G-12. Pretty standard issue type of stuff, nothing to write to earth about."
+
+"The victim had gunshot wounds in his head and chest."
+	"You'd best watch your step, space cowboy. Better not be implyin' what I think you are. I get it - not many people in this area can get their hands on any firepower. So me havin' a gun may seem suspicious. But this gun doesn't leave my hip except in my hand, and I know you ain't dumb enough to think I'd up and shoot a patron at my own place of work. I kept this gun safe in my sight the entire night."
+	(DIVE HERE TO FIND OUT THAT, WHEN BEN WOKE UP, HIS GUN WAS MISSING, AND HE LATER FOUND IT IN THE DIVE BAR BATHROOM)
+
+
+
+TINA
+3 clues:
+- Wally requested La Cantata
+- Tina and Kevin are an item (this could be a duplicate in case you didn't find out from Kevin)
+- Vinnie and Tina had a failed business venture
+
+Opening Line: "Hey, hon."
+
+"Were you in the bar the night of the murder?"
+	"Sure was, sweetheart. I was singing right in this very spot."
+
+"Did you see the murder happen?"
+	"Heavens, no. And praise Lord Stuxnet for that, or I just about mighta fainted. No, I was in the middle of my last song of the night. La Cantata is everyone's favorite song that I do, ya see, and so there was a mighty big crowd of folks all around me, I couln't see nothin over their heads."
+	(DIVE HERE TO FIND OUT THAT WALLY REQUESTED LA CANTATA)
+
+"You must've heard a gunshot?"
+	"'Fraid not, sweetheart. It went like this, ya see: I can sing high. Like, MIGHTY high. Mightier than a fax machine with a motor mouth! The last note of La Cantata is so high, that it breaks the sound system in the bar. There's this big, loud pop, ya see. Like this: POP! POP! POP! The devil must have fired his gun right then, to keep the sound from bein' noticed."
+
+"Are you famous? I've never heard of you."
+	"Not as famous as I'd like to be, darling. This dive ain't exactly Silicon Valley. That's why I'm branchin' out! I started my own business not that long ago - Makin' jackets for phones, ya see! Look how cute it is on my phone! Doesn't his just make you want to get a jacket for YOUR phone?"
+
+"Where did you get money to start a business?"
+	"Why, I got a bit o' help from some well-off friends o' mine, just to get off the ground they see. I don't think they're looking to take on any new investments right now though, if that's why you're askin'.
+	(DIVE HERE TO FIND OUT THAT VINNIE WAS TINA'S BUSINESS PARTNER)
+
+"How is the business going?"
+	"Not even close to as well as I'd hoped! I think it's cause my online webstore isn't reaching my target audience. I was supposed to get my phone jackets (or phackets, as I call them) in stores last lunar cycle, but my business partner never came through with the connections."
+
+
+KEVIN
+3 clues:
+- Kevin has beaten Vinnie in pool (and Vinnie did NOT take it well)
+- Wally told Kevin that Vinnie was after him
+- Kevin and Tina are an item (this could be a duplicate in case you didn't find out from Tina)
+
+Opening Line: "Sick detective get-up, slick. Up for a game of pool? I'm Kevin."
+
+"Kevin what?"
+	"...Just Kevin."
+
+"You play a lot of pool?"
+	"You're here to talk about the dead guy, right? So I gotta answer all truthful and all, yeah? Anyways yeah, you could say I'm pretty good. I've swindled at least half of these dopes out of their money. It's really their own fault for betting on games they can't win."
+	(DIVE HERE TO FIND OUT THAT KEVIN SWINDLED VINNIE OUT OF SOME CASH IN A GAME OF POOL)
+
+"Did you see the murder?"
+	"You'd think I would've, right? The booth is in clear view from the pool table. But nah, I was actually in the bathroom at the time. Came out when I heard some commotion, and boom - dead guy. I'm actually almost sad I missed it; you don't see that type of thing just any day. And the rest of the sharks that are normally at the table were over listenin' to Tina's song, I think."
