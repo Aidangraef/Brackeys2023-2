@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThoughtController : MonoBehaviour
 {
     [SerializeField]
-    GameObject balloonPrefab;
+    List<GameObject> balloonPrefabs;
 
     [SerializeField]
     int balloonQty = 5;
@@ -16,7 +16,7 @@ public class ThoughtController : MonoBehaviour
 
         // Create all balloons
         for (int i = 0; i < balloonQty; i++) {
-            GameObject newBalloon = Instantiate(balloonPrefab, transform);
+            GameObject newBalloon = Instantiate(balloonPrefabs[Random.Range(0, balloonPrefabs.Count)], transform);
             // Set position
             newBalloon.transform.position = mainCamera.ViewportToWorldPoint(new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), -mainCamera.transform.position.z));
 
