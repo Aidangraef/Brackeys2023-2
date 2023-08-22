@@ -219,10 +219,10 @@ RectTransform:
   m_Father: {fileID: 1291629997}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 509.49225, y: -18.47}
-  m_SizeDelta: {x: 1002.9845, y: 36.94}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79824066
 MonoBehaviour:
@@ -572,10 +572,10 @@ RectTransform:
   m_Father: {fileID: 724627504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 68, y: -16}
-  m_SizeDelta: {x: 128, y: 24}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183258846
 MonoBehaviour:
@@ -678,7 +678,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.0000017009922, y: -0.000020923126}
-  m_SizeDelta: {x: -72.6443, y: 52.94}
+  m_SizeDelta: {x: -72.6443, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &220518931
 MonoBehaviour:
@@ -794,9 +794,9 @@ RectTransform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &246608116
 MonoBehaviour:
@@ -1262,8 +1262,10 @@ MonoBehaviour:
   portraitImage: {fileID: 1515297994}
   portraitName:
     m_uiText: {fileID: 332976443}
+    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 775116541}
+    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -1955,10 +1957,10 @@ RectTransform:
   m_Father: {fileID: 1194469742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 27.346304, y: -17}
-  m_SizeDelta: {x: 46.692608, y: 26}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641790057
 MonoBehaviour:
@@ -2108,8 +2110,10 @@ MonoBehaviour:
   portraitImage: {fileID: 1647668912}
   portraitName:
     m_uiText: {fileID: 1666008940}
+    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 775116541}
+    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -2597,10 +2601,10 @@ RectTransform:
   m_Father: {fileID: 1194469742}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104.69261, y: -17}
-  m_SizeDelta: {x: 100, y: 26}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724627505
 MonoBehaviour:
@@ -2990,8 +2994,10 @@ MonoBehaviour:
   panel: {fileID: 1194469747}
   label:
     m_uiText: {fileID: 641790059}
+    m_textMeshProUGUI: {fileID: 0}
   inputField:
     m_uiInputField: {fileID: 724627507}
+    m_textMeshProInputField: {fileID: 0}
   acceptKey: 13
   acceptButton: 
   cancelKey: 27
@@ -3867,7 +3873,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 8}
-  m_SizeDelta: {x: 158.69261, y: 34}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &1194469743
 Animator:
@@ -4242,10 +4248,10 @@ RectTransform:
   m_Father: {fileID: 220518930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8, y: -8}
-  m_SizeDelta: {x: 1018.9845, y: 36.94}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1291629998
 MonoBehaviour:
@@ -4262,6 +4268,7 @@ MonoBehaviour:
   button: {fileID: 1291630000}
   label:
     m_uiText: {fileID: 681559480}
+    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 1
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1291629999
@@ -4893,8 +4900,10 @@ MonoBehaviour:
   portraitImage: {fileID: 2082450655}
   portraitName:
     m_uiText: {fileID: 1435641935}
+    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 775116541}
+    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -5238,7 +5247,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 158.07004, y: 38.178986}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1490429685
 GameObject:
@@ -5538,6 +5547,7 @@ MonoBehaviour:
   pcImage: {fileID: 1907276185}
   pcName:
     m_uiText: {fileID: 1490429689}
+    m_textMeshProUGUI: {fileID: 0}
   usePortraitNativeSize: 0
   timerSlider: {fileID: 130284623}
   buttonAlignment: 0
@@ -6532,10 +6542,10 @@ RectTransform:
   m_Father: {fileID: 1471891678}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 16, y: -8}
-  m_SizeDelta: {x: 126.07004, y: 22.178986}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1947209225
 GameObject:
@@ -6593,6 +6603,7 @@ MonoBehaviour:
     panel: {fileID: 1471891671}
     alertText:
       m_uiText: {fileID: 1938758423}
+      m_textMeshProUGUI: {fileID: 0}
     queueAlerts: 1
     dontQueueDuplicates: 0
     waitForHideAnimation: 1
@@ -6728,8 +6739,10 @@ MonoBehaviour:
   mainPanel: {fileID: 0}
   showingActiveQuestsHeading:
     m_uiText: {fileID: 0}
+    m_textMeshProUGUI: {fileID: 0}
   showingCompletedQuestHeading:
     m_uiText: {fileID: 0}
+    m_textMeshProUGUI: {fileID: 0}
   activeQuestsButton: {fileID: 0}
   completedQuestsButton: {fileID: 0}
   questSelectionContentContainer: {fileID: 0}
@@ -6752,6 +6765,7 @@ MonoBehaviour:
   abandonQuestPanel: {fileID: 0}
   abandonQuestTitleText:
     m_uiText: {fileID: 0}
+    m_textMeshProUGUI: {fileID: 0}
   onOpen:
     m_PersistentCalls:
       m_Calls: []
