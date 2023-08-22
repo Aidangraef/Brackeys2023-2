@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
 	<Events>
-		<WorkUnit Name="Music" ID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+		<WorkUnit Name="Music" ID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}">
+					<ChildrenList>
+						<Action Name="" ID="{92BF5C16-7816-48EB-AC2C-C3836922D804}" ShortID="388621325">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AF7F30F9-3FBD-4687-AA53-ECE66E59D069}" ShortID="216129447">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientRain" ID="{0E3F8F10-2278-4F6A-8C95-0F273BA303CF}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}">
+					<ChildrenList>
+						<Action Name="" ID="{4178EBBB-BF31-4CE7-8EC4-6688C3388FE8}" ShortID="502091931">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="murderShots" ID="{4C016B9C-A23E-4AB7-8C1D-B46FBA88FB25}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

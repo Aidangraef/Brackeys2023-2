@@ -13,10 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BUTTONCLICK = 4051332235U;
+        static const AkUniqueID FOOTSTEPPING = 3989513603U;
+        static const AkUniqueID GAMESTART = 4058101365U;
+        static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTDING = 1336322353U;
         static const AkUniqueID TESTFAIL = 1435302941U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace ROOMSTATE
+        {
+            static const AkUniqueID GROUP = 185713839U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INSIDE = 3553349781U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+            } // namespace STATE
+        } // namespace ROOMSTATE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

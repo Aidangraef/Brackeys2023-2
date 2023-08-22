@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C236CED2-CAEA-4BC2-8F71-513E177A67D5}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{C236CED2-CAEA-4BC2-8F71-513E177A67D5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C236CED2-CAEA-4BC2-8F71-513E177A67D5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Testing" ID="{7561577C-8A69-41D8-9C93-84FB8B5DD78B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{6FFFBC05-0324-4A19-9498-0E3C57CD2BC8}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

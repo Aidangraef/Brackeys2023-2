@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{02931163-AF92-764F-FA92-11600772EC44}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CF1D96A0-8535-37ED-98C4-E7EE1EDFFC6F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -33,25 +33,178 @@
 				<GameParameter Id="988953028" Name="SFXVolume"/>
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="185713839" Name="roomState">
+					<States>
+						<State Id="438105790" Name="outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3553349781" Name="inside"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{746A2EF7-1D57-1E8B-9388-4B7C76250D66}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{D83D2FB1-2FC6-F266-25C9-A8C2B4442719}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="133817862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-004.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-004_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="137141922" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DeliverComplete.wav</ShortName>
-					<CachePath>SFX/DeliverComplete_024042DF.wem</CachePath>
+					<CachePath>SFX/DeliverComplete_D296B342.wem</CachePath>
+				</File>
+				<File Id="147227719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>murderShots.wav</ShortName>
+					<CachePath>SFX/murderShots_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="149329997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-011.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-011_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="156683581" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-008.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="165332797" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-003.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="176846604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-010.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-010_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_F8FFE7AC.wem</CachePath>
+				</File>
+				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-004.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-004_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="226020652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailReady.wav</ShortName>
-					<CachePath>SFX/mailReady_5004E827.wem</CachePath>
+					<CachePath>SFX/mailReady_C2F9A30D.wem</CachePath>
+				</File>
+				<File Id="245039638" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-006.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-006_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="328961177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-009.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="363383916" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-007.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="491441777" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-002.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="549967391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-001.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-005.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="754295549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-012.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-012_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>buttonClick.wav</ShortName>
+					<CachePath>SFX/buttonClick_6C6C7A1D.wem</CachePath>
 				</File>
 				<File Id="895541830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Failure_01-10_Ensemble-Small_DRY.wav</ShortName>
-					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_8549DCFE.wem</CachePath>
+					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_4FD7D9B3.wem</CachePath>
+				</File>
+				<File Id="923676968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-001.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="927889926" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-007.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="952124549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-002.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="959757076" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-003.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-008.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1018975967" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-005.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1064893621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-006.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-006_3F75BDB9.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="4051332235" Name="buttonClick" DurationType="OneShot" DurationMin="0.02078266" DurationMax="0.02078266">
+					<MediaRefs>
+						<MediaRef Id="892375809"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.2291875" DurationMax="0.38945964">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="438105790" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="149329997"/>
+								<MediaRef Id="176846604"/>
+								<MediaRef Id="218386730"/>
+								<MediaRef Id="328961177"/>
+								<MediaRef Id="363383916"/>
+								<MediaRef Id="754295549"/>
+								<MediaRef Id="923676968"/>
+								<MediaRef Id="952124549"/>
+								<MediaRef Id="959757076"/>
+								<MediaRef Id="1015166504"/>
+								<MediaRef Id="1018975967"/>
+								<MediaRef Id="1064893621"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3553349781"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+								<MediaRef Id="927889926"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="147227719"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="183604237"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="2.0028148" DurationMax="2.0028148">
 					<MediaRefs>
 						<MediaRef Id="137141922"/>
@@ -68,7 +221,16 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="185713839" Name="roomState">
+					<States>
+						<State Id="438105790" Name="outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3553349781" Name="inside"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D3160A67-54F0-A002-A5C3-92AF2457CF5B}</FileHash>
+	<FileHash>{59B433E0-75E3-527A-C45E-6D12A90BC3B4}</FileHash>
 </SoundBanksInfo>

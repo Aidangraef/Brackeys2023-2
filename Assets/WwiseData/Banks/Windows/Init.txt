@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	185713839	roomState			\Default Work Unit\roomState	
+
+State	ID	Name	State Group			Notes
+	438105790	outside	roomState			
+	748895195	None	roomState			
+	3553349781	inside	roomState			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 	2346531308	musicVolume			\Default Work Unit\musicVolume	
