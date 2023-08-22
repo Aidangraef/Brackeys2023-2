@@ -91,13 +91,29 @@ Opening Line: "Sick detective get-up, slick. Up for a game of pool? I'm Kevin."
 
 "You seem familiar. Have I seen you before?"
 	"Very funny, slick. If I'd seen your ugly mug before, I think I'd remember."
-	(DIVE HERE TO LEATN THAT YOU AND KEVIN WERE FRIENDS)
+	(DIVE HERE TO LEARN THAT YOU AND KEVIN WERE FRIENDS)
 
 
 WALLY
 2 clues: 
 - Wally owes a lot of money to Vinnie
 - Wally has blackmail on someone (the memory will imply it is Kevin but not directly state it)
+
+Opening Line: "Can I do something for ya, chief?
+
+"You a poker guy?"
+	"Yeah, I guess so. Lady luck doesn't seem to want me to be, though. A tough losing streak's crept on me. Don't matter. I'll win it back soon enough. Just gotta get one lucky game."
+
+"Did you know the deceased?"
+	"Who, him? Not really. I know he comes in here often and flaunts his deep pockets. But he ain't really a gambler. Don't make that kinda cash gamblin' I suppose."
+	(DIVE HERE TO LEARN THAT WALLY OWES VINNIE A LOT OF MONEY)
+
+"What were you doing the night of the murder?"
+	"I wasn't in the dive bar that night."
+
+"Where were you?"
+	"Hey, I know my rights. You're job is to find out what happened in this bar. Not get up all in my beeswax."
+	(DIVE HERE TO FIND OUT THAT WALLY IS BLACKMAILING SOMEONE)
 
 
 
