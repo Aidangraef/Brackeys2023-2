@@ -62,6 +62,10 @@ Opening Line: "Hey, hon."
 "How is the business going?"
 	"Not even close to as well as I'd hoped! I think it's cause my online webstore isn't reaching my target audience. I was supposed to get my phone jackets (or phackets, as I call them) in stores last lunar cycle, but my business partner never came through with the connections."
 
+"You got a special someone?"
+	"Why, all my adoring fans of course! But seriously, sweetheart. You are very nice and all, and you're even handsome in your own way. But we just met!"
+	(DIVE HERE TO FIND OUT KEVIN AND TINA HAVE PLANS TO RUN AWAY TOGETHER)
+
 
 KEVIN
 3 clues:
@@ -81,9 +85,17 @@ Opening Line: "Sick detective get-up, slick. Up for a game of pool? I'm Kevin."
 "Did you see the murder?"
 	"You'd think I would've, right? The booth is in clear view from the pool table. But nah, I was actually in the bathroom at the time. Came out when I heard some commotion, and boom - dead guy. I'm actually almost sad I missed it; you don't see that type of thing just any day. And the rest of the sharks that are normally at the table were over listenin' to Tina's song, I think."
 
+"You do anything besides pool?"
+	"Parties, chicks, light cycles... You name it, and if it's cool, I'm all over it. Won't catch me doing any of that dorky crap."
+	(DIVE HERE TO LEARN THAT KEVIN CAN HACK PEOPLE)
+
+"You seem familiar. Have I seen you before?"
+	"Very funny, slick. If I'd seen your ugly mug before, I think I'd remember."
+	(DIVE HERE TO LEATN THAT YOU AND KEVIN WERE FRIENDS)
+
 
 WALLY
-3 clues: 
+2 clues: 
 - Wally owes a lot of money to Vinnie
 - Wally has blackmail on someone (the memory will imply it is Kevin but not directly state it)
 
