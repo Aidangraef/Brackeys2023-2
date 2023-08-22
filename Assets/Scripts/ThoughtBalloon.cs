@@ -5,35 +5,43 @@ using UnityEngine;
 public class ThoughtBalloon : MonoBehaviour
 {
     [SerializeField]
-    Vector3 targetPos;
+    protected Vector3 targetPos;
 
     [SerializeField]
-    float speed = 1f;
+    protected float speed = 1f;
 
     [SerializeField]
-    string thoughtText;
+    protected string thoughtText;
 
-    SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     [SerializeField]
-    Canvas canvasElement;
+    protected Canvas canvasElement;
+
+    protected Camera mainCamera;
+
+    protected bool frightened = false;
 
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        mainCamera = Camera.main;
         DefineTargetPosition();
     }
 
     void Update()
     {
-        Move();
+        if (frightened) {
+            Retreat();
+        }
+        else {
+            Move();
+        }
     }
 
-    void DefineTargetPosition() {
-        Camera mainCamera = Camera.main;
+    protected virtual void DefineTargetPosition() {
         targetPos = mainCamera.ViewportToWorldPoint(new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), -mainCamera.transform.position.z));
     }
 
@@ -59,5 +67,24 @@ public class ThoughtBalloon : MonoBehaviour
         if (transform.position == targetPos) {
             DefineTargetPosition();
         }
+    }
+
+    void Retreat() {
+        // Move straight into target and then stop being frightened
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * speed);
+
+        if (transform.position == targetPos) {
+            frightened = false;
+            speed /= 2f;
+
+            DefineTargetPosition();
+        }
+    }
+
+    public void Frighten(Vector3 playerPosition) {
+        frightened = true;
+        targetPos = transform.position + (transform.position - playerPosition) * 2;
+
+        speed *= 2f;
     }
 }
