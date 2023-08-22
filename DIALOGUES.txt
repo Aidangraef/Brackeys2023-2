@@ -37,7 +37,7 @@ Opening Line: *Grunt*
 TINA
 3 clues:
 - Wally requested La Cantata
-- Tina and Kevin are an item (this could be a duplicate in case you didn't find out from Kevin)
+- Tina and Kevin are an item
 - Vinnie and Tina had a failed business venture
 
 Opening Line: "Hey, hon."
@@ -66,8 +66,8 @@ Opening Line: "Hey, hon."
 KEVIN
 3 clues:
 - Kevin has beaten Vinnie in pool (and Vinnie did NOT take it well)
-- Wally told Kevin that Vinnie was after him
-- Kevin and Tina are an item (this could be a duplicate in case you didn't find out from Tina)
+- Kevin is a master with electronics.
+- Kevin and the player character actually know each other
 
 Opening Line: "Sick detective get-up, slick. Up for a game of pool? I'm Kevin."
 
@@ -85,4 +85,11 @@ Opening Line: "Sick detective get-up, slick. Up for a game of pool? I'm Kevin."
 WALLY
 3 clues: 
 - Wally owes a lot of money to Vinnie
-- 
+- Wally has blackmail on someone (the memory will imply it is Kevin but not directly state it)
+
+
+
+VINNIE
+Obviously Vinnie is dead, but you can still get one clue from his memory banks:
+1 clue:
+- you, the player, are the one who actually shot Vinnie!
