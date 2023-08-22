@@ -8,11 +8,13 @@ public class CharacterController : MonoBehaviour
     private bool facingRight;
 
     public int speed;
+    public bool inConversation;
 
     // Start is called before the first frame update
     void Start()
     {
         facingRight = false;
+        inConversation = false;
     }
 
     // Update is called once per frame
@@ -29,6 +31,10 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(inConversation)
+        {
+            return;
+        }
         transform.position += movement * Time.fixedDeltaTime * speed;
     }
 
@@ -39,5 +45,10 @@ public class CharacterController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x = theScale.x * -1;
         transform.localScale = theScale;
+    }
+
+    public void StartEndConversation()
+    {
+        //inConversation = !inConversation;
     }
 }
