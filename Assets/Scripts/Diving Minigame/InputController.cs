@@ -9,6 +9,11 @@ public class InputController : MonoBehaviour
 
     Camera mainCamera;
 
+    [SerializeField]
+    bool clickEnabled;
+
+    public bool ClickEnabled { get => clickEnabled; set => clickEnabled = value; }
+
     private void Start() {
         mainCamera = Camera.main;
     }
@@ -19,7 +24,7 @@ public class InputController : MonoBehaviour
         playerLight.position = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
 
         // Check if click
-        if (Input.GetMouseButtonDown(0)) {
+        if (clickEnabled && Input.GetMouseButtonDown(0)) {
             // Check if click hit any of the thoughts
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D[] hits = Physics2D.GetRayIntersectionAll(ray, Mathf.Infinity);
@@ -41,8 +46,16 @@ public class InputController : MonoBehaviour
 
             // Check if any was selected
             if (clickedThought != null) {
-                string thought = clickedThought.GetComponent<ThoughtBalloon>().ReadThought();
-                FindFirstObjectByType<MinigameController>().ShowThoughtText(thought);
+                ThoughtBalloon balloon = clickedThought.GetComponent<ThoughtBalloon>();
+                if (balloon.Special) {
+
+                }
+                else {
+                    string thought = balloon.ReadThought();
+
+                    // TODO Avoid find first
+                    FindFirstObjectByType<MinigameController>().ShowThoughtText(thought);
+                }
             }
         }
     }

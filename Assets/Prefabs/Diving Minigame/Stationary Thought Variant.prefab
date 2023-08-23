@@ -58,6 +58,16 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7385596382223782396, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+--- !u!198 &381671338790934404 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4200224735218556350, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 4540132189392996922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2700724607039068003 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1908167879018044761, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 4540132189392996922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4648988248598745063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9188834201974572509, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
@@ -75,10 +85,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebc40679e47bca4f9f68ef708f8f93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: 0, y: 0, z: 0}
-  speed: 5
+  targetPos: {x: 0, y: 0}
+  minSpeed: 0.5
+  maxSpeed: 2
+  speed: 2
   thoughtText: 
+  trailParticles: {fileID: 2700724607039068003}
+  pulseParticles: {fileID: 381671338790934404}
   canvasElement: {fileID: 5212059100066547658}
+  basePosition: {x: 0, y: 0}
 --- !u!223 &5212059100066547658 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 8598847271537806832, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}

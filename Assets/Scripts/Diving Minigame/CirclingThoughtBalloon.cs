@@ -4,28 +4,18 @@ using UnityEngine;
 
 public class CirclingThoughtBalloon : ThoughtBalloon {
     [SerializeField]
-    Vector3 originalPos;
+    Vector2 originalPos;
     [SerializeField]
-    Vector3 intermediatePosition1;
+    Vector2 intermediatePosition1;
     [SerializeField]
-    Vector3 intermediatePosition2;
+    Vector2 intermediatePosition2;
 
     [SerializeField]
     float currentPace = 0f;
 
-    void Update()
-    {
-        Move();
-    }
-
     protected override void DefineTargetPosition() {
         targetPos = mainCamera.ViewportToWorldPoint(new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), -mainCamera.transform.position.z));
-        originalPos = transform.position;
-        intermediatePosition1 = Vector3.Lerp(originalPos, Vector3.zero, Random.Range(0, 1f));
-        intermediatePosition2 = Vector3.Lerp(targetPos, Vector3.zero, Random.Range(0, 1f));
-        currentPace = 0f;
-
-        speed = Random.Range(0.2f, 2f);
+        PrepareBezierTrajectory();
     }
 
     protected override void Move() {
@@ -41,5 +31,18 @@ public class CirclingThoughtBalloon : ThoughtBalloon {
         if (t == 1f) {
             DefineTargetPosition();
         }
+    }
+
+    public override void Frighten(Vector3 playerPosition) {
+        base.Frighten(playerPosition);
+
+        PrepareBezierTrajectory();
+    }
+
+    private void PrepareBezierTrajectory() {
+        originalPos = transform.position;
+        intermediatePosition1 = Vector3.Lerp(originalPos, Vector3.zero, Random.Range(0, 1f));
+        intermediatePosition2 = Vector3.Lerp(targetPos, Vector3.zero, Random.Range(0, 1f));
+        currentPace = 0f;
     }
 }
