@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum MemoryEnum {
+    BEN_PAST,
+    BEN_WALLY_GET_TIPSY,
+    BEN_GUN_GOES_MISSING,
+    TINA_SINGS_LA_CANTATA,
+    TINA_KEVIN_TOGETHER,
+    TINA_BUSINESS_FAIL,
+    KEVIN_BEATS_VINNIE_POOL,
+    KEVIN_HIDES_NERDY_SIDE,
+    KEVIN_KNOWS_DETECTIVE,
+    WALLY_LOSES_VINNIE_POKER,
+    WALLY_SUSPICIOUS_PHONE_CALL,
+    WALLY_YOU_SHOT_VINNIE
+
+}
