@@ -1887,8 +1887,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 132.76865}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 71.55965, y: 65.10604}
+    canvasZoom: 1.0899999
   - id: 3
     fields:
     - title: Title
@@ -4670,7 +4670,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: 75e8d6b3-ec65-4f4a-9f95-84e9632ac3a1
+        value: b559bb1f-c1aa-4ab2-b7a0-22f2f89f84a6
         type: 0
         typeString: 
       conversationID: 5
@@ -4730,7 +4730,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: 5b97114d-a58b-489e-bd74-c184c567de22
+        value: 
         type: 0
         typeString: 
       conversationID: 5
@@ -5120,7 +5120,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: 501eb02f-f069-465e-91e1-ed7eb1a1a1cd
+        value: 
         type: 0
         typeString: 
       conversationID: 5
