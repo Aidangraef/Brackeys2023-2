@@ -1,38 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityTypes;
 
 public class DiveButtonController : MonoBehaviour
 {
     public GameObject diveButton;
     public int sceneIndex;
 
+    private GameObject _diveButtonGo;
     // Start is called before the first frame update
     void Start()
     {
-        diveButton.SetActive(false);
+
     }
 
     public void ShowDiveButton()
     {
-        diveButton.SetActive(true);
+        if (_diveButtonGo != null)
+        {
+            Destroy(_diveButtonGo);
+        }
+        _diveButtonGo = Instantiate(diveButton,
+                new Vector3(0, 0, 0),
+                Quaternion.identity); 
+        _diveButtonGo.transform.SetParent(transform, false);
     }
 
     public void HideDiveButton()
     {
-        diveButton.SetActive(false);
+        if (_diveButtonGo != null)
+        {
+            Destroy(_diveButtonGo);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void GoToMemoryDiveScene()
-    {
-        SceneManager.LoadScene(sceneIndex);
     }
 
     public void SetSceneIndex(int si)

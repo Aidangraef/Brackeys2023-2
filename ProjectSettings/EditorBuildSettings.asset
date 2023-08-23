@@ -9,13 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 733e48a360d5c2d4ca74d4a62def73a7
   - enabled: 1
-    path: Assets/Scenes/Sample2DScene.unity
-    guid: 90a2224c41155f04b99b104dfd62d751
+    path: Assets/Scenes/BarSceneAndMinigame.unity
+    guid: 4cf17d20462eaba4dbda1a78a4e62b74
+  - enabled: 1
+    path: Assets/Scenes/Minigame.unity
+    guid: 437ab1f1a55ed014da8d6827f833ee38
   - enabled: 1
     path: Assets/Scenes/BenDive1.unity
     guid: e6960dafda4dc2f409f615c6737cce89
   - enabled: 1
-    path: Assets/Scenes/BarSceneAndMinigame.unity
-    guid: 4cf17d20462eaba4dbda1a78a4e62b74
+    path: Assets/Scenes/Sample2DScene.unity
+    guid: 90a2224c41155f04b99b104dfd62d751
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 10e7c85b550d8244ea3970eea3947459, type: 2}

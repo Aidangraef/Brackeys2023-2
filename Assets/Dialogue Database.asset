@@ -162,6 +162,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 3
+    fields:
+    - title: Name
+      value: IsMinigame
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -825,11 +839,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 3
         type: 5
@@ -841,20 +855,20 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: But I get pretty damn close. In fact, I'd even say I was EXTRA vigilant
           that night.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 3ad68ed1-0854-4ea1-ab6d-39f21d5a540d
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -873,11 +887,23 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 978156324080950485, guid: 48473adc159ed844cba6b60e22f7fd1e, type: 3}
+            m_TargetAssemblyTypeName: DiveBtn, Assembly-CSharp
+            m_MethodName: SetDiveScene
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 3
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 84.17648
-        y: 375
+        x: 83.39418
+        y: 371.44885
         width: 160
         height: 30
     - id: 8
@@ -1342,6 +1368,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 45b6afb6-97e2-4416-84a6-a3812000498b
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -1360,11 +1390,23 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 978156324080950485, guid: 48473adc159ed844cba6b60e22f7fd1e, type: 3}
+            m_TargetAssemblyTypeName: DiveBtn, Assembly-CSharp
+            m_MethodName: SetDiveScene
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 3
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 492.98947
-        y: 689.9807
+        y: 686.8557
         width: 160
         height: 30
     - id: 16
@@ -1812,6 +1854,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 9607a662-3bbf-436b-b758-1ef83e2910fd
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -1830,7 +1876,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 3112265661621898727, guid: 48473adc159ed844cba6b60e22f7fd1e, type: 3}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 759.30145
@@ -1887,8 +1945,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 71.55965, y: 65.10604}
-    canvasZoom: 1.0899999
+    canvasScrollPosition: {x: 0, y: 221.73242}
+    canvasZoom: 0.6400002
   - id: 3
     fields:
     - title: Title
@@ -3559,8 +3617,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 13.566942, y: 8.903316}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.5800004
   - id: 4
     fields:
     - title: Title
@@ -4535,8 +4593,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 136.45503, y: 0}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 0, y: 88.77503}
+    canvasZoom: 0.8500001
   - id: 5
     fields:
     - title: Title
@@ -5143,8 +5201,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 95.5191}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 0, y: 78.848694}
+    canvasZoom: 0.73000026
   - id: 6
     fields:
     - title: Title
