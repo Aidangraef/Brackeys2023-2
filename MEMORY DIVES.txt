@@ -18,6 +18,7 @@ Bartender: Let me think it over.
 
 Benjamin: Thank you, sir!
 
+
 2. BEN AND WALLY GET TIPSY
 Wally: Come on, Benny boy! Just one drink! Loosen up!
 
@@ -43,7 +44,25 @@ Wally: Or are you scared?
 
 Benjamin: Fine! You are on!
 
+
 3. BEN'S GUN GOES MISSING
+Benjamin: Oooh, my head.
+
+Kevin: You okay, Ben?
+
+Benjamin: What happened?
+
+Kevin: You've been asleep at the bar almost the whole night.
+
+Benjamin: That little...
+
+Benjamin: Wait, where is my gun?!
+
+Kevin: Hey, keep your voice down, big guy. I don't want this to go south for you. Look, here it is. I found it in the bathroom. You must've went to the bathroom drunk and dropped it.
+
+Benjamin: Thanks Kevin.
+
+Kevin: Don't mention it, big guy. I can keep a secret.
 
 
 4. TINA DECIDES TO SING LA CANTATA
@@ -99,7 +118,19 @@ Kevin: I'll make it up to her later. Just a few more hours. This ain't a mere ha
 
 
 9. KEVIN AND THE DETECTIVE... KNOW EACH OTHER?
+Kevin: Hey, you busy?
 
+Detective: Not too busy that I can't make time for you, friend. What's up?
+
+Kevin: Well, uhh, there's this pool tournament. Down at this dive bar downtown.
+
+Detective: Uh huh, sounds right up your alley.
+
+Kevin: Yeah. Uh, anyways, to sign up, you need to be in teams of two. I know pool's not really your thing...
+
+Detective: Say no more, buddy. My afternoon is empty anyways. Let's go kick some dive bar butt!
+
+Kevin: ...Awesome. The bar is called the Blue Screen. I'll see you there tonight.
 
 
 10. WALLY LOSES TO VINNIE IN POKER
