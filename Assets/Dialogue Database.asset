@@ -851,6 +851,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 3ad68ed1-0854-4ea1-ab6d-39f21d5a540d
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -872,7 +876,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 83
+        x: 84.17648
         y: 375
         width: 160
         height: 30
@@ -904,6 +908,10 @@ MonoBehaviour:
         typeString: 
       - title: Sequence
         value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 0b2ca32b-c116-4f36-adc8-9baa5da10215
         type: 0
         typeString: 
       conversationID: 2
@@ -1879,8 +1887,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 289.3861, y: 0}
-    canvasZoom: 0.7600002
+    canvasScrollPosition: {x: 272.4559, y: 0}
+    canvasZoom: 1
   - id: 3
     fields:
     - title: Title
@@ -3964,11 +3972,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -3980,15 +3988,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: '*LEAVE*'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -4527,8 +4535,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 21.256386, y: 0}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 136.45503, y: 0}
+    canvasZoom: 0.97
   syncInfo:
     syncActors: 0
     syncItems: 0
