@@ -22,7 +22,8 @@ public class ThoughtController : MonoBehaviour
 
             // The first balloon is always the right one, so it gets behind all others
             if (i == 0) {
-                // TODO Set right balloon
+                // Set right balloon
+                newBalloon.GetComponent<ThoughtBalloon>().Special = true;
             }
 
             // Set balloon sort order
