@@ -4133,7 +4133,7 @@ MonoBehaviour:
   startConversationEntryID: -1
   startConversationEntryTitle: 
   exclusive: 0
-  replace: 0
+  replace: 1
   skipIfNoValidEntries: 0
   preventRestartOnSameFrameEnded: 0
   stopConversationOnTriggerExit: 0
