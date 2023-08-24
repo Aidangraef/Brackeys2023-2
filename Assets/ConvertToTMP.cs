@@ -17,5 +17,6 @@ public class ConvertToTMP : MonoBehaviour
     void Update()
     {
         this.GetComponent<TMPro.TextMeshProUGUI>().text = text.text;
+        //AkSoundEngine.PostEvent("npcTalk", this.gameObject);
     }
 }
