@@ -7,14 +7,8 @@ public class ConvertToTMP : MonoBehaviour
 {
     public Text text;
 
-    int i;
-    bool talking;
-
-    // Start is called before the first frame update
-    void Awake()
-    {
-        i = 6;
-    }
+    [SerializeField]
+    bool shouldSendTextToVoiceManager = false;
 
     // Update is called once per frame
     void Update()
@@ -22,24 +16,9 @@ public class ConvertToTMP : MonoBehaviour
         if(text.text != this.GetComponent<TMPro.TextMeshProUGUI>().text)
         {
             this.GetComponent<TMPro.TextMeshProUGUI>().text = text.text;
-            talking = true;
-        }
-        else
-        {
-            talking = false;
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if(i >= 6 && talking)
-        {
-            AkSoundEngine.PostEvent("npcTalk", this.gameObject);
-            i = 0;
-        }
-        else
-        {
-            i += 1;
+            if (shouldSendTextToVoiceManager) {
+                VoiceManager.manager.Speak(text.text);
+            }
         }
     }
 }
