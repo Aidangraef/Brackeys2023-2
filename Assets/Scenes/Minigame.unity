@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: inputController
       value: 
       objectReference: {fileID: 2104695369}
+    - target: {fileID: 7614816528962177024, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
+      propertyPath: characterSpriteRenderer
+      value: 
+      objectReference: {fileID: 446263774}
     - target: {fileID: 7614816528962177025, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
       propertyPath: m_RootOrder
       value: 6

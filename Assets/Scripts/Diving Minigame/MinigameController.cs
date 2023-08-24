@@ -25,6 +25,14 @@ public class MinigameController : MonoBehaviour
     bool minigameOver = false;
     bool foundSpecialThought = false;
 
+    MemoryEnum currentMemory;
+
+    [Header("Character attributes")]
+    [SerializeField]
+    List<Sprite> characterSprites;
+    [SerializeField]
+    SpriteRenderer characterSpriteRenderer;
+
     public static MinigameController controller;
 
     private void Awake() {
@@ -38,6 +46,12 @@ public class MinigameController : MonoBehaviour
     void Start()
     {
         fadeEffect.TargetAlpha = 0f;
+
+        // TODO Load current memory dive index
+    }
+
+    public void SetCharacter(CharacterEnum character) {
+        characterSpriteRenderer.sprite = characterSprites[(int)character];
     }
 
     IEnumerator StartMinigame() {
@@ -62,12 +76,11 @@ public class MinigameController : MonoBehaviour
             // Didn't end by timeout, so stop coroutine
             StopCoroutine(endMinigameCoroutine);
 
-            // TODO Inform game controller thought was found
+            // Inform game controller thought was found
+            GameController.controller.NewMemorySeen(currentMemory);
 
             // TODO Play victory sound
         } else {
-            // TODO Inform game controller thought was NOT found
-
             // TODO Play failure sound
         }
 

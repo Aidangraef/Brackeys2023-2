@@ -45,7 +45,9 @@ public class ThoughtController : MonoBehaviour
                 int thoughtIndex = Random.Range(0, characterThoughts.Count);
                 IrrelevantThought irrelevantThought = characterThoughts[thoughtIndex];
                 thoughtScript.FillBalloon(irrelevantThought.feeling, irrelevantThought.thought);
-                characterThoughts.RemoveAt(thoughtIndex);
+                if (characterThoughts.Count > 1) {
+                    characterThoughts.RemoveAt(thoughtIndex);
+                }
             }
 
             // Set balloon sort order

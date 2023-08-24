@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum MemoryEnum {
-    BEN_PAST,
+    // Make sure these are aligned to the id of the scenes they represent
+    BEN_PAST = 3,
     BEN_WALLY_GET_TIPSY,
     BEN_GUN_GOES_MISSING,
     TINA_SINGS_LA_CANTATA,
