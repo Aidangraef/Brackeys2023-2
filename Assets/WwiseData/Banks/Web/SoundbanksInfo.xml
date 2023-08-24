@@ -42,11 +42,34 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3858903546" Name="characterSwitch">
+					<Switches>
+						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="2596618219" Name="switchBarkeep"/>
+						<Switch Id="3053756386" Name="switchWally"/>
+						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3928776531" Name="switchTina"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{D83D2FB1-2FC6-F266-25C9-A8C2B4442719}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{14661902-F6E1-0739-EE5E-4855B6768939}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-003.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-003_AF701E17.wem</CachePath>
+				</File>
+				<File Id="53288716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-001.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-001_F34FEF3F.wem</CachePath>
+				</File>
+				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-006.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-006_C8C15967.wem</CachePath>
+				</File>
 				<File Id="133817862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-004.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-004_3F75BDB9.wem</CachePath>
@@ -77,7 +100,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_F8FFE7AC.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_B1DE48CC.wem</CachePath>
 				</File>
 				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-004.wav</ShortName>
@@ -86,6 +109,10 @@
 				<File Id="226020652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailReady.wav</ShortName>
 					<CachePath>SFX/mailReady_C2F9A30D.wem</CachePath>
+				</File>
+				<File Id="229554145" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-005.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-005_E89ABAA7.wem</CachePath>
 				</File>
 				<File Id="245039638" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-006.wav</ShortName>
@@ -99,25 +126,61 @@
 					<ShortName>concreteFootsteps-007.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="414330125" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-003.wav</ShortName>
+					<CachePath>SFX/vocalsBen-003_0DFD26B0.wem</CachePath>
+				</File>
+				<File Id="432340000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-001.wav</ShortName>
+					<CachePath>SFX/vocalsBen-001_2FF2CED2.wem</CachePath>
+				</File>
 				<File Id="491441777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-002.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="493927494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-006.wav</ShortName>
+					<CachePath>SFX/vocalsBen-006_2C1C7318.wem</CachePath>
+				</File>
+				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-005.wav</ShortName>
+					<CachePath>SFX/vocalsBen-005_89A9CF86.wem</CachePath>
 				</File>
 				<File Id="549967391" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-001.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-001_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="553687529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-002.wav</ShortName>
+					<CachePath>SFX/vocalsBen-002_44F511E2.wem</CachePath>
+				</File>
+				<File Id="555974561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-002.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-002_D70AD38F.wem</CachePath>
+				</File>
+				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-007.wav</ShortName>
+					<CachePath>SFX/vocalsBen-007_7F1C4D02.wem</CachePath>
+				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="736710810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-004.wav</ShortName>
+					<CachePath>SFX/vocalsBen-004_13884BA3.wem</CachePath>
 				</File>
 				<File Id="754295549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-012.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-012_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-004.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-004_DB36F877.wem</CachePath>
+				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
-					<CachePath>SFX/buttonClick_6C6C7A1D.wem</CachePath>
+					<CachePath>SFX/buttonClick_ED1E115E.wem</CachePath>
 				</File>
 				<File Id="895541830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Failure_01-10_Ensemble-Small_DRY.wav</ShortName>
@@ -192,6 +255,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="783992069" Name="gameLight" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="5" DurationMax="5">
 					<MediaRefs>
 						<MediaRef Id="147227719"/>
@@ -204,6 +268,58 @@
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="3988978802" Name="npcBarkeep" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="2596618219" Name="switchBarkeep"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="216426317" Name="npcBen" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3469465608" Name="switchBen"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="2124506477" Name="npcKevin" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.48562276" DurationMax="0.516084">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="385597812"/>
+							<MediaRefs>
+								<MediaRef Id="21251891"/>
+								<MediaRef Id="53288716"/>
+								<MediaRef Id="92909319"/>
+								<MediaRef Id="229554145"/>
+								<MediaRef Id="555974561"/>
+								<MediaRef Id="776453115"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="414330125"/>
+								<MediaRef Id="432340000"/>
+								<MediaRef Id="493927494"/>
+								<MediaRef Id="532866258"/>
+								<MediaRef Id="553687529"/>
+								<MediaRef Id="637710719"/>
+								<MediaRef Id="736710810"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="315848864" Name="npcTina" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3928776531" Name="switchTina"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1157041911" Name="npcWally" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3053756386" Name="switchWally"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="2.0028148" DurationMax="2.0028148">
 					<MediaRefs>
@@ -230,7 +346,18 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3858903546" Name="characterSwitch">
+					<Switches>
+						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="2596618219" Name="switchBarkeep"/>
+						<Switch Id="3053756386" Name="switchWally"/>
+						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3928776531" Name="switchTina"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{59B433E0-75E3-527A-C45E-6D12A90BC3B4}</FileHash>
+	<FileHash>{3C7AA040-5C1D-20A3-D8AC-F9AFEE67DC7F}</FileHash>
 </SoundBanksInfo>

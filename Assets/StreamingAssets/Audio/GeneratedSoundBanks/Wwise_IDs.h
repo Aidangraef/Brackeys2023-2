@@ -15,8 +15,15 @@ namespace AK
     {
         static const AkUniqueID BUTTONCLICK = 4051332235U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
+        static const AkUniqueID GAMELIGHT = 783992069U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID NPCBARKEEP = 3988978802U;
+        static const AkUniqueID NPCBEN = 216426317U;
+        static const AkUniqueID NPCKEVIN = 2124506477U;
+        static const AkUniqueID NPCTALK = 4041656984U;
+        static const AkUniqueID NPCTINA = 315848864U;
+        static const AkUniqueID NPCWALLY = 1157041911U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTDING = 1336322353U;
         static const AkUniqueID TESTFAIL = 1435302941U;
@@ -37,6 +44,24 @@ namespace AK
         } // namespace ROOMSTATE
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace CHARACTERSWITCH
+        {
+            static const AkUniqueID GROUP = 3858903546U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SWITCHBARKEEP = 2596618219U;
+                static const AkUniqueID SWITCHBEN = 3469465608U;
+                static const AkUniqueID SWITCHKEVIN = 385597812U;
+                static const AkUniqueID SWITCHTINA = 3928776531U;
+                static const AkUniqueID SWITCHWALLY = 3053756386U;
+            } // namespace SWITCH
+        } // namespace CHARACTERSWITCH
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

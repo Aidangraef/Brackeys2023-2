@@ -25,6 +25,10 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="roomState" ID="{F8442905-DC11-4414-8E94-3FC41F913E6E}"/>
+						<ArgumentRef Name="characterSwitch" ID="{A4FCCCFC-6E86-46EB-A5EB-C595DDC706DF}"/>
+					</ArgumentList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>

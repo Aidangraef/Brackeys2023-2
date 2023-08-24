@@ -19,7 +19,9 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
