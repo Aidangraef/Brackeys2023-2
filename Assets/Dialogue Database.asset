@@ -1741,7 +1741,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 755.35406
+        x: 753.9842
         y: 522.7416
         width: 160
         height: 30
@@ -1889,6 +1889,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 6f6b9b6e-8e04-4ee5-abeb-071733372ead
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -1919,11 +1923,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 3
         type: 5
@@ -1935,19 +1939,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I kept this gun safe in my sight the entire night.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 9607a662-3bbf-436b-b758-1ef83e2910fd
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -1967,22 +1971,22 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 3112265661621898727, guid: 48473adc159ed844cba6b60e22f7fd1e, type: 3}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 1
+          - m_Target: {fileID: 978156324080950485, guid: 48473adc159ed844cba6b60e22f7fd1e, type: 3}
+            m_TargetAssemblyTypeName: DiveBtn, Assembly-CSharp
+            m_MethodName: SetDiveScene
+            m_Mode: 3
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
-              m_IntArgument: 0
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 6
               m_FloatArgument: 0
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 759.30145
-        y: 731.9521
+        x: 756.56177
+        y: 733.32196
         width: 160
         height: 30
     - id: 24
@@ -2035,8 +2039,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 208.74622}
-    canvasZoom: 0.70000017
+    canvasScrollPosition: {x: 30.136963, y: 212.3287}
+    canvasZoom: 0.73000014
   - id: 3
     fields:
     - title: Title
