@@ -84,6 +84,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}"/>
+				<Event Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

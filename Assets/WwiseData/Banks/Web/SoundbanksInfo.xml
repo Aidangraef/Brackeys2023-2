@@ -54,7 +54,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B1D1CC15-623C-E1FD-01FE-C537A55DC5EA}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F088EFDD-B257-D3A0-3395-70F588BBEE3A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -394,5 +394,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5A9B2026-137A-A879-5FD3-C43C3A631732}</FileHash>
+	<FileHash>{CE4D52B3-0D3C-A296-872C-0ED401BD933D}</FileHash>
 </SoundBanksInfo>
