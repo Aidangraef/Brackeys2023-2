@@ -8,7 +8,10 @@ public class DiveBtn : MonoBehaviour
 {
     public DiveInfoScriptableObject DiveInfo;
 
-    public void GoToMiniGame() => SceneManager.LoadScene((int)UnityScenes.Minigame);
+    public void GoToMiniGame() {
+        GameController.controller.SavePlayerTransform();
+        SceneManager.LoadScene((int)UnityScenes.Minigame);
+    }
 
     public void SetDiveScene(int divingSceneId)
     {
