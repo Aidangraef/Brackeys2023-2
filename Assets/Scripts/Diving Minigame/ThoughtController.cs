@@ -8,14 +8,22 @@ public class ThoughtController : MonoBehaviour
     List<GameObject> balloonPrefabs;
 
     [SerializeField]
-    int balloonQty = 5;
+    int baseBalloonQty = 8;
+
+    [SerializeField]
+    int balloonIncrementByMemory = 2;
 
     void Start() {
         // Keep camera to get random positions
         Camera mainCamera = Camera.main;
 
+        // TODO Load amount of memories visited from gamecontroller
+        int memoriesSeen = 0;
+
+        int allThoughts = baseBalloonQty + memoriesSeen * balloonIncrementByMemory;
+
         // Create all balloons
-        for (int i = 0; i < balloonQty; i++) {
+        for (int i = 0; i < allThoughts; i++) {
             GameObject newBalloon = Instantiate(balloonPrefabs[Random.Range(0, balloonPrefabs.Count)], transform);
             // Set position
             newBalloon.transform.position = mainCamera.ViewportToWorldPoint(new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), -mainCamera.transform.position.z));

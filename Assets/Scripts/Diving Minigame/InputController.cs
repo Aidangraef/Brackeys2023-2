@@ -9,7 +9,6 @@ public class InputController : MonoBehaviour
 
     Camera mainCamera;
 
-    [SerializeField]
     bool clickEnabled;
 
     public bool ClickEnabled { get => clickEnabled; set => clickEnabled = value; }
@@ -33,14 +32,14 @@ public class InputController : MonoBehaviour
             int currentClickedThoughtSortingOrder = -1;
             foreach (RaycastHit2D hit in hits) {
                 if (hit.collider.CompareTag("ThoughtBalloon")) {
+                    // Catch thought balloon
+                    ThoughtBalloon thought = hit.collider.GetComponent<ThoughtBalloon>();
+
                     // If no one was clicked yet, select this one
-                    if (clickedThought == null) {
+                    if (clickedThought == null || currentClickedThoughtSortingOrder < thought.SpriteRenderer.sortingOrder) {
                         clickedThought = hit.collider.gameObject;
-                        currentClickedThoughtSortingOrder = hit.collider.GetComponent<SpriteRenderer>().sortingOrder;
-                    } else if (currentClickedThoughtSortingOrder < hit.collider.GetComponent<SpriteRenderer>().sortingOrder) {
-                        clickedThought = hit.collider.gameObject;
-                        currentClickedThoughtSortingOrder = hit.collider.GetComponent<SpriteRenderer>().sortingOrder;
-                    }
+                        currentClickedThoughtSortingOrder = thought.SpriteRenderer.sortingOrder;
+                    } 
                 }
             }
 
@@ -53,8 +52,7 @@ public class InputController : MonoBehaviour
                 else {
                     string thought = balloon.ReadThought();
 
-                    // TODO Avoid find first
-                    FindFirstObjectByType<MinigameController>().ShowThoughtText(thought);
+                    MinigameController.controller.ShowThoughtText(thought);
                 }
             }
         }

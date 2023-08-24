@@ -58,6 +58,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7385596382223782396, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+--- !u!212 &954747343260226558 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5417412911656886874, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 5048946336778056100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!223 &3550045942121200724 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 8598847271537806832, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
@@ -85,9 +90,12 @@ MonoBehaviour:
   maxSpeed: 1
   speed: 1
   thoughtText: 
+  spriteRenderer: {fileID: 954747343260226558}
   trailParticles: {fileID: 6659233277083397373}
   pulseParticles: {fileID: 8960834867129003034}
+  thoughtCollider: {fileID: 6904944065793097478}
   canvasElement: {fileID: 3550045942121200724}
+  fadeEffect: {fileID: 7282066206318797713}
   originalPos: {x: 0, y: 0}
   intermediatePosition1: {x: 0, y: 0}
   intermediatePosition2: {x: 0, y: 0}
@@ -97,6 +105,22 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1908167879018044761, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
   m_PrefabInstance: {fileID: 5048946336778056100}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &6904944065793097478 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1856116341118045858, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 5048946336778056100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7282066206318797713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2530580233932263989, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 5048946336778056100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4149004880894096505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa32b4b3f4cee49a0d48ebd2bb6166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &8960834867129003034 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4200224735218556350, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}

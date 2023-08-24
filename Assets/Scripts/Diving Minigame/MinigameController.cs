@@ -12,7 +12,7 @@ public class MinigameController : MonoBehaviour
     float startDelay = 0.7f;
 
     [SerializeField]
-    TextMeshProUGUI textElement;
+    FadingTMP textElement;
 
     [SerializeField]
     InputController inputController;
@@ -79,11 +79,12 @@ public class MinigameController : MonoBehaviour
         if (minigameOver) {
             // Check which scene to load
             if (foundSpecialThought) {
-                // TODO Load memory
+                // Load memory
                 SceneManager.LoadScene(3);
 
             } else {
-                // TODO Load bar scene
+                // Load bar scene
+                SceneManager.LoadScene(1);
 
             }
         } else {
@@ -92,9 +93,7 @@ public class MinigameController : MonoBehaviour
         }
     }
 
-
-
     public void ShowThoughtText(string thought) {
-        textElement.text = thought;
+        textElement.LoadNewText(thought);
     }
 }
