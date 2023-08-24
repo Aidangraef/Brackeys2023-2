@@ -57,6 +57,8 @@ public class MinigameController : MonoBehaviour
     IEnumerator StartMinigame() {
         yield return new WaitForSeconds(startDelay);
 
+        PlaySound("minigameStart");
+
         endMinigameCoroutine = StartCoroutine(WaitToEndMinigame());
     }
 
@@ -79,9 +81,11 @@ public class MinigameController : MonoBehaviour
             // Inform game controller thought was found
             GameController.controller.NewMemorySeen(currentMemory);
 
-            // TODO Play victory sound
+            // Play victory sound
+            PlaySound("minigameVictory");
         } else {
-            // TODO Play failure sound
+            // Play failure sound
+            PlaySound("minigameFailure");
         }
 
         // Fade off
@@ -108,5 +112,9 @@ public class MinigameController : MonoBehaviour
 
     public void ShowThoughtText(string thought) {
         textElement.LoadNewText(thought);
+    }
+
+    public void PlaySound(string eventSound) {
+        AkSoundEngine.PostEvent(eventSound, gameObject);
     }
 }
