@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,9 @@ using UnityEngine;
 // Class responsible for keeping all game info
 public class GameController : MonoBehaviour
 {
+    // This has to be ordered as the CharacterEnum
     [SerializeField]
-    CharacterThoughtsScriptableObject tinaThoughts;
+    List<CharacterThoughtsScriptableObject> characterThoughts;
 
     [SerializeField]
     List<MemoryEnum> memoriesSeen = new List<MemoryEnum>();
@@ -16,9 +18,9 @@ public class GameController : MonoBehaviour
 
     public static GameController controller;
 
-    public CharacterEnum CurrentCharacterDive { get => currentCharacterDive; }
+    public CharacterEnum CurrentCharacterDive { get => currentCharacterDive; set => currentCharacterDive = value; }
     public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
-    public CharacterThoughtsScriptableObject TinaThoughts { get => tinaThoughts; set => tinaThoughts = value; }
+    public List<CharacterThoughtsScriptableObject> CharacterThoughts { get => characterThoughts; set => characterThoughts = value; }
 
     void Awake() {
         if (controller == null) {
@@ -49,4 +51,14 @@ public class GameController : MonoBehaviour
     public void SubmitCulprit(CharacterEnum character) {
         // TODO Prepare code to send to ending
     }
+
+#if UNITY_EDITOR
+    private void OnValidate() {
+        foreach (CharacterEnum character in Enum.GetValues(typeof(CharacterEnum))) {
+            if (characterThoughts[(int)character].character != character) {
+                Debug.LogError("Character thoughts in Game Controller aren't sorted in the same order as CharacterEnum!");
+            }
+        }
+    }
+#endif
 }

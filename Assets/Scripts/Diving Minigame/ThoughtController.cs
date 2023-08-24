@@ -14,7 +14,7 @@ public class ThoughtController : MonoBehaviour
     int balloonIncrementByMemory = 2;
 
     [SerializeField]
-    List<CharacterThoughtsScriptableObject.IrrelevantThought> characterThoughts;
+    List<IrrelevantThought> characterThoughts;
 
     void Start() {
         // Keep camera to get random positions
@@ -26,7 +26,7 @@ public class ThoughtController : MonoBehaviour
         int allThoughts = baseBalloonQty + memoriesSeen * balloonIncrementByMemory;
 
         // Load irrelevant thoughts
-        characterThoughts = new List<CharacterThoughtsScriptableObject.IrrelevantThought>(GameController.controller.TinaThoughts.thoughtsList);
+        characterThoughts = new List<IrrelevantThought>(GameController.controller.CharacterThoughts[(int)GameController.controller.CurrentCharacterDive].thoughtsList);
 
         // Create all balloons
         for (int i = 0; i < allThoughts; i++) {
@@ -43,7 +43,7 @@ public class ThoughtController : MonoBehaviour
             } else {
                 // Fill with irrelevant thought
                 int thoughtIndex = Random.Range(0, characterThoughts.Count);
-                CharacterThoughtsScriptableObject.IrrelevantThought irrelevantThought = characterThoughts[thoughtIndex];
+                IrrelevantThought irrelevantThought = characterThoughts[thoughtIndex];
                 thoughtScript.FillBalloon(irrelevantThought.feeling, irrelevantThought.thought);
                 characterThoughts.RemoveAt(thoughtIndex);
             }
