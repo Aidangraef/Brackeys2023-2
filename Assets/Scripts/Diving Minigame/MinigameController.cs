@@ -25,9 +25,28 @@ public class MinigameController : MonoBehaviour
     bool minigameOver = false;
     bool foundSpecialThought = false;
 
+    MemoryEnum currentMemory;
+
+    [Header("Character attributes")]
+    [SerializeField]
+    List<Sprite> characterSprites;
+    [SerializeField]
+    SpriteRenderer characterSpriteRenderer;
+    [SerializeField]
+    CharacterEnum currentCharacter;
+
+    [SerializeField]
+    DiveInfoScriptableObject diso;
+
+    [Header("Tutorial")]
+    [SerializeField]
+    GameObject tutorial;
+    [SerializeField]
+    float tutorialDuration = 2f;
+
     public static MinigameController controller;
 
-    public DiveInfoScriptableObject diso;
+    public CharacterEnum CurrentCharacter { get => currentCharacter; set => currentCharacter = value; }
 
     private void Awake() {
         if (controller == null) {
@@ -39,11 +58,40 @@ public class MinigameController : MonoBehaviour
 
     void Start()
     {
+        if (tutorial.activeSelf) {
+            StartCoroutine(FadeTutorial());
+        }
+        else {
+            fadeEffect.TargetAlpha = 0f;
+        }
+
+        // Load current memory dive index
+        currentMemory = (MemoryEnum)diso.DivingScene;
+
+        // Load character
+        currentCharacter = ConvertSceneIndexToCharacter((int)currentMemory);
+        SetCharacter(currentCharacter);
+    }
+
+    public void SetCharacter(CharacterEnum character) {
+        characterSpriteRenderer.sprite = characterSprites[(int)character];
+    }
+
+    IEnumerator FadeTutorial() {
+        yield return new WaitForSeconds(tutorialDuration);
+
+        FadingTMP fadingTutorialScript = tutorial.GetComponent<FadingTMP>();
+        fadingTutorialScript.enabled = true;
+        fadingTutorialScript.IsFading = true;
+
+        // Set screen fading to start minigame
         fadeEffect.TargetAlpha = 0f;
     }
 
     IEnumerator StartMinigame() {
         yield return new WaitForSeconds(startDelay);
+
+        PlaySound("minigameStart");
 
         endMinigameCoroutine = StartCoroutine(WaitToEndMinigame());
     }
@@ -62,17 +110,18 @@ public class MinigameController : MonoBehaviour
 
         if (foundSpecialThought) {
             // Didn't end by timeout, so stop coroutine
-            StopCoroutine(endMinigameCoroutine);
+            if (endMinigameCoroutine != null) {
+                StopCoroutine(endMinigameCoroutine);
+            }
 
-            // TODO Inform game controller thought was found
+            // Inform game controller thought was found
+            GameController.controller.NewMemorySeen(currentMemory);
 
-            // TODO Play victory sound
-
-            SceneManager.LoadScene(((int)diso.DivingScene));
+            // Play victory sound
+            PlaySound("minigameVictory");
         } else {
-            // TODO Inform game controller thought was NOT found
-
-            // TODO Play failure sound
+            // Play failure sound
+            PlaySound("minigameFailure");
         }
 
         // Fade off
@@ -84,7 +133,7 @@ public class MinigameController : MonoBehaviour
             // Check which scene to load
             if (foundSpecialThought) {
                 // Load memory
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(((int)diso.DivingScene));
 
             } else {
                 // Load bar scene
@@ -99,5 +148,41 @@ public class MinigameController : MonoBehaviour
 
     public void ShowThoughtText(string thought) {
         textElement.LoadNewText(thought);
+    }
+
+    CharacterEnum ConvertSceneIndexToCharacter(int index) {
+        switch ((MemoryEnum)index) {
+            case MemoryEnum.BEN_PAST:
+            case MemoryEnum.BEN_WALLY_GET_TIPSY:
+            case MemoryEnum.BEN_GUN_GOES_MISSING:
+                return CharacterEnum.BEN;
+
+            case MemoryEnum.TINA_SINGS_LA_CANTATA:
+            case MemoryEnum.TINA_KEVIN_TOGETHER:
+            case MemoryEnum.TINA_BUSINESS_FAIL:
+                return CharacterEnum.TINA;
+
+            case MemoryEnum.KEVIN_BEATS_VINNIE_POOL:
+            case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+            case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                return CharacterEnum.KEVIN;
+
+            case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+            case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+            case MemoryEnum.WALLY_YOU_SHOT_VINNIE:
+                return CharacterEnum.WALLY;
+
+            default:
+                Debug.LogError("Character not found!");
+                return 0;
+        }
+    }
+
+    public void ShowTutorial() {
+        tutorial.SetActive(true);
+    }
+
+    public void PlaySound(string eventSound) {
+        //AkSoundEngine.PostEvent(eventSound, gameObject);
     }
 }

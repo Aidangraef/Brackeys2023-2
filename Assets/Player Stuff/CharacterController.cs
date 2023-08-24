@@ -10,13 +10,12 @@ public class CharacterController : MonoBehaviour
     private Animator animator;
 
     public int speed;
-    public bool inConversation;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool FacingRight { get => facingRight; set => facingRight = value; }
+
+    void Awake()
     {
         facingRight = false;
-        inConversation = false;
         animator = GetComponent<Animator>();
     }
 
@@ -60,10 +59,5 @@ public class CharacterController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x = theScale.x * -1;
         transform.localScale = theScale;
-    }
-
-    public void StartEndConversation()
-    {
-        //inConversation = !inConversation;
     }
 }

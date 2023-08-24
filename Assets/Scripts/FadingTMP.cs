@@ -18,6 +18,8 @@ public class FadingTMP : MonoBehaviour
 
     Coroutine delayCoroutine;
 
+    public bool IsFading { get => isFading; set => isFading = value; }
+
     private void Update() {
         if (isFading) {
             Color color = textComponent.color;
