@@ -18,13 +18,17 @@ public class GameController : MonoBehaviour
     void Awake() {
         if (controller == null) {
             controller = this;
+
+            DontDestroyOnLoad(gameObject);
         } else {
             Destroy(gameObject);
         }
     }
 
     public void NewMemorySeen(MemoryEnum memory) {
-        memoriesSeen.Add(memory);
+        if (!memoriesSeen.Contains(memory)) {
+            memoriesSeen.Add(memory);
+        }
     }
 
     public void DiveIntoCharacterMemory(CharacterEnum character) {
