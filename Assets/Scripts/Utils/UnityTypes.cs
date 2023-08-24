@@ -22,16 +22,23 @@ namespace UnityTypes
         DialogueManager
     }
 
+    [System.Serializable]
     public enum UnityScenes
     {
         StartMenu,
         Bar,
         Minigame,
-        BenDive,
-        BartenderDive,
-        KevinDive,
-        TinaDive,
-        WallyDive
+        BenDive1,
+        BenDive2,
+        BenDive3,
+        KevinDive1,
+        KevinDive2,
+        KevinDive3,
+        TinaDive1,
+        TinaDive2,
+        TinaDive3,
+        WallyDive1,
+        WallyDive2
     }
     
 }

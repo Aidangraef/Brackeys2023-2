@@ -989,6 +989,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7614816528962177024, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
+      propertyPath: diso
+      value: 
+      objectReference: {fileID: 11400000, guid: ecfb6b681ec2a3d4db7a5c421b4ba0c9, type: 2}
+    - target: {fileID: 7614816528962177024, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
       propertyPath: textElement
       value: 
       objectReference: {fileID: 747593656}
