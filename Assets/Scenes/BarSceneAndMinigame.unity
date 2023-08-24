@@ -3910,7 +3910,7 @@ GameObject:
   - component: {fileID: 1076208717}
   - component: {fileID: 1076208719}
   m_Layer: 0
-  m_Name: Bar Tender
+  m_Name: Bartender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
