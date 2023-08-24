@@ -18,16 +18,37 @@ EditorBuildSettings:
     path: Assets/Scenes/BenDive1.unity
     guid: e6960dafda4dc2f409f615c6737cce89
   - enabled: 1
+    path: Assets/Scenes/BenDive2.unity
+    guid: 81783e45fc726b74ab5fc7926c979538
+  - enabled: 1
+    path: Assets/Scenes/BenDive3.unity
+    guid: e8e469f266c4f0e42baeb7d8fcb79986
+  - enabled: 1
+    path: Assets/Scenes/KevinDive1.unity
+    guid: 3fabf985d3b8e964a9d3639b9900c3f5
+  - enabled: 1
+    path: Assets/Scenes/KevinDive2.unity
+    guid: 601179de28e7a964e924ac3f0fd51ab5
+  - enabled: 1
+    path: Assets/Scenes/KevinDive3.unity
+    guid: be2cff2ee6d22cc469a30b0d97524da3
+  - enabled: 1
+    path: Assets/Scenes/TinaDive1.unity
+    guid: 2bf151f56bc4a3849ae09140af8b6473
+  - enabled: 1
+    path: Assets/Scenes/TinaDive2.unity
+    guid: 330df8caf107be847b666af64d5c1815
+  - enabled: 1
+    path: Assets/Scenes/TinaDive3.unity
+    guid: 6e79495ba7c03ba48995500a98f0521a
+  - enabled: 1
+    path: Assets/Scenes/WallyDivev2.unity
+    guid: e0ea3e7324bfac545b9b3ab931259408
+  - enabled: 1
     path: Assets/Scenes/Sample2DScene.unity
     guid: 90a2224c41155f04b99b104dfd62d751
   - enabled: 1
     path: Assets/Scenes/BarScenev5.unity
     guid: a5f510ac55b57c849826ba84a70a53d2
-  - enabled: 1
-    path: Assets/Scenes/BenDive3.unity
-    guid: e8e469f266c4f0e42baeb7d8fcb79986
-  - enabled: 1
-    path: Assets/Scenes/BenDive2.unity
-    guid: 81783e45fc726b74ab5fc7926c979538
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 10e7c85b550d8244ea3970eea3947459, type: 2}
