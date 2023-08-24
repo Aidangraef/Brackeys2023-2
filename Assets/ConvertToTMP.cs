@@ -43,8 +43,8 @@ public class ConvertToTMP : MonoBehaviour
         }
         else if (actorID == 2)
         {
-            currentSpeaker = "Kevin";
-            AkSoundEngine.PostEvent("npcKevin", this.gameObject);
+            currentSpeaker = "Barkeep";
+            AkSoundEngine.PostEvent("npcBarkeep", this.gameObject);
         }
         else if (actorID == 3)
         {
@@ -56,6 +56,7 @@ public class ConvertToTMP : MonoBehaviour
         {
             currentSpeaker = "Tina";
             AkSoundEngine.PostEvent("npcTina", this.gameObject);
+            speechFreq = 6;
         }
         else if (actorID == 5)
         {
