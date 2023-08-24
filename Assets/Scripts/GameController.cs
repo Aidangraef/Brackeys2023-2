@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityTypes;
 
 // Class responsible for keeping all game info
 public class GameController : MonoBehaviour
@@ -16,6 +17,12 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     CharacterEnum currentCharacterDive;
+
+    // Keeps track of the player position/direction when returning to the bar scene
+    Vector3 playerPosition;
+    Vector3 playerScale;
+    bool playerFacingRight;
+    bool playerSaved = false;
 
     public static GameController controller;
 
@@ -35,14 +42,22 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode) { 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         // TODO Change to use UnityScenes
-        if (scene.buildIndex == 2) {
-            // TODO Get index from DISO inside MinigameController
-            currentCharacterDive = ConvertSceneIndexToCharacter(3);
+        switch ((UnityScenes)scene.buildIndex) {
+            case UnityScenes.Bar:
+                if (playerSaved) {
+                    LoadPlayerTransform();
+                }
+                break;
 
-            // Load character
-            MinigameController.controller.SetCharacter(currentCharacterDive);
+            case UnityScenes.Minigame:
+                // TODO Get index from DISO inside MinigameController
+                currentCharacterDive = ConvertSceneIndexToCharacter(3);
+
+                // Load character
+                MinigameController.controller.SetCharacter(currentCharacterDive);
+                break;
         }
     }
 
@@ -92,6 +107,22 @@ public class GameController : MonoBehaviour
 
     public void SubmitCulprit(CharacterEnum character) {
         // TODO Prepare code to send to ending
+    }
+
+    public void SavePlayerTransform() {
+        CharacterController characterController = FindObjectOfType<CharacterController>();
+        playerPosition = characterController.transform.position;
+        playerScale = characterController.transform.localScale;
+        playerFacingRight = characterController.FacingRight;
+        playerSaved = true;
+    }
+
+    public void LoadPlayerTransform() {
+        // Find character controller
+        CharacterController characterController = FindObjectOfType<CharacterController>();
+        characterController.transform.position = playerPosition;
+        characterController.transform.localScale = playerScale;
+        characterController.FacingRight = playerFacingRight;
     }
 
 #if UNITY_EDITOR

@@ -78,7 +78,9 @@ public class MinigameController : MonoBehaviour
 
         if (foundSpecialThought) {
             // Didn't end by timeout, so stop coroutine
-            StopCoroutine(endMinigameCoroutine);
+            if (endMinigameCoroutine != null) {
+                StopCoroutine(endMinigameCoroutine);
+            }
 
             // Inform game controller thought was found
             GameController.controller.NewMemorySeen(currentMemory);
@@ -118,6 +120,6 @@ public class MinigameController : MonoBehaviour
     }
 
     public void PlaySound(string eventSound) {
-        AkSoundEngine.PostEvent(eventSound, gameObject);
+        //AkSoundEngine.PostEvent(eventSound, gameObject);
     }
 }
