@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Class responsible for keeping all game info
 public class GameController : MonoBehaviour
@@ -27,8 +28,49 @@ public class GameController : MonoBehaviour
             controller = this;
 
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         } else {
             Destroy(gameObject);
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) { 
+        // TODO Change to use UnityScenes
+        if (scene.buildIndex == 2) {
+            // TODO Get index from DISO inside MinigameController
+            currentCharacterDive = ConvertSceneIndexToCharacter(3);
+
+            // Load character
+            MinigameController.controller.SetCharacter(currentCharacterDive);
+        }
+    }
+
+    CharacterEnum ConvertSceneIndexToCharacter(int index) {
+        switch ((MemoryEnum)index) {    
+            case MemoryEnum.BEN_PAST:
+            case MemoryEnum.BEN_WALLY_GET_TIPSY:
+            case MemoryEnum.BEN_GUN_GOES_MISSING:
+                return CharacterEnum.BEN;
+
+            case MemoryEnum.TINA_SINGS_LA_CANTATA:
+            case MemoryEnum.TINA_KEVIN_TOGETHER:
+            case MemoryEnum.TINA_BUSINESS_FAIL:
+                return CharacterEnum.TINA;
+
+            case MemoryEnum.KEVIN_BEATS_VINNIE_POOL:
+            case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+            case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                return CharacterEnum.KEVIN;
+
+            case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+            case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+            case MemoryEnum.WALLY_YOU_SHOT_VINNIE:
+                return CharacterEnum.WALLY;
+
+            default:
+                Debug.LogError("Character not found!");
+                return 0;
         }
     }
 
