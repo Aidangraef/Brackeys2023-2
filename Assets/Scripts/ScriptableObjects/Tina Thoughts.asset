@@ -12,4 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 619efd3ba79f5fe48b927daa67ca6149, type: 3}
   m_Name: Tina Thoughts
   m_EditorClassIdentifier: 
-  character: 0
+  character: 1
+  thoughtsList:
+  - feeling: Pride
+    thought: Phackets are what they are called.
+  - feeling: Sadness
+    thought: One day you could achieve success, Tina...
+  - feeling: Sadness
+    thought: Life is blues...
+  - feeling: Happiness
+    thought: Honey bunny!
+  - feeling: Anger
+    thought: Don't think I forgot you stood me up that day.
+  - feeling: Happiness
+    thought: Singing is cleansing.
+  - feeling: Anxiety
+    thought: Rent is still due...
+  - feeling: Worry
+    thought: I see you oogling, mister android
+  - feeling: Serious
+    thought: Still gotta study more SEO.
+  - feeling: Serious
+    thought: I should write the lyrics for Reckoning, definitely.
+  - feeling: Stingy
+    thought: No money but you still got that fancy suit, little man.
