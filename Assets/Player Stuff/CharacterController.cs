@@ -26,7 +26,8 @@ public class CharacterController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
 
         // flip sprite
-        if((movement.x > 0 && !facingRight) || (movement.x < 0 && facingRight))
+        if(!DialogueManager.IsConversationActive && 
+            (movement.x > 0 && !facingRight || movement.x < 0 && facingRight))
         {
             Flip();
         }
