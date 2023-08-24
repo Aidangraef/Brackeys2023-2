@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,7 +32,8 @@ public class CharacterController : MonoBehaviour
         }
 
         // walking animation
-        if(Input.GetAxisRaw("Horizontal") >= 0.01 || Input.GetAxisRaw("Horizontal") <= -0.01)
+        if(!DialogueManager.IsConversationActive && 
+                (Input.GetAxisRaw("Horizontal") >= 0.01 || Input.GetAxisRaw("Horizontal") <= -0.01))
         {
             animator.SetBool("isMoving", true);
         }
@@ -43,7 +45,7 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(inConversation)
+        if(DialogueManager.IsConversationActive)
         {
             return;
         }
