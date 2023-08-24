@@ -33,8 +33,8 @@ RectTransform:
   m_Father: {fileID: 4229287248433402136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.1, y: 0.35}
+  m_AnchorMax: {x: 0.9, y: 0.65}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -93,11 +93,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
+  m_fontSize: 0.25
   m_fontSizeBase: 0.2
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 0.2
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.15
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -442,7 +442,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.2509804}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10000,7 +10000,8 @@ MonoBehaviour:
   minSpeed: 1
   maxSpeed: 2
   speed: 5
-  thoughtText: I really liked the Grand Martini they used to serve...
+  feelingTMP: {fileID: 4335873229909653509}
+  thoughtText: 
   spriteRenderer: {fileID: 5417412911656886874}
   trailParticles: {fileID: 1908167879018044761}
   pulseParticles: {fileID: 4200224735218556350}

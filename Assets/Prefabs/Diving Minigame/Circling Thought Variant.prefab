@@ -89,6 +89,7 @@ MonoBehaviour:
   minSpeed: 0.5
   maxSpeed: 1
   speed: 1
+  feelingTMP: {fileID: 8808311120596666785}
   thoughtText: 
   spriteRenderer: {fileID: 954747343260226558}
   trailParticles: {fileID: 6659233277083397373}
@@ -116,9 +117,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 5048946336778056100}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4149004880894096505}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19fa32b4b3f4cee49a0d48ebd2bb6166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8808311120596666785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4335873229909653509, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 5048946336778056100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!198 &8960834867129003034 stripped
