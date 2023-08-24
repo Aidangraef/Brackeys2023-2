@@ -27,8 +27,8 @@ public class GameController : MonoBehaviour
 
     public void NewMemorySeen(MemoryEnum memory) {
         if (!memoriesSeen.Contains(memory)) {
-        memoriesSeen.Add(memory);
-    }
+            memoriesSeen.Add(memory);
+        }
     }
 
     public void DiveIntoCharacterMemory(CharacterEnum character) {
