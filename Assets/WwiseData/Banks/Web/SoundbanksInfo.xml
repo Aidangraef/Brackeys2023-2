@@ -54,7 +54,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{637FFE40-925C-890B-F730-415E07743FA9}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F92829F0-2F03-3085-4D07-3EC3C9B0AAC0}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -66,9 +66,21 @@
 					<ShortName>vocalsKevin-001.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-001_F34FEF3F.wem</CachePath>
 				</File>
+				<File Id="64071679" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-004.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-004_934F4FCF.wem</CachePath>
+				</File>
+				<File Id="84863909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-003.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-003_1D5E741E.wem</CachePath>
+				</File>
 				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-006.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-006_C8C15967.wem</CachePath>
+				</File>
+				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-008.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-008_2BDF5D3C.wem</CachePath>
 				</File>
 				<File Id="133817862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-004.wav</ShortName>
@@ -126,6 +138,10 @@
 					<ShortName>concreteFootsteps-007.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-006.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-006_61BD9872.wem</CachePath>
+				</File>
 				<File Id="414330125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-003.wav</ShortName>
 					<CachePath>SFX/vocalsBen-003_0DFD26B0.wem</CachePath>
@@ -141,6 +157,10 @@
 				<File Id="493927494" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-006.wav</ShortName>
 					<CachePath>SFX/vocalsBen-006_2C1C7318.wem</CachePath>
+				</File>
+				<File Id="509130527" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-002.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-002_3F7AF031.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
@@ -165,6 +185,10 @@
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="660616321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-005.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-005_5439912E.wem</CachePath>
 				</File>
 				<File Id="736710810" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-004.wav</ShortName>
@@ -197,6 +221,10 @@
 				<File Id="959757076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-003.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="962974613" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-007.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-007_FEFDCF12.wem</CachePath>
 				</File>
 				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-008.wav</ShortName>
@@ -293,6 +321,18 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3928776531"/>
+							<MediaRefs>
+								<MediaRef Id="64071679"/>
+								<MediaRef Id="84863909"/>
+								<MediaRef Id="131293917"/>
+								<MediaRef Id="409836546"/>
+								<MediaRef Id="509130527"/>
+								<MediaRef Id="660616321"/>
+								<MediaRef Id="962974613"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="414330125"/>
@@ -354,5 +394,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EFE96F8B-FE0B-05D5-3209-0B4892C4DDA5}</FileHash>
+	<FileHash>{16E43851-167A-D910-599A-CE235E272B3F}</FileHash>
 </SoundBanksInfo>

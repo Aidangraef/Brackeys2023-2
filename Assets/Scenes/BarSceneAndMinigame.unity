@@ -237,6 +237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 681559480}
+  currentSpeaker: 
+  speechFreq: 6
+  i: 0
+  talking: 0
 --- !u!114 &79824067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1445,6 +1449,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 775116541}
+  currentSpeaker: 
+  speechFreq: 6
+  i: 0
+  talking: 0
 --- !u!1 &361693163
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,6 +3652,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1490429689}
+  currentSpeaker: 
+  speechFreq: 6
+  i: 0
+  talking: 0
 --- !u!114 &832450144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6119,6 +6131,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 332976443}
+  currentSpeaker: 
+  speechFreq: 6
+  i: 0
+  talking: 0
 --- !u!114 &1409049188
 MonoBehaviour:
   m_ObjectHideFlags: 0

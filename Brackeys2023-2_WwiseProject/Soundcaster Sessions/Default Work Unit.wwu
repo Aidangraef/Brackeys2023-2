@@ -6,8 +6,24 @@
 				<SoundcasterSession Name="Testing" ID="{7561577C-8A69-41D8-9C93-84FB8B5DD78B}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="npcTina" ID="{4FC9DBF5-60B6-4F2E-BB0F-DE424A22FE6B}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="npcKevin" ID="{5336D7A8-4B55-47A1-AE21-191EA16736A8}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="npcBen" ID="{EF8E36AA-7614-4D9D-BCBD-FC70BF2DCAB1}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -20,7 +36,7 @@
 						<CurrentStateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+						<CurrentSwitchRef Name="switchKevin" ID="{9FB83119-932B-4A84-8A0E-3B8320C841C0}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

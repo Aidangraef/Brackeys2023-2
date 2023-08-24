@@ -896,6 +896,12 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
+										<ItemList>
+											<ItemRef Name="vocalsTina" ID="{27394528-0262-486A-B04E-9131A8E218C5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="switchBen" ID="{27FB8BD2-91EE-4D4A-9F76-0A27C6B51E45}"/>
 										<ItemList>
 											<ItemRef Name="vocalsBen" ID="{EFFD8A63-6AA5-43E9-9D7B-555C702BFBA6}"/>
