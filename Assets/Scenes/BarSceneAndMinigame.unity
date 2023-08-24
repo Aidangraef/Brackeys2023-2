@@ -1333,7 +1333,7 @@ MonoBehaviour:
   fullPauseDuration: 1
   quarterPauseDuration: 0.25
   removeDuplicateTypewriterEffects: 1
-  playOnEnable: 1
+  playOnEnable: 0
   waitOneFrameBeforeStarting: 0
   stopOnConversationEnd: 0
   autoScrollSettings:
@@ -1605,8 +1605,8 @@ MonoBehaviour:
   useAnimatedPortraits: 0
   usePortraitNativeSize: 0
   waitForOpen: 1
-  waitForClose: 1
-  clearTextOnClose: 0
+  waitForClose: 0
+  clearTextOnClose: 1
   clearTextOnConversationStart: 0
   scrollbarEnabler: {fileID: 0}
   onFocus:

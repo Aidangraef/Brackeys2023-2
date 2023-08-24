@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,13 +26,15 @@ public class CharacterController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
 
         // flip sprite
-        if((movement.x > 0 && !facingRight) || (movement.x < 0 && facingRight))
+        if(!DialogueManager.IsConversationActive && 
+            (movement.x > 0 && !facingRight || movement.x < 0 && facingRight))
         {
             Flip();
         }
 
         // walking animation
-        if(Input.GetAxisRaw("Horizontal") >= 0.01 || Input.GetAxisRaw("Horizontal") <= -0.01)
+        if(!DialogueManager.IsConversationActive && 
+                (Input.GetAxisRaw("Horizontal") >= 0.01 || Input.GetAxisRaw("Horizontal") <= -0.01))
         {
             animator.SetBool("isMoving", true);
         }
@@ -43,7 +46,7 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(inConversation)
+        if(DialogueManager.IsConversationActive)
         {
             return;
         }
