@@ -54,13 +54,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F92829F0-2F03-3085-4D07-3EC3C9B0AAC0}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B1D1CC15-623C-E1FD-01FE-C537A55DC5EA}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-003.wav</ShortName>
-					<CachePath>SFX/vocalsKevin-003_AF701E17.wem</CachePath>
+					<CachePath>SFX/vocalsKevin-003_563DD58F.wem</CachePath>
 				</File>
 				<File Id="53288716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-001.wav</ShortName>
@@ -68,11 +68,11 @@
 				</File>
 				<File Id="64071679" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-004.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-004_934F4FCF.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-004_08B47BC6.wem</CachePath>
 				</File>
 				<File Id="84863909" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-003.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-003_1D5E741E.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-003_DF39ADDA.wem</CachePath>
 				</File>
 				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-006.wav</ShortName>
@@ -80,7 +80,7 @@
 				</File>
 				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-008.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-008_2BDF5D3C.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-008_180252C5.wem</CachePath>
 				</File>
 				<File Id="133817862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-004.wav</ShortName>
@@ -112,7 +112,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_D01F04F9.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_8A4EC9BF.wem</CachePath>
 				</File>
 				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-004.wav</ShortName>
@@ -124,7 +124,7 @@
 				</File>
 				<File Id="229554145" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-005.wav</ShortName>
-					<CachePath>SFX/vocalsKevin-005_E89ABAA7.wem</CachePath>
+					<CachePath>SFX/vocalsKevin-005_71CCA37B.wem</CachePath>
 				</File>
 				<File Id="245039638" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-006.wav</ShortName>
@@ -140,15 +140,15 @@
 				</File>
 				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-006.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-006_61BD9872.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-006_708FC496.wem</CachePath>
 				</File>
 				<File Id="414330125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-003.wav</ShortName>
-					<CachePath>SFX/vocalsBen-003_0DFD26B0.wem</CachePath>
+					<CachePath>SFX/vocalsBen-003_9DDCF442.wem</CachePath>
 				</File>
 				<File Id="432340000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-001.wav</ShortName>
-					<CachePath>SFX/vocalsBen-001_2FF2CED2.wem</CachePath>
+					<CachePath>SFX/vocalsBen-001_0CE7D5AD.wem</CachePath>
 				</File>
 				<File Id="491441777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-002.wav</ShortName>
@@ -156,15 +156,15 @@
 				</File>
 				<File Id="493927494" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-006.wav</ShortName>
-					<CachePath>SFX/vocalsBen-006_2C1C7318.wem</CachePath>
+					<CachePath>SFX/vocalsBen-006_10F647BC.wem</CachePath>
 				</File>
 				<File Id="509130527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-002.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-002_3F7AF031.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-002_55AE7C1C.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
-					<CachePath>SFX/vocalsBen-005_89A9CF86.wem</CachePath>
+					<CachePath>SFX/vocalsBen-005_EBA2F5B0.wem</CachePath>
 				</File>
 				<File Id="549967391" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-001.wav</ShortName>
@@ -172,15 +172,15 @@
 				</File>
 				<File Id="553687529" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-002.wav</ShortName>
-					<CachePath>SFX/vocalsBen-002_44F511E2.wem</CachePath>
+					<CachePath>SFX/vocalsBen-002_051ADCE7.wem</CachePath>
 				</File>
 				<File Id="555974561" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-002.wav</ShortName>
-					<CachePath>SFX/vocalsKevin-002_D70AD38F.wem</CachePath>
+					<CachePath>SFX/vocalsKevin-002_A1E9C817.wem</CachePath>
 				</File>
 				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-007.wav</ShortName>
-					<CachePath>SFX/vocalsBen-007_7F1C4D02.wem</CachePath>
+					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
 				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
@@ -188,11 +188,11 @@
 				</File>
 				<File Id="660616321" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-005.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-005_5439912E.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-005_78F679F7.wem</CachePath>
 				</File>
 				<File Id="736710810" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-004.wav</ShortName>
-					<CachePath>SFX/vocalsBen-004_13884BA3.wem</CachePath>
+					<CachePath>SFX/vocalsBen-004_5D39340A.wem</CachePath>
 				</File>
 				<File Id="754295549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-012.wav</ShortName>
@@ -200,7 +200,7 @@
 				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
-					<CachePath>SFX/vocalsKevin-004_DB36F877.wem</CachePath>
+					<CachePath>SFX/vocalsKevin-004_F7D5790F.wem</CachePath>
 				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -224,7 +224,7 @@
 				</File>
 				<File Id="962974613" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-007.wav</ShortName>
-					<CachePath>SFX/vocalsTina2-007_FEFDCF12.wem</CachePath>
+					<CachePath>SFX/vocalsTina2-007_942A7DCB.wem</CachePath>
 				</File>
 				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-008.wav</ShortName>
@@ -394,5 +394,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{40025E7E-6708-8B85-35A5-16F441E347EE}</FileHash>
+	<FileHash>{5C6FBAB5-0373-8346-57E6-4614F043F0B5}</FileHash>
 </SoundBanksInfo>

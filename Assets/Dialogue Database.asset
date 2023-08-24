@@ -84,7 +84,7 @@ MonoBehaviour:
     - title: Name
       value: Ben "Big Shot" Blamblin
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -97,6 +97,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcBen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 8
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -106,7 +114,7 @@ MonoBehaviour:
     - title: Name
       value: Tina Marino
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -119,6 +127,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcTina
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 5
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -128,7 +144,7 @@ MonoBehaviour:
     - title: Name
       value: Kevin
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -141,6 +157,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcKevin
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 4
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
