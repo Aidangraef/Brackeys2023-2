@@ -54,10 +54,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F088EFDD-B257-D3A0-3395-70F588BBEE3A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{94E90BD5-E63B-0CE6-9185-849A6CDC4360}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="4833183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-003.wav</ShortName>
+					<CachePath>SFX/VocalsWally-003_BE58D27B.wem</CachePath>
+				</File>
 				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-003.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-003_563DD58F.wem</CachePath>
@@ -77,6 +81,18 @@
 				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-006.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-006_C8C15967.wem</CachePath>
+				</File>
+				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-004.wav</ShortName>
+					<CachePath>SFX/VocalsWally-004_2762B747.wem</CachePath>
+				</File>
+				<File Id="121403949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-008.wav</ShortName>
+					<CachePath>SFX/VocalsWally-008_2885DB73.wem</CachePath>
+				</File>
+				<File Id="130825561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-006.wav</ShortName>
+					<CachePath>SFX/VocalsWally-006_96F59DA3.wem</CachePath>
 				</File>
 				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-008.wav</ShortName>
@@ -130,6 +146,10 @@
 					<ShortName>Wood Footstep-006.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-006_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="289387898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-001.wav</ShortName>
+					<CachePath>SFX/VocalsWally-001_D1DECA33.wem</CachePath>
+				</File>
 				<File Id="328961177" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-009.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
@@ -137,6 +157,10 @@
 				<File Id="363383916" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-007.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-007.wav</ShortName>
+					<CachePath>SFX/VocalsWally-007_4EEF454F.wem</CachePath>
 				</File>
 				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-006.wav</ShortName>
@@ -178,6 +202,10 @@
 					<ShortName>vocalsKevin-002.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-002_A1E9C817.wem</CachePath>
 				</File>
+				<File Id="616338181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-002.wav</ShortName>
+					<CachePath>SFX/VocalsWally-002_33886FAF.wem</CachePath>
+				</File>
 				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-007.wav</ShortName>
 					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
@@ -217,6 +245,10 @@
 				<File Id="952124549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-002.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="957187976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-005.wav</ShortName>
+					<CachePath>SFX/VocalsWally-005_EDBABEA3.wem</CachePath>
 				</File>
 				<File Id="959757076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-003.wav</ShortName>
@@ -307,7 +339,7 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.48562276" DurationMax="0.516084">
+				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.30079" DurationMax="0.516084">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="385597812"/>
@@ -330,6 +362,19 @@
 								<MediaRef Id="509130527"/>
 								<MediaRef Id="660616321"/>
 								<MediaRef Id="962974613"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3053756386"/>
+							<MediaRefs>
+								<MediaRef Id="4833183"/>
+								<MediaRef Id="100112895"/>
+								<MediaRef Id="121403949"/>
+								<MediaRef Id="130825561"/>
+								<MediaRef Id="289387898"/>
+								<MediaRef Id="382571462"/>
+								<MediaRef Id="616338181"/>
+								<MediaRef Id="957187976"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -394,5 +439,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CE4D52B3-0D3C-A296-872C-0ED401BD933D}</FileHash>
+	<FileHash>{B14E66B2-9BF5-4E58-72C4-0C7ABA122E33}</FileHash>
 </SoundBanksInfo>

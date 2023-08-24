@@ -893,11 +893,8 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1161,6 +1158,12 @@
 										<SwitchRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
 										<ItemList>
 											<ItemRef Name="vocalsTina" ID="{27394528-0262-486A-B04E-9131A8E218C5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchWally" ID="{A278707C-0006-45D3-BF98-44229ACE3593}"/>
+										<ItemList>
+											<ItemRef Name="vocalsWally" ID="{8C95F95F-5F90-4431-97F1-DF06A6E84DFE}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

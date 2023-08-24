@@ -162,7 +162,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: speechSpeed
-      value: 4
+      value: 6
       type: 1
       typeString: CustomFieldType_Number
     portrait: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
     - title: Name
       value: Wally Pevels
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -187,6 +187,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcWally
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 5
+      type: 0
+      typeString: CustomFieldType_Text
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -218,7 +226,7 @@ MonoBehaviour:
     - title: Name
       value: Vinnie
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
