@@ -13,14 +13,20 @@ public class ThoughtController : MonoBehaviour
     [SerializeField]
     int balloonIncrementByMemory = 2;
 
+    [SerializeField]
+    List<CharacterThoughtsScriptableObject.IrrelevantThought> characterThoughts;
+
     void Start() {
         // Keep camera to get random positions
         Camera mainCamera = Camera.main;
 
-        // TODO Load amount of memories visited from gamecontroller
-        int memoriesSeen = 0;
+        // Load amount of memories visited from gamecontroller
+        int memoriesSeen = GameController.controller.MemoriesSeen.Count;
 
         int allThoughts = baseBalloonQty + memoriesSeen * balloonIncrementByMemory;
+
+        // Load irrelevant thoughts
+        characterThoughts = new List<CharacterThoughtsScriptableObject.IrrelevantThought>(GameController.controller.TinaThoughts.thoughtsList);
 
         // Create all balloons
         for (int i = 0; i < allThoughts; i++) {
@@ -28,14 +34,22 @@ public class ThoughtController : MonoBehaviour
             // Set position
             newBalloon.transform.position = mainCamera.ViewportToWorldPoint(new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), -mainCamera.transform.position.z));
 
+            ThoughtBalloon thoughtScript = newBalloon.GetComponent<ThoughtBalloon>();
+
             // The first balloon is always the right one, so it gets behind all others
             if (i == 0) {
                 // Set right balloon
-                newBalloon.GetComponent<ThoughtBalloon>().Special = true;
+                thoughtScript.Special = true;
+            } else {
+                // Fill with irrelevant thought
+                int thoughtIndex = Random.Range(0, characterThoughts.Count);
+                CharacterThoughtsScriptableObject.IrrelevantThought irrelevantThought = characterThoughts[thoughtIndex];
+                thoughtScript.FillBalloon(irrelevantThought.feeling, irrelevantThought.thought);
+                characterThoughts.RemoveAt(thoughtIndex);
             }
 
             // Set balloon sort order
-            newBalloon.GetComponent<ThoughtBalloon>().SetSortingOrder(i * 2);
+            thoughtScript.SetSortingOrder(i * 2);
         }
     }
 

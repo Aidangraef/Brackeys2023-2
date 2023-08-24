@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField]
+    CharacterThoughtsScriptableObject tinaThoughts;
+
+    [SerializeField]
     List<MemoryEnum> memoriesSeen = new List<MemoryEnum>();
 
     [SerializeField]
@@ -14,6 +17,8 @@ public class GameController : MonoBehaviour
     public static GameController controller;
 
     public CharacterEnum CurrentCharacterDive { get => currentCharacterDive; }
+    public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
+    public CharacterThoughtsScriptableObject TinaThoughts { get => tinaThoughts; set => tinaThoughts = value; }
 
     void Awake() {
         if (controller == null) {

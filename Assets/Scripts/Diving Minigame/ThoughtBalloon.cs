@@ -18,6 +18,8 @@ public class ThoughtBalloon : MonoBehaviour
     protected float speed = 2f;
 
     [SerializeField]
+    protected TextMeshProUGUI feelingTMP;
+    [SerializeField]
     protected string thoughtText;
 
     [SerializeField]
@@ -54,6 +56,11 @@ public class ThoughtBalloon : MonoBehaviour
         DefineSpeed();
 
         PrepareAppearance();
+    }
+
+    public void FillBalloon(string feeling, string thought) {
+        feelingTMP.text = feeling;
+        thoughtText = thought;
     }
 
     protected virtual void BalloonSpecificStart() {
@@ -162,7 +169,7 @@ public class ThoughtBalloon : MonoBehaviour
             spriteRenderer.color = Color.white;
 
             // Change font color
-            GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+            feelingTMP.color = Color.black;
 
             // Activate pulse
             pulseParticles.Play();
