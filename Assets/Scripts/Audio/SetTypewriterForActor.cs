@@ -15,7 +15,7 @@ public class SetTypewriterForActor : MonoBehaviour
     public void OnBeginTypewriter() // Assign to typewriter's OnBegin() event.
     {
         // Look up character's switch and talking speed:
-        var actorName = DialogueManager.currentConversationState.subtitle.speakerInfo.nameInDatabase;
+        string actorName = DialogueManager.currentConversationState.subtitle.speakerInfo.nameInDatabase;
         string switchName = DialogueManager.masterDatabase.GetActor(actorName).LookupValue("WwiseSwitch");
         Debug.Log(switchName);
         switch(switchName)
@@ -35,4 +35,12 @@ public class SetTypewriterForActor : MonoBehaviour
         CharacterSpeech.currentSpeechSpeed = currentTalkSpeed;
         CharacterSpeech.charPassed = currentTalkSpeed;
     }
+
+#if UNITY_EDITOR
+    private void OnValidate() {
+        if (GetComponent<TextMeshProTypewriterEffect>().playOnEnable) {
+            Debug.LogError("TextMeshProTypewriterEffect component should not have Play On Enable checked!");
+        }
+    }
+#endif
 }
