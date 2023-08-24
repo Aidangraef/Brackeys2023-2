@@ -20,11 +20,14 @@ public class ThoughtBalloon : MonoBehaviour
     [SerializeField]
     protected string thoughtText;
 
+    [SerializeField]
     protected SpriteRenderer spriteRenderer;
     [SerializeField]
     protected ParticleSystem trailParticles;
     [SerializeField]
     protected ParticleSystem pulseParticles;
+    [SerializeField]
+    protected Collider2D thoughtCollider;
 
     [SerializeField]
     protected Canvas canvasElement;
@@ -35,11 +38,11 @@ public class ThoughtBalloon : MonoBehaviour
 
     protected bool special = false;
 
-    public bool Special { get => special; set => special = value; }
+    [SerializeField]
+    protected ThoughtBalloonFade fadeEffect;
 
-    private void Awake() {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    public bool Special { get => special; set => special = value; }
+    public SpriteRenderer SpriteRenderer { get => spriteRenderer; set => spriteRenderer = value; }
 
     void Start() {
         mainCamera = Camera.main;
@@ -79,8 +82,15 @@ public class ThoughtBalloon : MonoBehaviour
     }
 
     public string ReadThought() {
-        // Indicate balloon read
-        spriteRenderer.color = Color.white;
+        // Indicate balloon read by fading away
+        fadeEffect.enabled = true;
+
+        // Disable collider
+        thoughtCollider.enabled = false;
+
+        // Stop particles
+        trailParticles.Stop();
+        pulseParticles.Stop();
 
         // Get text
         return thoughtText;
@@ -138,7 +148,6 @@ public class ThoughtBalloon : MonoBehaviour
     private bool CheckValidTargetPosition() {
         // Checks if target position is inside camera viewport
         Vector2 targetViewportPoint = mainCamera.WorldToViewportPoint(targetPos);
-        Debug.Log(targetViewportPoint);
 
         return (0f <= targetViewportPoint.x && targetViewportPoint.x <= 1f &&
             0f <= targetViewportPoint.y && targetViewportPoint.y <= 1f);

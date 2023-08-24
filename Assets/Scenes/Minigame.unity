@@ -326,7 +326,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1001
   m_Sprite: {fileID: 21300000, guid: 837810c55a3b98041ac7dd73b0a49b28, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 747593653}
   - component: {fileID: 747593655}
   - component: {fileID: 747593654}
+  - component: {fileID: 747593656}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -384,8 +385,8 @@ RectTransform:
   m_Father: {fileID: 1392433813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0.2}
-  m_AnchorMax: {x: 0.9, y: 0.5}
+  m_AnchorMin: {x: 0.2, y: 0.1}
+  m_AnchorMax: {x: 0.8, y: 0.3}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -439,7 +440,7 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -486,6 +487,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747593652}
   m_CullTransparentMesh: 1
+--- !u!114 &747593656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747593652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7cdef5a65277c46933aa1464809974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 747593654}
+  fadeSpeed: 2
+  delay: 1
 --- !u!1 &1144064219
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +516,7 @@ GameObject:
   - component: {fileID: 1144064225}
   - component: {fileID: 1144064224}
   - component: {fileID: 1144064223}
+  - component: {fileID: 1144064226}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -635,6 +652,18 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1144064226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144064219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e95d0152c7cd84ca4ca9c1348f6faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1392433809
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 7614816528962177024, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
       propertyPath: textElement
       value: 
-      objectReference: {fileID: 747593654}
+      objectReference: {fileID: 747593656}
     - target: {fileID: 7614816528962177024, guid: b6ac677fd420cbb41a67c4226f32b6ad, type: 3}
       propertyPath: inputController
       value: 
