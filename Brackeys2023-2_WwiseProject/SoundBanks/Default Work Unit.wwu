@@ -9,7 +9,18 @@
 							<ObjectInclusionList>
 								<ObjectRef Name="testDing" ID="{0C961428-884D-4008-B7B0-C2D098BD920F}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testFail" ID="{0BB6097A-49D7-418A-9097-6BD0BE673BCF}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="buttonClick" ID="{65F98E0E-5A30-4407-866F-7A9796E70323}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="footStepping" ID="{6D86B6AF-5B93-478D-B675-5985BB6A9018}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcKevin" ID="{5336D7A8-4B55-47A1-AE21-191EA16736A8}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gameLight" ID="{DDFC3101-C173-4A61-A998-DCCEA4D349E4}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testComplete" ID="{61CFB72B-375B-4B59-AE73-9D657F0DE60D}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcWally" ID="{A2C1C9FD-8987-4C5E-B45F-18B64B5B441B}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcBen" ID="{EF8E36AA-7614-4D9D-BCBD-FC70BF2DCAB1}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcBarkeep" ID="{A34B8619-1F34-4E4E-AD8A-34414DA73B96}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="npcTina" ID="{4FC9DBF5-60B6-4F2E-BB0F-DE424A22FE6B}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

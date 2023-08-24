@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
 	<Events>
-		<WorkUnit Name="Player" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="footStepping" ID="{6D86B6AF-5B93-478D-B675-5985BB6A9018}">
+					<ChildrenList>
+						<Action Name="" ID="{44006458-1606-4DA2-970F-83F1C0367451}" ShortID="408732143">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footSwitch" ID="{DE886B43-53C7-412E-89CA-2351F8F5A736}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="gameLight" ID="{DDFC3101-C173-4A61-A998-DCCEA4D349E4}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

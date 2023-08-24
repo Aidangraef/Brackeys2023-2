@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,11 @@ public class ConvertToTMP : MonoBehaviour
     public Text text;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+
+    }
+
     void Start()
     {
         
@@ -16,6 +22,9 @@ public class ConvertToTMP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<TMPro.TextMeshProUGUI>().text = text.text;
+        if (text.text != this.GetComponent<TMPro.TextMeshProUGUI>().text)
+        {
+            this.GetComponent<TMPro.TextMeshProUGUI>().text = text.text;
+        }
     }
 }

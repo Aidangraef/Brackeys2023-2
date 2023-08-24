@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e119edb416e0ded4091c8debda94745e, type: 3}
+  m_Name: 34862F30-E040-4AD9-B188-B0A308642F50
+  m_EditorClassIdentifier: 
+  objectName: npcTalk
+  id: 4041656984
+  guid: 34862F30-E040-4AD9-B188-B0A308642F50
