@@ -54,9 +54,9 @@
 														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.883332667554372"/>
 														<Property Name="LoopBegin" Type="Real64" Value="1.10416583444297"/>
-														<Property Name="LoopEnd" Type="Real64" Value="38.8114290806702"/>
+														<Property Name="LoopEnd" Type="Real64" Value="78.4509825371726"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="40.5228861240568"/>
+														<Property Name="TrimEnd" Type="Real64" Value="79.996814705393"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>thunder_rain_helsinki_august_2014_04.wav</AudioFile>

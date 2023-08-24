@@ -58,6 +58,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -237,6 +242,11 @@
 												</Sound>
 												<Sound Name="Wood Footstep-007" ID="{F4D9D331-5D5A-4E43-8554-EF0B18AC4259}" ShortID="829635834">
 													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-8</Value>
@@ -300,7 +310,7 @@
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

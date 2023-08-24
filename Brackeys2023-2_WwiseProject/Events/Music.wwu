@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+									<ObjectRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

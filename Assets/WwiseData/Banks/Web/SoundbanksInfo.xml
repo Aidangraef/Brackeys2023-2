@@ -54,7 +54,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{14661902-F6E1-0739-EE5E-4855B6768939}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{637FFE40-925C-890B-F730-415E07743FA9}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -100,7 +100,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_B1DE48CC.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_D01F04F9.wem</CachePath>
 				</File>
 				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-004.wav</ShortName>
@@ -190,10 +190,6 @@
 					<ShortName>concreteFootsteps-001.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-001_3F75BDB9.wem</CachePath>
 				</File>
-				<File Id="927889926" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Wood Footstep-007.wav</ShortName>
-					<CachePath>SFX/Wood Footstep-007_3F75BDB9.wem</CachePath>
-				</File>
 				<File Id="952124549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-002.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-002_3F75BDB9.wem</CachePath>
@@ -250,7 +246,6 @@
 								<MediaRef Id="491441777"/>
 								<MediaRef Id="549967391"/>
 								<MediaRef Id="650103668"/>
-								<MediaRef Id="927889926"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -266,7 +261,7 @@
 						<MediaRef Id="183604237"/>
 					</MediaRefs>
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
+						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3988978802" Name="npcBarkeep" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -359,5 +354,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3C7AA040-5C1D-20A3-D8AC-F9AFEE67DC7F}</FileHash>
+	<FileHash>{EFE96F8B-FE0B-05D5-3209-0B4892C4DDA5}</FileHash>
 </SoundBanksInfo>

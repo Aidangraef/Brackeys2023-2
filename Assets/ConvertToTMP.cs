@@ -13,7 +13,7 @@ public class ConvertToTMP : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        i = 10;
+        i = 6;
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class ConvertToTMP : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(i >= 3 && talking)
+        if(i >= 6 && talking)
         {
             AkSoundEngine.PostEvent("npcTalk", this.gameObject);
             i = 0;

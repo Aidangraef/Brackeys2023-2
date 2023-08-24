@@ -48,6 +48,8 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.25"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
@@ -312,8 +314,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -624,8 +624,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
