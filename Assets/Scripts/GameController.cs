@@ -15,9 +15,6 @@ public class GameController : MonoBehaviour
     [SerializeField]
     List<MemoryEnum> memoriesSeen = new List<MemoryEnum>();
 
-    [SerializeField]
-    CharacterEnum currentCharacterDive;
-
     // Keeps track of the player position/direction when returning to the bar scene
     Vector3 playerPosition;
     Vector3 playerScale;
@@ -26,7 +23,6 @@ public class GameController : MonoBehaviour
 
     public static GameController controller;
 
-    public CharacterEnum CurrentCharacterDive { get => currentCharacterDive; set => currentCharacterDive = value; }
     public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
     public List<CharacterThoughtsScriptableObject> CharacterThoughts { get => characterThoughts; set => characterThoughts = value; }
 
@@ -43,62 +39,21 @@ public class GameController : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        // TODO Change to use UnityScenes
         switch ((UnityScenes)scene.buildIndex) {
             case UnityScenes.Bar:
+                // If there is a player saved, load the transform to keep player at the same place/direction
                 if (playerSaved) {
                     LoadPlayerTransform();
                 }
                 break;
-
-            case UnityScenes.Minigame:
-                // TODO Get index from DISO inside MinigameController
-                currentCharacterDive = ConvertSceneIndexToCharacter(3);
-
-                // Load character
-                MinigameController.controller.SetCharacter(currentCharacterDive);
-                break;
         }
     }
 
-    CharacterEnum ConvertSceneIndexToCharacter(int index) {
-        switch ((MemoryEnum)index) {    
-            case MemoryEnum.BEN_PAST:
-            case MemoryEnum.BEN_WALLY_GET_TIPSY:
-            case MemoryEnum.BEN_GUN_GOES_MISSING:
-                return CharacterEnum.BEN;
-
-            case MemoryEnum.TINA_SINGS_LA_CANTATA:
-            case MemoryEnum.TINA_KEVIN_TOGETHER:
-            case MemoryEnum.TINA_BUSINESS_FAIL:
-                return CharacterEnum.TINA;
-
-            case MemoryEnum.KEVIN_BEATS_VINNIE_POOL:
-            case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
-            case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
-                return CharacterEnum.KEVIN;
-
-            case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
-            case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
-            case MemoryEnum.WALLY_YOU_SHOT_VINNIE:
-                return CharacterEnum.WALLY;
-
-            default:
-                Debug.LogError("Character not found!");
-                return 0;
-        }
-    }
 
     public void NewMemorySeen(MemoryEnum memory) {
         if (!memoriesSeen.Contains(memory)) {
             memoriesSeen.Add(memory);
         }
-    }
-
-    public void DiveIntoCharacterMemory(CharacterEnum character) {
-        currentCharacterDive = character;
-
-        // Call minigame scene
     }
 
     public bool IsMemorySeen(MemoryEnum memory) {

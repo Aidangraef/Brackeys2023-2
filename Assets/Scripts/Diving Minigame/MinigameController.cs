@@ -32,10 +32,14 @@ public class MinigameController : MonoBehaviour
     List<Sprite> characterSprites;
     [SerializeField]
     SpriteRenderer characterSpriteRenderer;
+    [SerializeField]
+    CharacterEnum currentCharacter;
 
     public static MinigameController controller;
 
     public DiveInfoScriptableObject diso;
+
+    public CharacterEnum CurrentCharacter { get => currentCharacter; set => currentCharacter = value; }
 
     private void Awake() {
         if (controller == null) {
@@ -49,7 +53,12 @@ public class MinigameController : MonoBehaviour
     {
         fadeEffect.TargetAlpha = 0f;
 
-        // TODO Load current memory dive index
+        // Load current memory dive index
+        currentMemory = (MemoryEnum)diso.DivingScene;
+
+        // Load character
+        currentCharacter = ConvertSceneIndexToCharacter((int)currentMemory);
+        SetCharacter(currentCharacter);
     }
 
     public void SetCharacter(CharacterEnum character) {
@@ -87,7 +96,6 @@ public class MinigameController : MonoBehaviour
 
             // Play victory sound
             PlaySound("minigameVictory");
-            SceneManager.LoadScene(((int)diso.DivingScene));
         } else {
             // Play failure sound
             PlaySound("minigameFailure");
@@ -102,7 +110,7 @@ public class MinigameController : MonoBehaviour
             // Check which scene to load
             if (foundSpecialThought) {
                 // Load memory
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(((int)diso.DivingScene));
 
             } else {
                 // Load bar scene
@@ -117,6 +125,34 @@ public class MinigameController : MonoBehaviour
 
     public void ShowThoughtText(string thought) {
         textElement.LoadNewText(thought);
+    }
+
+    CharacterEnum ConvertSceneIndexToCharacter(int index) {
+        switch ((MemoryEnum)index) {
+            case MemoryEnum.BEN_PAST:
+            case MemoryEnum.BEN_WALLY_GET_TIPSY:
+            case MemoryEnum.BEN_GUN_GOES_MISSING:
+                return CharacterEnum.BEN;
+
+            case MemoryEnum.TINA_SINGS_LA_CANTATA:
+            case MemoryEnum.TINA_KEVIN_TOGETHER:
+            case MemoryEnum.TINA_BUSINESS_FAIL:
+                return CharacterEnum.TINA;
+
+            case MemoryEnum.KEVIN_BEATS_VINNIE_POOL:
+            case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+            case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                return CharacterEnum.KEVIN;
+
+            case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+            case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+            case MemoryEnum.WALLY_YOU_SHOT_VINNIE:
+                return CharacterEnum.WALLY;
+
+            default:
+                Debug.LogError("Character not found!");
+                return 0;
+        }
     }
 
     public void PlaySound(string eventSound) {

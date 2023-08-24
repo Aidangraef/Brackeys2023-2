@@ -26,7 +26,7 @@ public class ThoughtController : MonoBehaviour
         int allThoughts = baseBalloonQty + memoriesSeen * balloonIncrementByMemory;
 
         // Load irrelevant thoughts
-        characterThoughts = new List<IrrelevantThought>(GameController.controller.CharacterThoughts[(int)GameController.controller.CurrentCharacterDive].thoughtsList);
+        characterThoughts = new List<IrrelevantThought>(GameController.controller.CharacterThoughts[(int)MinigameController.controller.CurrentCharacter].thoughtsList);
 
         // Create all balloons
         for (int i = 0; i < allThoughts; i++) {
