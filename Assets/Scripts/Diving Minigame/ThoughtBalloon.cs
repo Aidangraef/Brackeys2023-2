@@ -99,6 +99,9 @@ public class ThoughtBalloon : MonoBehaviour
         trailParticles.Stop();
         pulseParticles.Stop();
 
+        // Play sound
+        MinigameController.controller.PlaySound("minigameWrong");
+
         // Get text
         return thoughtText;
     }
