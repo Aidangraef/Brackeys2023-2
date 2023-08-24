@@ -1605,8 +1605,8 @@ MonoBehaviour:
   useAnimatedPortraits: 0
   usePortraitNativeSize: 0
   waitForOpen: 1
-  waitForClose: 1
-  clearTextOnClose: 0
+  waitForClose: 0
+  clearTextOnClose: 1
   clearTextOnConversationStart: 0
   scrollbarEnabler: {fileID: 0}
   onFocus:
