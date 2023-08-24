@@ -27,6 +27,8 @@ public class MinigameController : MonoBehaviour
 
     public static MinigameController controller;
 
+    public DiveInfoScriptableObject diso;
+
     private void Awake() {
         if (controller == null) {
             controller = this;
@@ -65,6 +67,8 @@ public class MinigameController : MonoBehaviour
             // TODO Inform game controller thought was found
 
             // TODO Play victory sound
+
+            SceneManager.LoadScene(((int)diso.DivingScene));
         } else {
             // TODO Inform game controller thought was NOT found
 
