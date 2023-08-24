@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MinigameController : MonoBehaviour
 {
@@ -79,6 +80,7 @@ public class MinigameController : MonoBehaviour
             // Check which scene to load
             if (foundSpecialThought) {
                 // TODO Load memory
+                SceneManager.LoadScene(3);
 
             } else {
                 // TODO Load bar scene

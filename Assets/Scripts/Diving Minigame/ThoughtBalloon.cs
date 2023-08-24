@@ -138,7 +138,6 @@ public class ThoughtBalloon : MonoBehaviour
     private bool CheckValidTargetPosition() {
         // Checks if target position is inside camera viewport
         Vector2 targetViewportPoint = mainCamera.WorldToViewportPoint(targetPos);
-        Debug.Log(targetViewportPoint);
 
         return (0f <= targetViewportPoint.x && targetViewportPoint.x <= 1f &&
             0f <= targetViewportPoint.y && targetViewportPoint.y <= 1f);

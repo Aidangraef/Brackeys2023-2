@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class InputController : MonoBehaviour
 {
@@ -49,7 +48,7 @@ public class InputController : MonoBehaviour
             if (clickedThought != null) {
                 ThoughtBalloon balloon = clickedThought.GetComponent<ThoughtBalloon>();
                 if (balloon.Special) {
-                    SceneManager.LoadScene(3);
+                    MinigameController.controller.EndMinigame(true);
                 }
                 else {
                     string thought = balloon.ReadThought();
