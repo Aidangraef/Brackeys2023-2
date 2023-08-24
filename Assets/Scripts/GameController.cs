@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     bool playerFacingRight;
     bool playerSaved = false;
 
+    // Keeps track of the tutorial for the minigame
+    bool minigameFirstTimer = true;
+
     public static GameController controller;
 
     public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
@@ -46,6 +49,15 @@ public class GameController : MonoBehaviour
                     LoadPlayerTransform();
                 }
                 break;
+
+            case UnityScenes.Minigame:
+                // Prepare to show tutorial
+                if (minigameFirstTimer) {
+                    MinigameController.controller.ShowTutorial();
+                    minigameFirstTimer = false;
+                }
+                break;
+
         }
     }
 

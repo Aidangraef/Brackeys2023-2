@@ -35,9 +35,16 @@ public class MinigameController : MonoBehaviour
     [SerializeField]
     CharacterEnum currentCharacter;
 
-    public static MinigameController controller;
+    [SerializeField]
+    DiveInfoScriptableObject diso;
 
-    public DiveInfoScriptableObject diso;
+    [Header("Tutorial")]
+    [SerializeField]
+    GameObject tutorial;
+    [SerializeField]
+    float tutorialDuration = 2f;
+
+    public static MinigameController controller;
 
     public CharacterEnum CurrentCharacter { get => currentCharacter; set => currentCharacter = value; }
 
@@ -51,7 +58,12 @@ public class MinigameController : MonoBehaviour
 
     void Start()
     {
-        fadeEffect.TargetAlpha = 0f;
+        if (tutorial.activeSelf) {
+            StartCoroutine(FadeTutorial());
+        }
+        else {
+            fadeEffect.TargetAlpha = 0f;
+        }
 
         // Load current memory dive index
         currentMemory = (MemoryEnum)diso.DivingScene;
@@ -63,6 +75,17 @@ public class MinigameController : MonoBehaviour
 
     public void SetCharacter(CharacterEnum character) {
         characterSpriteRenderer.sprite = characterSprites[(int)character];
+    }
+
+    IEnumerator FadeTutorial() {
+        yield return new WaitForSeconds(tutorialDuration);
+
+        FadingTMP fadingTutorialScript = tutorial.GetComponent<FadingTMP>();
+        fadingTutorialScript.enabled = true;
+        fadingTutorialScript.IsFading = true;
+
+        // Set screen fading to start minigame
+        fadeEffect.TargetAlpha = 0f;
     }
 
     IEnumerator StartMinigame() {
@@ -153,6 +176,10 @@ public class MinigameController : MonoBehaviour
                 Debug.LogError("Character not found!");
                 return 0;
         }
+    }
+
+    public void ShowTutorial() {
+        tutorial.SetActive(true);
     }
 
     public void PlaySound(string eventSound) {

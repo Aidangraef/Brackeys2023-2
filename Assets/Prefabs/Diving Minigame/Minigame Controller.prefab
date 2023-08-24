@@ -56,6 +56,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ee090b234640bd4c8e8b995b2cba8ff, type: 3}
   - {fileID: 21300000, guid: 6f5fdec5edee7ee42981ab566c211050, type: 3}
   characterSpriteRenderer: {fileID: 0}
+  currentCharacter: 0
+  diso: {fileID: 11400000, guid: ecfb6b681ec2a3d4db7a5c421b4ba0c9, type: 2}
+  tutorial: {fileID: 0}
+  tutorialDuration: 2
 --- !u!114 &7614816528962177054
 MonoBehaviour:
   m_ObjectHideFlags: 0
