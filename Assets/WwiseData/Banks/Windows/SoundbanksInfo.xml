@@ -56,7 +56,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{DB5B44F6-685E-FF0A-8BDB-ED08B77817E5}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{3E2C7006-1D55-CDD4-1876-FD392A3E7783}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -187,6 +187,10 @@
 				<File Id="278849896" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-003.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="287062502" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Bar Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Bar Theme_25Aug2023_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="289387898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-001.wav</ShortName>
@@ -474,6 +478,19 @@
 						<MediaRef Id="526299618"/>
 						<MediaRef Id="857239412"/>
 					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="0"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3858903546" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="287062502"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="2626890067" Name="neonFlicker"/>
 					</ActionPostEvent>
@@ -658,5 +675,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FF61BC3F-E6CD-E86A-5DD2-776BC63EB2B6}</FileHash>
+	<FileHash>{76F1C788-41E1-9CE4-90CC-979AD19711D9}</FileHash>
 </SoundBanksInfo>

@@ -44,6 +44,10 @@ State	ID	Name	State Group			Notes
 	748895195	None	roomState			
 	3553349781	inside	roomState			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	674059714	outside	roomState	\Interactive Music Hierarchy\Default Work Unit\Music\musicSwitch		
+	682608021	inside	roomState	\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientRain		
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4833183	VocalsWally-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\VocalsWally-003_7316207B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsWally\VocalsWally-003		7056
 	21251891	vocalsKevin-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\vocalsKevin-003_563DD58F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsKevin\vocalsKevin-003		5204
@@ -77,6 +81,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	248109132	vocalsVinnie2-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\vocalsVinnie2-003_3FC805C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-003		10311
 	262041955	vocalsBarkeep-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\vocalsBarkeep-007_D9694653.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsPhone\vocalsBarkeep-007		7215
 	278849896	vocalsBarkeep2-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\vocalsBarkeep2-003_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep2-003		14555
+	287062502	The Blue Screen_Bar Theme_25Aug2023	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\The Blue Screen_Bar Theme_25Aug2023_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Music\musicSwitch\BarTheme\The Blue Screen_Bar Theme_25Aug2023\The Blue Screen_Bar Theme_25Aug2023		3114904
 	289387898	VocalsWally-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\VocalsWally-001_D5CC2DD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsWally\VocalsWally-001		6683
 	328961177	concreteFootsteps-009	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\concreteFootsteps-009_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-009		5584
 	361036282	vocalsVinnie2-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Mac\SFX\vocalsVinnie2-001_226B8B7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-001		13252
