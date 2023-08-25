@@ -427,6 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 597476704}
   - component: {fileID: 597476705}
+  - component: {fileID: 597476706}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -452,7 +453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -494.40833}
+  m_AnchoredPosition: {x: 0, y: -107.23}
   m_SizeDelta: {x: -1000, y: 1038.8165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &597476705
@@ -476,6 +477,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &597476706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597476703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeda28a6fd0a674997e7a5de7a5bb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &728313256
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,25 +555,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Oh no! you got the wrong guy!
+  m_text: 'Congratulations! You caught the culprit!
 
 
-    Here''s how it really went down:
+
+    Here''s how it all went
+    down:
+
+
+    Wally Pevels lost one too many games of poker. But he just couldn''t
+    stop playing - his addiction was too strong.
+
+
+    Wally got a loan from Vinnie,
+    hoping to win all his money back - but he instead just put himself into deeper
+    debt. Unable to pay back Vinnie, he decided to turn to unadvisable means.
 
 
     Wally
-    Pevels lost one too many games of poker. But he just couldn''t stop playing -
-    his addiction was too strong.
-
-
-    Wally got a loan from Vinnie, hoping to win
-    all his money back - but he instead just put himself into deeper debt. Unable
-    to pay back Vinnie, he decided to turn to unadvisable means.
-
-
-    Wally knew
-    that Benjamin carried a gun while working at the bar. So he devised a plan to
-    get the weapon away from Ben without him realizing.  Wally used Ben''s competitive
+    knew that Benjamin carried a gun while working at the bar. So he devised a plan
+    to get the weapon away from Ben without him realizing.  Wally used Ben''s competitive
     spirit against him, getting him drunk enough to miss the fact that Wally had
     stolen his firearm.
 
@@ -592,16 +606,14 @@ MonoBehaviour:
     without remembering a thing.
 
 
-    Unfortunately, Wally will escape without getting
-    caught, and an innocent person may wind up in jail as a result of your actions!
+    Thanks to your efforts, Vinnie''s death will
+    be avenged, and  Wally will end up behind bars for his crimes. There he can learn
+    from his actions and even get help with his gambling addiction thanks to the
+    city''s incredibly well-funded and highly-resourced prison rehabilitation programs.
 
 
-    Make
-    sure to play the game again so you can make things right! The fate of the Blue
-    Screen Patrons are in your hands!
-
-
-    Thanks for playing our game!'
+    Thanks
+    for playing our game!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
   m_sharedMaterial: {fileID: 970098969770918241, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
