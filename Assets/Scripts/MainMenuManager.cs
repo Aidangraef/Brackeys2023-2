@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject menu;
     public GameObject credits;
     public GameObject settings;
+    public GameObject howToPlay;
 
     [SerializeField]
     ImageFadeEffect fadeEffect;
@@ -24,6 +25,7 @@ public class MainMenuManager : MonoBehaviour
         menu.SetActive(true);
         credits.SetActive(false);
         settings.SetActive(false);
+        howToPlay.SetActive(false);
     }
 
     public void Play()
@@ -57,12 +59,17 @@ public class MainMenuManager : MonoBehaviour
         settings.SetActive(true);
     }
 
+    public void HowToPlay() {
+        menu.SetActive(false);
+        howToPlay.SetActive(true);
+    }
+
     public void Back()
     {
-        Debug.Log("GOING BACK");
         menu.SetActive(true);
         credits.SetActive(false);
         settings.SetActive(false);
+        howToPlay.SetActive(false);
     }
 
     public void Quit()

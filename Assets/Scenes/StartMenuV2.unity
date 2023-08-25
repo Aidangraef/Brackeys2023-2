@@ -1019,22 +1019,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823535802}
     m_Modifications:
-    - target: {fileID: 4025873967008324339, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967008324339, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967008324339, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967008324339, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4025873967324202400, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
       propertyPath: m_Name
       value: MainMenuManager
@@ -1091,53 +1075,5 @@ PrefabInstance:
       propertyPath: logoFlickerScript
       value: 
       objectReference: {fileID: 2081185729}
-    - target: {fileID: 4025873967401235869, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967401235869, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967401235869, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873967401235869, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873968362711995, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873968362711995, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873968362711995, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873968362711995, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873969076192276, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873969076192276, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873969076192276, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025873969076192276, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
