@@ -22,6 +22,8 @@ namespace AK
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID MURDERSHOTS = 2097039607U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID NEONFLICKER = 2626890067U;
+        static const AkUniqueID NEONSTARTGAME = 3171753105U;
         static const AkUniqueID NPCBARKEEP = 3988978802U;
         static const AkUniqueID NPCBEN = 216426317U;
         static const AkUniqueID NPCKEVIN = 2124506477U;

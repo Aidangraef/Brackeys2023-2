@@ -10,11 +10,17 @@ public class MainMenuManager : MonoBehaviour
     public float leftBound = -10.0f; // Adjust the left boundary
     public float rightBound = 10.0f; // Adjust the right boundary
 
+    [SerializeField]
+    float playDelay = 2.5f;
+
     public GameObject menu;
     public GameObject credits;
     public GameObject settings;
 
     private bool movingRight = true;
+
+    [SerializeField]
+    ImageFadeEffect fadeEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +51,21 @@ public class MainMenuManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(6);
+        FindObjectOfType<LogoFlicker>().StartSequence();
+
+        // Disappear buttons
+        menu.SetActive(false);
+
+        // Start fade effect
+        fadeEffect.FadeSpeed = 1f / playDelay;
+        fadeEffect.TargetAlpha = 1f;
+
+        StartCoroutine(WaitAndStartGame());
+    }
+
+    IEnumerator WaitAndStartGame() {
+        yield return new WaitForSeconds(playDelay);
+        SceneManager.LoadScene(1);
     }
 
     public void Credits()

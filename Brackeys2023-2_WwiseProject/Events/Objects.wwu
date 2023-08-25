@@ -14,6 +14,49 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="neonFlicker" ID="{5C5FBA5D-C18C-493D-B45B-F57A59660308}">
+					<ChildrenList>
+						<Action Name="" ID="{1F6E22E1-87FF-4CB1-9E73-17346C25FF0C}" ShortID="235346627">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonFlickers" ID="{269E79E2-C512-4189-A3A4-246F7549A663}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8292660E-7D65-4409-BACF-1374290C7D2D}" ShortID="379923791">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonFlickers" ID="{269E79E2-C512-4189-A3A4-246F7549A663}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="neonStartGame" ID="{5E033DF6-DC74-4024-93DD-44C94C165405}">
+					<ChildrenList>
+						<Action Name="" ID="{3F90B1A8-1F2A-4288-912E-D2B2318ADB4A}" ShortID="1001121487">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonFlickers" ID="{269E79E2-C512-4189-A3A4-246F7549A663}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B3C9AC44-6361-48F5-A200-862C97FADD36}" ShortID="519284577">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonStartGame" ID="{1C4B0CB0-962C-4A59-93A2-00F010D42824}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
