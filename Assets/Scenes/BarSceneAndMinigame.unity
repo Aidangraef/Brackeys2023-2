@@ -4405,7 +4405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4681056945572020263, guid: e2c0c094a468c294c8019805ed978fb9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4681056945572020263, guid: e2c0c094a468c294c8019805ed978fb9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4703,6 +4703,10 @@ PrefabInstance:
     - target: {fileID: 4738228796149281531, guid: b4984becc3779c84dbb657babed44094, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738228796149281531, guid: b4984becc3779c84dbb657babed44094, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4738228796283734552, guid: b4984becc3779c84dbb657babed44094, type: 3}
       propertyPath: m_SizeDelta.y

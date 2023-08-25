@@ -457,78 +457,80 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'CREDITS
 
-
+    
 
     Character Designer: xpanderex
 
+    
 
+    Prop Designer:
+    Aidan Graef
 
-    Prop Designer: graph
+    
 
+    Animation: xpanderex
 
+    
 
-    Animation:
-    xpanderex
+    UI Designers: nizbel,
+    Aweb
 
+    
 
+    Scene Art & Design: xpanderex, Aidan Graef
 
-    UI Designers: nizbel, Aweb
+    
 
+    Color
+    Guide: Aweb
 
+    
 
-    Scene Art & Design: xpanderex,
-    graph
-
-
-
-    Color Guide: Aweb
-
-
-
-
+    
 
     Game Mechanics & System Design: nizbel
 
-
+    
 
     Post
     Processing: xpanderex
 
-
+    
 
     Settings and Controls: Aweb
 
+    
 
+    
 
+    Sound
+    Design & Wwise Integration: Evan Seamans
 
+    
 
-    Sound Design:
-    KhaoKG
+    Music: Max Nattrass
 
+    
 
-
-    Character Audio: KhaoKG
-
-
-
-    Music: Max Nattrass, KhaoKG
-
-
-
-
+    
 
     Story:
-    nizbel, graph
+    nizbel, Aidan Graef
 
+    
 
+    Dialogue: nizbel, Aidan Graef
 
-    Dialogue: nizbel, graph
+    
 
+    
 
+    Task
+    Management: Aweb
 
+    
 
-
-    Task Management: Aweb'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
   m_sharedMaterial: {fileID: 970098969770918241, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}

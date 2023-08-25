@@ -24,4 +24,9 @@ public class ShootingScene : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void PlayGunSound()
+    {
+        AkSoundEngine.PostEvent("murderShots", gameObject);
+    }
 }
