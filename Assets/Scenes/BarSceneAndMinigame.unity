@@ -775,7 +775,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &916794589
 RectTransform:
@@ -998,7 +998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -38.17}
+  m_AnchoredPosition: {x: 0, y: 7.38}
   m_SizeDelta: {x: 125, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021987341
@@ -1590,6 +1590,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1021987343}
           m_TargetAssemblyTypeName: DiveButtonController, Assembly-CSharp
           m_MethodName: ShowDiveButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: afb53759-05f9-48eb-8c22-efbde0c36528
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7306168219613346093}
+          m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+          m_MethodName: SwitchToBigReveal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 3af36974-8391-4d38-9a81-107fca2c339b
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7306168219613346093}
+          m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+          m_MethodName: SwitchToBigReveal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3223,7 +3255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392662759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.189989, y: -0.4000001, z: -10}
+  m_LocalPosition: {x: 4.1899977, y: -0.4000001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3745,7 +3777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625495165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000010848045, y: -2.06, z: -1.5500002}
+  m_LocalPosition: {x: 0.0000022649765, y: -2.06, z: -1.5500002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4174,7 +4206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084317990199450470, guid: 275fb0e5ce7710740aca69926a26c0f0, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6084317990199450489, guid: 275fb0e5ce7710740aca69926a26c0f0, type: 3}
       propertyPath: m_Pivot.x
@@ -4861,3 +4893,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7306168220721864443, guid: 689dcbe298404b44a96ddf3c3758ff41, type: 3}
   m_PrefabInstance: {fileID: 7306168219613346091}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7306168219613346093 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7306168220721864420, guid: 689dcbe298404b44a96ddf3c3758ff41, type: 3}
+  m_PrefabInstance: {fileID: 7306168219613346091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9ccadf1b5dfa4459d726201a628be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
