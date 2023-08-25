@@ -5,23 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class CameraMover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    ImageFadeEffect fadeEffect;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void MoveCameraX(int x)
+    public void MoveCameraX(float x)
     {
         Camera.main.transform.position = new Vector3(x, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
-    public void MoveCameraY(int y)
+    public void MoveCameraY(float y)
     {
         Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, y, Camera.main.transform.position.z);
     }
@@ -34,6 +25,10 @@ public class CameraMover : MonoBehaviour
     IEnumerator RollCredits()
     {
         yield return new WaitForSeconds(3);
+
+        // Fade screen
+        fadeEffect.TargetAlpha = 1f;
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(16);
     }
 }
