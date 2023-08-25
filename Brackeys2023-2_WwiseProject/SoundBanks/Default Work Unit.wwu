@@ -8,6 +8,7 @@
 						<SoundBank Name="GameplayLoop" ID="{29848C7B-3575-4E82-8437-C137E9980C07}">
 							<ObjectInclusionList>
 								<ObjectRef Name="testDing" ID="{0C961428-884D-4008-B7B0-C2D098BD920F}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="neonStartGame" ID="{5E033DF6-DC74-4024-93DD-44C94C165405}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testFail" ID="{0BB6097A-49D7-418A-9097-6BD0BE673BCF}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" Origin="Manual" Filter="7"/>
@@ -17,6 +18,7 @@
 								<ObjectRef Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="footStepping" ID="{6D86B6AF-5B93-478D-B675-5985BB6A9018}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcKevin" ID="{5336D7A8-4B55-47A1-AE21-191EA16736A8}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="neonFlicker" ID="{5C5FBA5D-C18C-493D-B45B-F57A59660308}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testComplete" ID="{61CFB72B-375B-4B59-AE73-9D657F0DE60D}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
