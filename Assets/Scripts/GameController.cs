@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -45,6 +46,9 @@ public class GameController : MonoBehaviour
 
             DontDestroyOnLoad(gameObject);
 
+            ResetDialogueManagerVariables();
+            NewMemorySeen(MemoryEnum.VINNIE_YOU_SHOT_VINNIE);
+
             SceneManager.sceneLoaded += OnSceneLoaded;
         } else {
             Destroy(gameObject);
@@ -90,10 +94,51 @@ public class GameController : MonoBehaviour
         }
     }
 
+    void ResetDialogueManagerVariables() {
+        DialogueLua.SetVariable("SawNoMemory", true);
+        DialogueLua.SetVariable("SawMemory4", false);
+        DialogueLua.SetVariable("SawMemory5", false);
+        DialogueLua.SetVariable("SawMemory6", false);
+        DialogueLua.SetVariable("SawMemory10", false);
+        DialogueLua.SetVariable("SawMemory11", false);
+        DialogueLua.SetVariable("SawMemory12", false);
+        DialogueLua.SetVariable("SawMemory13", false);
+        DialogueLua.SetVariable("SawMemory14", false);
+    }
+
 
     public void NewMemorySeen(MemoryEnum memory) {
         if (!memoriesSeen.Contains(memory)) {
             memoriesSeen.Add(memory);
+            DialogueLua.SetVariable("SawNoMemory", false);
+
+            // Check for specific variable values
+            switch (memory) {
+                case MemoryEnum.BEN_WALLY_GET_TIPSY:
+                    DialogueLua.SetVariable("SawMemory4", true);
+                    break;
+                case MemoryEnum.BEN_GUN_GOES_MISSING:
+                    DialogueLua.SetVariable("SawMemory5", true);
+                    break;
+                case MemoryEnum.TINA_SINGS_LA_CANTATA:
+                    DialogueLua.SetVariable("SawMemory6", true);
+                    break;
+                case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+                    DialogueLua.SetVariable("SawMemory10", true);
+                    break;
+                case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                    DialogueLua.SetVariable("SawMemory11", true);
+                    break;
+                case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+                    DialogueLua.SetVariable("SawMemory12", true);
+                    break;
+                case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+                    DialogueLua.SetVariable("SawMemory13", true);
+                    break;
+                case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
+                    DialogueLua.SetVariable("SawMemory14", true);
+                    break;
+            }
         }
     }
 
