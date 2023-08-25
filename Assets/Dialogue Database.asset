@@ -62,7 +62,7 @@ MonoBehaviour:
     - title: Name
       value: Bartender
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -75,6 +75,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcBarkeep
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 7
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -193,8 +201,8 @@ MonoBehaviour:
       typeString: CustomFieldType_Text
     - title: speechSpeed
       value: 5
-      type: 0
-      typeString: CustomFieldType_Text
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -204,7 +212,7 @@ MonoBehaviour:
     - title: Name
       value: Voice on Phone
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -217,6 +225,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcPhone
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 6
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -239,6 +255,14 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: WwiseSwitch
+      value: npcVinnie
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: speechSpeed
+      value: 5
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
