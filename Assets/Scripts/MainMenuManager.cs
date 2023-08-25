@@ -35,6 +35,9 @@ public class MainMenuManager : MonoBehaviour
         // Disappear buttons
         menu.SetActive(false);
 
+        // for music change with scenes
+        AkSoundEngine.PostEvent("gameStart", this.gameObject);
+
         // Start fade effect
         fadeEffect.FadeSpeed = 1f / playDelay;
         fadeEffect.TargetAlpha = 1f;
