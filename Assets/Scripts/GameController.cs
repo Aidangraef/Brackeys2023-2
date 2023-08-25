@@ -33,6 +33,9 @@ public class GameController : MonoBehaviour
     public bool didIJustShootSomeone; // Used to show one of the detective's inner monologues
     public GameObject didIJustShootSomeoneGameObject;
 
+    public bool wasThatMe; // Same thing as above
+    public GameObject wasThatMeGameObject;
+
     void Awake() {
         if (controller == null) {
             controller = this;
@@ -45,6 +48,7 @@ public class GameController : MonoBehaviour
         }
 
         didIJustShootSomeone = false;
+        wasThatMe = false;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
@@ -54,9 +58,15 @@ public class GameController : MonoBehaviour
                 if (playerSaved) {
                     LoadPlayerTransform();
                 }
+                // check to see if we should show the dialogue
                 if (didIJustShootSomeone) {
                     didIJustShootSomeoneGameObject.SetActive(true);
                     didIJustShootSomeone = false;
+                }
+                // same here
+                if(wasThatMe) {
+                    wasThatMeGameObject.SetActive(true);
+                    wasThatMe = false;
                 }
                 break;
 
@@ -100,12 +110,6 @@ public class GameController : MonoBehaviour
         characterController.transform.position = playerPosition;
         characterController.transform.localScale = playerScale;
         characterController.FacingRight = playerFacingRight;
-    }
-
-    // Gets called at the end of the memory dive where the player shoots Vinnie
-    public void SetDidIJustShootSomeone()
-    {
-        didIJustShootSomeone = true;
     }
 
 #if UNITY_EDITOR
