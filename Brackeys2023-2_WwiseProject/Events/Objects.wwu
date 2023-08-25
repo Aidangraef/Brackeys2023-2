@@ -14,6 +14,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="neonFlicker" ID="{5C5FBA5D-C18C-493D-B45B-F57A59660308}"/>
+				<Event Name="neonSustain" ID="{7F09C857-F760-4986-B542-47BDC9C7D1D5}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

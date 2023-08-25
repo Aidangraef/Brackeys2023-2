@@ -6,6 +6,10 @@
 				<SoundcasterSession Name="Testing" ID="{7561577C-8A69-41D8-9C93-84FB8B5DD78B}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="npcBarkeep" ID="{A34B8619-1F34-4E4E-AD8A-34414DA73B96}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="npcTina" ID="{4FC9DBF5-60B6-4F2E-BB0F-DE424A22FE6B}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
 							<Position X="0" Y="2"/>
 						</Module>
