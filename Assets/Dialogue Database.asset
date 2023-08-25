@@ -787,7 +787,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 79
+        x: 77.86365
         y: 206
         width: 160
         height: 30
@@ -1101,8 +1101,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 544.1764
-        y: 61.470642
+        x: 542.9999
+        y: 59.117706
         width: 160
         height: 30
     - id: 9
@@ -2071,8 +2071,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 24.125244, y: 3.7974854}
-    canvasZoom: 0.7900001
+    canvasScrollPosition: {x: 15.937162, y: 41.8101}
+    canvasZoom: 0.82000005
   - id: 3
     fields:
     - title: Title
@@ -6945,7 +6945,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: You have the ability to hack into people's robot brains and dive into
+        value: You have the ability to hack into people's cybernetics and dive into
           their memories.
         type: 0
         typeString: 
@@ -7056,7 +7056,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Talk to the patrons and figure out who committed the crime.
+        value: Talk to the patrons and figure out who committed the crime. I have
+          a phone here at the counter.
         type: 0
         typeString: 
       - title: Sequence
@@ -7111,7 +7112,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Then come talk to me when you're ready to make an accusation.
+        value: Then come talk to me when you're ready to make an accusation, and
+          I can call the  police from the station and have them get down here.
         type: 0
         typeString: 
       - title: Sequence
