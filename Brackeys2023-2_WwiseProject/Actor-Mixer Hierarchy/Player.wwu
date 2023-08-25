@@ -716,6 +716,22 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<RandomSequenceContainer Name="vocalsDetective" ID="{C4A25330-BFA1-4C5F-BA0C-B627A7CA685D}" ShortID="505584752">
+							<PropertyList>
+								<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoopCount" Type="int32" Value="8"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPCs" ID="{4D490F2F-7194-439D-B336-6C189D509A33}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

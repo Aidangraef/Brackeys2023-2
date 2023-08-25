@@ -57,7 +57,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="gunCock" ID="{70EEAA8C-7F94-4B61-ACE3-520593E56DF2}"/>
+				<Event Name="gunCock" ID="{70EEAA8C-7F94-4B61-ACE3-520593E56DF2}">
+					<ChildrenList>
+						<Action Name="" ID="{68A7FA7F-19A6-4405-87D4-5657F8B39597}" ShortID="652326358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gunCock" ID="{B6F897CB-4503-4CCD-8026-1A2EE63316F5}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

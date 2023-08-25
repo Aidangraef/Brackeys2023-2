@@ -56,7 +56,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B48B3B89-E97E-5DA0-BD10-1E5DF1BA1AE7}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{DB5B44F6-685E-FF0A-8BDB-ED08B77817E5}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -155,6 +155,10 @@
 				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-004.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-004_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="225175085" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gunCock.wav</ShortName>
+					<CachePath>SFX/gunCock_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="226020652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailReady.wav</ShortName>
@@ -407,6 +411,11 @@
 				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2973970440" Name="diveSuccess" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="425063146" Name="diveWrong" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4122450220" Name="enterBar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.2291875" DurationMax="0.38945964">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -448,6 +457,11 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3171753105" Name="neonStartGame"/>
 					</ActionPostEvent>
+				</Event>
+				<Event Id="2610950761" Name="gunCock" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="225175085"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2097039607" Name="murderShots" DurationType="OneShot" DurationMin="2.0011601" DurationMax="2.0011601">
 					<MediaRefs>
@@ -563,7 +577,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="2596618219"/>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="2596618219" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="56598575"/>
 								<MediaRef Id="157001152"/>
@@ -576,7 +590,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608"/>
 							<MediaRefs>
 								<MediaRef Id="414330125"/>
 								<MediaRef Id="432340000"/>
@@ -644,5 +658,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{023E1E58-2F4E-B698-E392-0C1935EC7135}</FileHash>
+	<FileHash>{31294ABF-608E-1A7E-E40A-845BC8BC627B}</FileHash>
 </SoundBanksInfo>

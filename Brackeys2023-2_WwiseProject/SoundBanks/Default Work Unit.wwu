@@ -22,8 +22,10 @@
 								<ObjectRef Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testComplete" ID="{61CFB72B-375B-4B59-AE73-9D657F0DE60D}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gunCock" ID="{70EEAA8C-7F94-4B61-ACE3-520593E56DF2}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="diveWrong" ID="{E2518E44-F8D4-4C37-AF8E-10511EE08D2E}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcWally" ID="{A2C1C9FD-8987-4C5E-B45F-18B64B5B441B}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcBen" ID="{EF8E36AA-7614-4D9D-BCBD-FC70BF2DCAB1}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcBarkeep" ID="{A34B8619-1F34-4E4E-AD8A-34414DA73B96}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>

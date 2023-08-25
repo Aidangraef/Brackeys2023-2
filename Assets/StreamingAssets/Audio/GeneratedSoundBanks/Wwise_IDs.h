@@ -18,8 +18,10 @@ namespace AK
         static const AkUniqueID DIVESTART = 1229279613U;
         static const AkUniqueID DIVESUCCESS = 2973970440U;
         static const AkUniqueID DIVEWRONG = 425063146U;
+        static const AkUniqueID ENTERBAR = 4122450220U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
         static const AkUniqueID GAMESTART = 4058101365U;
+        static const AkUniqueID GUNCOCK = 2610950761U;
         static const AkUniqueID MURDERSHOTS = 2097039607U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID NEONFLICKER = 2626890067U;

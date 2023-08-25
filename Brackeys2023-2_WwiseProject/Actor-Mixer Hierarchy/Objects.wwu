@@ -54,6 +54,35 @@
 										<ActiveSource Name="murderShots" ID="{601D5FEE-8546-44E0-B135-368B4A9AE784}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="gunCock" ID="{B6F897CB-4503-4CCD-8026-1A2EE63316F5}" ShortID="56383249">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gunCock" ID="{1555C9E3-58DE-45E0-BE9A-EE48B0F485C8}">
+											<Language>SFX</Language>
+											<AudioFile>gunCock.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225175085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gunCock" ID="{1555C9E3-58DE-45E0-BE9A-EE48B0F485C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="neonSign" ID="{B6DD4807-9A0F-4221-9408-81E09808E9B9}" ShortID="298084341">
