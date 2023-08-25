@@ -46,21 +46,23 @@
 				<SwitchGroup Id="3858903546" Name="characterSwitch">
 					<Switches>
 						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="1025251668" Name="switchVinnie"/>
 						<Switch Id="2596618219" Name="switchBarkeep"/>
 						<Switch Id="3053756386" Name="switchWally"/>
 						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3661604879" Name="switchPhone"/>
 						<Switch Id="3928776531" Name="switchTina"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{94E90BD5-E63B-0CE6-9185-849A6CDC4360}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{4D8E0540-D01A-B02C-79B3-F81E96C1560E}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="4833183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-003.wav</ShortName>
-					<CachePath>SFX/VocalsWally-003_BE58D27B.wem</CachePath>
+					<CachePath>SFX/VocalsWally-003_7316207B.wem</CachePath>
 				</File>
 				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-003.wav</ShortName>
@@ -84,7 +86,7 @@
 				</File>
 				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-004.wav</ShortName>
-					<CachePath>SFX/VocalsWally-004_2762B747.wem</CachePath>
+					<CachePath>SFX/VocalsWally-004_066B5527.wem</CachePath>
 				</File>
 				<File Id="121403949" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-008.wav</ShortName>
@@ -92,7 +94,7 @@
 				</File>
 				<File Id="130825561" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-006.wav</ShortName>
-					<CachePath>SFX/VocalsWally-006_96F59DA3.wem</CachePath>
+					<CachePath>SFX/VocalsWally-006_02E2FC4B.wem</CachePath>
 				</File>
 				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-008.wav</ShortName>
@@ -146,13 +148,21 @@
 					<ShortName>Wood Footstep-006.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-006_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="248109132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-003.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-003_46DA28FF.wem</CachePath>
+				</File>
 				<File Id="289387898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-001.wav</ShortName>
-					<CachePath>SFX/VocalsWally-001_D1DECA33.wem</CachePath>
+					<CachePath>SFX/VocalsWally-001_D5CC2DD7.wem</CachePath>
 				</File>
 				<File Id="328961177" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-009.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-001.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-001_EA29292B.wem</CachePath>
 				</File>
 				<File Id="363383916" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-007.wav</ShortName>
@@ -160,7 +170,7 @@
 				</File>
 				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-007.wav</ShortName>
-					<CachePath>SFX/VocalsWally-007_4EEF454F.wem</CachePath>
+					<CachePath>SFX/VocalsWally-007_02BB463F.wem</CachePath>
 				</File>
 				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-006.wav</ShortName>
@@ -173,6 +183,10 @@
 				<File Id="432340000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-001.wav</ShortName>
 					<CachePath>SFX/vocalsBen-001_0CE7D5AD.wem</CachePath>
+				</File>
+				<File Id="485430302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-006.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-006_E602AE1F.wem</CachePath>
 				</File>
 				<File Id="491441777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-002.wav</ShortName>
@@ -206,6 +220,14 @@
 					<ShortName>VocalsWally-002.wav</ShortName>
 					<CachePath>SFX/VocalsWally-002_33886FAF.wem</CachePath>
 				</File>
+				<File Id="625714746" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-005.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-005_F44A8547.wem</CachePath>
+				</File>
+				<File Id="632492742" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-002.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-002_BF954D6F.wem</CachePath>
+				</File>
 				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-007.wav</ShortName>
 					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
@@ -222,6 +244,10 @@
 					<ShortName>vocalsBen-004.wav</ShortName>
 					<CachePath>SFX/vocalsBen-004_5D39340A.wem</CachePath>
 				</File>
+				<File Id="753997685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-007.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-007_248DD6CF.wem</CachePath>
+				</File>
 				<File Id="754295549" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-012.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-012_3F75BDB9.wem</CachePath>
@@ -234,9 +260,17 @@
 					<ShortName>buttonClick.wav</ShortName>
 					<CachePath>SFX/buttonClick_ED1E115E.wem</CachePath>
 				</File>
+				<File Id="894259500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-004.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-004_E93AF8B7.wem</CachePath>
+				</File>
 				<File Id="895541830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Failure_01-10_Ensemble-Small_DRY.wav</ShortName>
 					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_4FD7D9B3.wem</CachePath>
+				</File>
+				<File Id="912247419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-008.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-008_3285CF1F.wem</CachePath>
 				</File>
 				<File Id="923676968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-001.wav</ShortName>
@@ -248,7 +282,7 @@
 				</File>
 				<File Id="957187976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-005.wav</ShortName>
-					<CachePath>SFX/VocalsWally-005_EDBABEA3.wem</CachePath>
+					<CachePath>SFX/VocalsWally-005_4DE7BA8B.wem</CachePath>
 				</File>
 				<File Id="959757076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-003.wav</ShortName>
@@ -339,7 +373,7 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.30079" DurationMax="0.516084">
+				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.29647765" DurationMax="0.516084">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="385597812"/>
@@ -375,6 +409,19 @@
 								<MediaRef Id="382571462"/>
 								<MediaRef Id="616338181"/>
 								<MediaRef Id="957187976"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="1025251668"/>
+							<MediaRefs>
+								<MediaRef Id="248109132"/>
+								<MediaRef Id="361036282"/>
+								<MediaRef Id="485430302"/>
+								<MediaRef Id="625714746"/>
+								<MediaRef Id="632492742"/>
+								<MediaRef Id="753997685"/>
+								<MediaRef Id="894259500"/>
+								<MediaRef Id="912247419"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -430,14 +477,16 @@
 				<SwitchGroup Id="3858903546" Name="characterSwitch">
 					<Switches>
 						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="1025251668" Name="switchVinnie"/>
 						<Switch Id="2596618219" Name="switchBarkeep"/>
 						<Switch Id="3053756386" Name="switchWally"/>
 						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3661604879" Name="switchPhone"/>
 						<Switch Id="3928776531" Name="switchTina"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E591782D-5266-0E86-263E-0AD5604335BD}</FileHash>
+	<FileHash>{3CD12576-47C9-9B2F-9230-4DD11F719905}</FileHash>
 </SoundBanksInfo>

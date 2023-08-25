@@ -56,7 +56,9 @@ namespace AK
                 static const AkUniqueID SWITCHBARKEEP = 2596618219U;
                 static const AkUniqueID SWITCHBEN = 3469465608U;
                 static const AkUniqueID SWITCHKEVIN = 385597812U;
+                static const AkUniqueID SWITCHPHONE = 3661604879U;
                 static const AkUniqueID SWITCHTINA = 3928776531U;
+                static const AkUniqueID SWITCHVINNIE = 1025251668U;
                 static const AkUniqueID SWITCHWALLY = 3053756386U;
             } // namespace SWITCH
         } // namespace CHARACTERSWITCH

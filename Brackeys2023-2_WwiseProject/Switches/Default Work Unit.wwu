@@ -10,6 +10,8 @@
 						<Switch Name="switchKevin" ID="{9FB83119-932B-4A84-8A0E-3B8320C841C0}"/>
 						<Switch Name="switchBen" ID="{27FB8BD2-91EE-4D4A-9F76-0A27C6B51E45}"/>
 						<Switch Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+						<Switch Name="switchVinnie" ID="{91C20481-F05F-4FCE-A2C6-A283AF73B80F}"/>
+						<Switch Name="switchPhone" ID="{EC0FC65E-C14E-4CBE-B72F-219AB1D7895F}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
