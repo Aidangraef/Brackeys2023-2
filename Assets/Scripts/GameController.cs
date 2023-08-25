@@ -29,6 +29,10 @@ public class GameController : MonoBehaviour
     public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
     public List<CharacterThoughtsScriptableObject> CharacterThoughts { get => characterThoughts; set => characterThoughts = value; }
 
+    // Graph's Additions
+    public bool didIJustShootSomeone; // Used to show one of the detective's inner monologues
+    public GameObject didIJustShootSomeoneGameObject;
+
     void Awake() {
         if (controller == null) {
             controller = this;
@@ -39,6 +43,8 @@ public class GameController : MonoBehaviour
         } else {
             Destroy(gameObject);
         }
+
+        didIJustShootSomeone = false;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
@@ -47,6 +53,10 @@ public class GameController : MonoBehaviour
                 // If there is a player saved, load the transform to keep player at the same place/direction
                 if (playerSaved) {
                     LoadPlayerTransform();
+                }
+                if (didIJustShootSomeone) {
+                    didIJustShootSomeoneGameObject.SetActive(true);
+                    didIJustShootSomeone = false;
                 }
                 break;
 
@@ -90,6 +100,12 @@ public class GameController : MonoBehaviour
         characterController.transform.position = playerPosition;
         characterController.transform.localScale = playerScale;
         characterController.FacingRight = playerFacingRight;
+    }
+
+    // Gets called at the end of the memory dive where the player shoots Vinnie
+    public void SetDidIJustShootSomeone()
+    {
+        didIJustShootSomeone = true;
     }
 
 #if UNITY_EDITOR
