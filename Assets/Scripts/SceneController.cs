@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public int sceneToSwitchTo;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,12 @@ public class SceneController : MonoBehaviour
 
     public void ReturnToBar()
     {
+        StartCoroutine(ChangeScene());
+    }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(1);
     }
 }
