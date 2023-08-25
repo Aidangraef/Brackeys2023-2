@@ -29,6 +29,16 @@ public class GameController : MonoBehaviour
     public List<MemoryEnum> MemoriesSeen { get => memoriesSeen; set => memoriesSeen = value; }
     public List<CharacterThoughtsScriptableObject> CharacterThoughts { get => characterThoughts; set => characterThoughts = value; }
 
+    // Graph's Additions
+    public bool didIJustShootSomeone; // Used to show one of the detective's inner monologues
+    public GameObject didIJustShootSomeoneGameObject;
+
+    public bool wasThatMe; // Same thing as above
+    public GameObject wasThatMeGameObject;
+
+    public bool barTenderIntro;
+    public GameObject barTenderIntroGameObject;
+
     void Awake() {
         if (controller == null) {
             controller = this;
@@ -39,6 +49,10 @@ public class GameController : MonoBehaviour
         } else {
             Destroy(gameObject);
         }
+
+        didIJustShootSomeone = false;
+        wasThatMe = false;
+        barTenderIntro = true;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
@@ -47,6 +61,21 @@ public class GameController : MonoBehaviour
                 // If there is a player saved, load the transform to keep player at the same place/direction
                 if (playerSaved) {
                     LoadPlayerTransform();
+                }
+                // check to see if we should show the dialogue
+                if (didIJustShootSomeone) {
+                    didIJustShootSomeoneGameObject.SetActive(true);
+                    didIJustShootSomeone = false;
+                }
+                // same here
+                if(wasThatMe) {
+                    wasThatMeGameObject.SetActive(true);
+                    wasThatMe = false;
+                }
+                if(barTenderIntro)
+                {
+                    barTenderIntroGameObject.SetActive(true);
+                    barTenderIntro = false;
                 }
                 break;
 
