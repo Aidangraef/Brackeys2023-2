@@ -10,9 +10,12 @@ public class ImageFadeEffect : MonoBehaviour {
     float targetAlpha = 0f;
     [SerializeField]
     float fadeSpeed = 2f;
+    [SerializeField]
+    bool unscaledTime = false;
 
     public float TargetAlpha { get => targetAlpha; set { enabled = true; targetAlpha = value; } }
     public float FadeSpeed { get => fadeSpeed; set => fadeSpeed = value; }
+    public bool UnscaledTime { get => unscaledTime; set => unscaledTime = value; }
 
     private void Awake() {
         image = GetComponent<Image>();
@@ -20,7 +23,7 @@ public class ImageFadeEffect : MonoBehaviour {
 
     void Update() {
         Color color = image.color;
-        color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * Time.deltaTime);
+        color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * (unscaledTime ? Time.unscaledDeltaTime : Time.deltaTime));
         image.color = color;
 
         if (color.a == targetAlpha) {
