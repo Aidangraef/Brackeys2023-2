@@ -121,6 +121,11 @@ public class GameController : MonoBehaviour
         characterController.FacingRight = playerFacingRight;
     }
 
+    public void SwitchToBigReveal()
+    {
+        SceneManager.LoadScene(15);
+    }
+
 #if UNITY_EDITOR
     private void OnValidate() {
         foreach (CharacterEnum character in Enum.GetValues(typeof(CharacterEnum))) {
