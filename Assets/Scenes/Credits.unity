@@ -457,78 +457,77 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'CREDITS
 
-    
+
 
     Character Designer: xpanderex
 
-    
 
-    Prop Designer:
-    Aidan Graef
 
-    
+    Prop Designer: Aidan
+    Graef
+
+
 
     Animation: xpanderex
 
-    
 
-    UI Designers: nizbel,
-    Aweb
 
-    
+    UI Designers: nizbel, Aweb
 
-    Scene Art & Design: xpanderex, Aidan Graef
 
-    
 
-    Color
-    Guide: Aweb
+    Scene
+    Art & Design: xpanderex, Aidan Graef
 
-    
 
-    
 
-    Game Mechanics & System Design: nizbel
+    Color Guide: Aweb
 
-    
 
-    Post
-    Processing: xpanderex
 
-    
 
-    Settings and Controls: Aweb
 
-    
+    Game Mechanics
+    & System Design: nizbel
 
-    
 
-    Sound
-    Design & Wwise Integration: Evan Seamans
 
-    
+    Post Processing: xpanderex
 
-    Music: Max Nattrass
 
-    
 
-    
+    Settings and
+    Controls: Aweb
 
-    Story:
-    nizbel, Aidan Graef
 
-    
 
-    Dialogue: nizbel, Aidan Graef
 
-    
 
-    
+    Sound Design & Wwise Integration: Evan Seamans
 
-    Task
-    Management: Aweb
 
-    
+
+    Music:
+    Max Nattrass
+
+
+
+
+
+    Story: nizbel, Aidan Graef
+
+
+
+    Dialogue: nizbel, Aidan
+    Graef
+
+
+
+
+
+    Task Management: Aweb
+
+
 
 '
   m_isRightToLeft: 0
@@ -690,7 +689,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 816937567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1441903574}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: ReturnToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &816937567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,6 +1120,7 @@ GameObject:
   - component: {fileID: 1441903571}
   - component: {fileID: 1441903573}
   - component: {fileID: 1441903572}
+  - component: {fileID: 1441903574}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1233,6 +1245,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441903570}
   m_CullTransparentMesh: 1
+--- !u!114 &1441903574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441903570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1586072928
 GameObject:
   m_ObjectHideFlags: 0

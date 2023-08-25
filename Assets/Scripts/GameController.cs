@@ -137,6 +137,11 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(15);
     }
 
+    public void SwitchToBadEnding()
+    {
+        SceneManager.LoadScene(17);
+    }
+
 #if UNITY_EDITOR
     private void OnValidate() {
         foreach (CharacterEnum character in Enum.GetValues(typeof(CharacterEnum))) {
