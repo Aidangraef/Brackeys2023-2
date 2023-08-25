@@ -26,16 +26,20 @@ public class PauseMenuScript : MonoBehaviour
         {
             pauseMenu.SetActive(true);
             isPuased = true;
+            Time.timeScale = 0f;
+
         }else if (Input.GetKeyDown(KeyCode.Escape) && isPuased == true)
         {
             pauseMenu.SetActive(false);
             isPuased = false;
+            Time.timeScale = 1f;
         }
     }
 
     public void Resume()
     {
         pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
         isPuased = false;
     }
 
