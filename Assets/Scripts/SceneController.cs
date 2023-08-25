@@ -19,6 +19,17 @@ public class SceneController : MonoBehaviour
         StartCoroutine(ChangeScene());
     }
 
+    public void ReturnToMenu()
+    {
+        StartCoroutine(ChangeScene2());
+    }
+
+    IEnumerator ChangeScene2()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(0);
+    }
+
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(5);

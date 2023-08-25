@@ -455,81 +455,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CREDITS
-
-
-
-    Character Designer: xpanderex
-
-
-
-    Prop Designer: Aidan
-    Graef
-
-
-
-    Animation: xpanderex
-
-
-
-    UI Designers: nizbel, Aweb
-
-
-
-    Scene
-    Art & Design: xpanderex, Aidan Graef
-
-
-
-    Color Guide: Aweb
-
-
-
-
-
-    Game Mechanics
-    & System Design: nizbel
-
-
-
-    Post Processing: xpanderex
-
-
-
-    Settings and
-    Controls: Aweb
-
-
-
-
-
-    Sound Design & Wwise Integration: Evan Seamans
-
-
-
-    Music:
-    Max Nattrass
-
-
-
-
-
-    Story: nizbel, Aidan Graef
-
-
-
-    Dialogue: nizbel, Aidan
-    Graef
-
-
-
-
-
-    Task Management: Aweb
-
-
-
-'
+  m_text: "The Bartender called the station and the police came down to the Blue
+    Screen. You were able to successfully arrest the patron you accused of committing
+    the murder. \n\nUnfortunately, when the \"culprit\" was taken to court the next
+    day, the court discovered a crucial piece of evidence you missed that absolved
+    them of guilt. You got the wrong guy!\n\nIn order to catch the correct culprit,
+    you will have to play again.\n\nThanks for playing our game!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
   m_sharedMaterial: {fileID: 970098969770918241, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
@@ -556,8 +487,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -618,6 +549,7 @@ GameObject:
   - component: {fileID: 816937568}
   - component: {fileID: 816937567}
   - component: {fileID: 816937566}
+  - component: {fileID: 816937569}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -690,7 +622,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1441903574}
+      - m_Target: {fileID: 816937569}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: ReturnToMenu
         m_Mode: 1
@@ -740,6 +672,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816937564}
   m_CullTransparentMesh: 1
+--- !u!114 &816937569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816937564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963853835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1064,6 @@ GameObject:
   - component: {fileID: 1441903571}
   - component: {fileID: 1441903573}
   - component: {fileID: 1441903572}
-  - component: {fileID: 1441903574}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1245,18 +1188,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441903570}
   m_CullTransparentMesh: 1
---- !u!114 &1441903574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441903570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1586072928
 GameObject:
   m_ObjectHideFlags: 0
