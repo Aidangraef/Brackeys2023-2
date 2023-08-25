@@ -617,6 +617,105 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="smonking" ID="{7FB1B59C-5705-416F-AB4E-00FC1991A3DB}" ShortID="1039944679">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="exhale" ID="{3F4DEA0D-541E-46B5-B4B9-104BAAEAACFC}" ShortID="391001561">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EE6CC687-6489-4E53-8C2C-AE81483E0621}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="exhale" ID="{A1BFE18D-FC4F-49B1-BD73-F525A1431DF0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0348027842227378"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.118909512761021"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.27262180974478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>exhale.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="772547028"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="exhale" ID="{A1BFE18D-FC4F-49B1-BD73-F525A1431DF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="cigExtinguish" ID="{242174F3-4902-44BD-A15F-83F72E4F4764}" ShortID="527104760">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A2FC7F48-7140-4E0E-A81A-BD25068DC352}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cigExtinguish" ID="{2A7304ED-3CE2-49C3-B18B-6DE28E1A890E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0341067285382831"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.143248259860789"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.375174013921114"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.20194895591647"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>cigExtinguish.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="649754737"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="cigExtinguish" ID="{2A7304ED-3CE2-49C3-B18B-6DE28E1A890E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

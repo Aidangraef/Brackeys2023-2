@@ -65,6 +65,128 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="neonStartGame" ID="{1C4B0CB0-962C-4A59-93A2-00F010D42824}" ShortID="463040204">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="neonStartGame" ID="{828818D9-6E4D-4F4F-85A3-0A6D0564474D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.076022403744145"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.266578568992831"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>neonStartGame.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1018112364"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="neonStartGame" ID="{828818D9-6E4D-4F4F-85A3-0A6D0564474D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="neonFlickers" ID="{269E79E2-C512-4189-A3A4-246F7549A663}" ShortID="159226200">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="neonFlicker" ID="{FEE523DE-32A9-44AC-81AE-0F04D7A74CFC}" ShortID="1016896931">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="neonFlicker" ID="{1B5A09DB-22FB-40C5-9002-A59B57E1EC94}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.967052590873936"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>neonFlicker.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="505014345"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="neonFlicker" ID="{1B5A09DB-22FB-40C5-9002-A59B57E1EC94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="neonSustain" ID="{EAB2EDAF-951A-4153-AFCF-2CDE65125E4A}" ShortID="624175236">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="neonSustain" ID="{6FAE878D-F5DD-4AA2-BB0D-3ECA2D832914}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.76668445475638"/>
+														<Property Name="LoopEnd" Type="Real64" Value="24.3719853054911"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>neonSustain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52227454"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="neonSustain" ID="{6FAE878D-F5DD-4AA2-BB0D-3ECA2D832914}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="neonFlicker" ID="{FEE523DE-32A9-44AC-81AE-0F04D7A74CFC}"/>
+										<ItemRef Name="neonSustain" ID="{EAB2EDAF-951A-4153-AFCF-2CDE65125E4A}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>

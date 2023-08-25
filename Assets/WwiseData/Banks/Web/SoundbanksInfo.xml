@@ -56,7 +56,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BFD383C4-95D3-5A30-0207-1FB96C4A1B1A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{81CD01E1-98C3-C29A-FCFF-982799DEBF3A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -67,6 +67,10 @@
 				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-003.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-003_563DD58F.wem</CachePath>
+				</File>
+				<File Id="52227454" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonSustain.wav</ShortName>
+					<CachePath>SFX/neonSustain_9D07D3F6.wem</CachePath>
 				</File>
 				<File Id="53288716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-001.wav</ShortName>
@@ -94,11 +98,11 @@
 				</File>
 				<File Id="121403949" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-008.wav</ShortName>
-					<CachePath>SFX/VocalsWally-008_2885DB73.wem</CachePath>
+					<CachePath>SFX/VocalsWally-008_8DF222D7.wem</CachePath>
 				</File>
 				<File Id="130825561" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-006.wav</ShortName>
-					<CachePath>SFX/VocalsWally-006_02E2FC4B.wem</CachePath>
+					<CachePath>SFX/VocalsWally-006_0D657923.wem</CachePath>
 				</File>
 				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-008.wav</ShortName>
@@ -142,7 +146,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_8A4EC9BF.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_20E2C849.wem</CachePath>
 				</File>
 				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-002.wav</ShortName>
@@ -232,6 +236,10 @@
 					<ShortName>vocalsBen-006.wav</ShortName>
 					<CachePath>SFX/vocalsBen-006_10F647BC.wem</CachePath>
 				</File>
+				<File Id="505014345" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonFlicker.wav</ShortName>
+					<CachePath>SFX/neonFlicker_520D05E3.wem</CachePath>
+				</File>
 				<File Id="509130527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-002.wav</ShortName>
 					<CachePath>SFX/vocalsTina2-002_55AE7C1C.wem</CachePath>
@@ -239,6 +247,10 @@
 				<File Id="519605749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-001.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="526299618" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_63E42BAC.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
@@ -276,6 +288,10 @@
 					<ShortName>vocalsBen-007.wav</ShortName>
 					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
 				</File>
+				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cigExtinguish.wav</ShortName>
+					<CachePath>SFX/cigExtinguish_A1931EF3.wem</CachePath>
+				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-005_3F75BDB9.wem</CachePath>
@@ -304,6 +320,10 @@
 					<ShortName>vocalsBarkeep-006.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-006_7BAB9924.wem</CachePath>
 				</File>
+				<File Id="772547028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>exhale.wav</ShortName>
+					<CachePath>SFX/exhale_C56622D7.wem</CachePath>
+				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-004_F7D5790F.wem</CachePath>
@@ -311,6 +331,10 @@
 				<File Id="838841969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-008.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="857239412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_595CCA58.wem</CachePath>
 				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -359,6 +383,10 @@
 				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-008.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1018112364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonStartGame.wav</ShortName>
+					<CachePath>SFX/neonStartGame_F0939E07.wem</CachePath>
 				</File>
 				<File Id="1018975967" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-005.wav</ShortName>
@@ -412,7 +440,15 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="6.6645327" DurationMax="6.9962006">
+					<MediaRefs>
+						<MediaRef Id="649754737"/>
+						<MediaRef Id="772547028"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3171753105" Name="neonStartGame"/>
+					</ActionPostEvent>
+				</Event>
 				<Event Id="2097039607" Name="murderShots" DurationType="OneShot" DurationMin="2.0011601" DurationMax="2.0011601">
 					<MediaRefs>
 						<MediaRef Id="147227719"/>
@@ -421,10 +457,26 @@
 				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="183604237"/>
+						<MediaRef Id="526299618"/>
+						<MediaRef Id="857239412"/>
 					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="2626890067" Name="neonFlicker"/>
+					</ActionPostEvent>
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
+						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="2626890067" Name="neonFlicker" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="52227454"/>
+						<MediaRef Id="505014345"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3171753105" Name="neonStartGame" DurationType="OneShot" DurationMin="26.11813" DurationMax="26.11813">
+					<MediaRefs>
+						<MediaRef Id="1018112364"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3988978802" Name="npcBarkeep" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetSwitch>
@@ -441,7 +493,11 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="133505754" Name="npcPhone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="133505754" Name="npcPhone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3661604879" Name="switchPhone"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.19431554" DurationMax="0.805">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -538,7 +594,11 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="3928776531" Name="switchTina"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="4101721491" Name="npcVinnie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4101721491" Name="npcVinnie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="1025251668" Name="switchVinnie"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="1157041911" Name="npcWally" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry GroupId="3858903546" Id="3053756386" Name="switchWally"/>
@@ -584,5 +644,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C0AA2F24-0F06-3740-C824-856185A43F2B}</FileHash>
+	<FileHash>{37BB3D1F-C234-F685-D70F-3E8BE063F42C}</FileHash>
 </SoundBanksInfo>
