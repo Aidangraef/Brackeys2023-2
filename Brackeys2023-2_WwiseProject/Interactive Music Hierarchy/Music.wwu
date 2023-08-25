@@ -6,12 +6,29 @@
 				<MusicSwitchContainer Name="musicSwitch" ID="{4446E7BB-69F8-41F6-B510-40B00537C9F3}" ShortID="561767693">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+							<ObjectRef Name="Music" ID="{2F135520-F1C4-46DB-8D12-DC4DBA8CE833}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="roomState" ID="{F8442905-DC11-4414-8E94-3FC41F913E6E}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}"/>
+								<CustomState Name="" ID="{88827229-4E25-4F70-844D-6358D38E6818}" ShortID="674059714"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
+								<CustomState Name="" ID="{EAAE39ED-3977-46AD-8948-898F969B9FB7}" ShortID="259728075"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{2F3BFC6A-99AF-47B7-A746-81AAC74BED4F}">
 							<PropertyList>

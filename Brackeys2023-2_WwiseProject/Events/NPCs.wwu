@@ -84,8 +84,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}"/>
-				<Event Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}"/>
+				<Event Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}">
+					<ChildrenList>
+						<Action Name="" ID="{9A2E63AA-AFB6-4B57-9B99-996D6158BDA8}" ShortID="14439104">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchPhone" ID="{EC0FC65E-C14E-4CBE-B72F-219AB1D7895F}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}">
+					<ChildrenList>
+						<Action Name="" ID="{5F5CB9BE-A4C8-4ADA-802C-2ED1E0E2BA54}" ShortID="783094879">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchVinnie" ID="{91C20481-F05F-4FCE-A2C6-A283AF73B80F}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

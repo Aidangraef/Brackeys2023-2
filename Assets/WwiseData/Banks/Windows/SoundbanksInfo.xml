@@ -56,7 +56,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{81CD01E1-98C3-C29A-FCFF-982799DEBF3A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B48B3B89-E97E-5DA0-BD10-1E5DF1BA1AE7}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -70,7 +70,7 @@
 				</File>
 				<File Id="52227454" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>neonSustain.wav</ShortName>
-					<CachePath>SFX/neonSustain_9D07D3F6.wem</CachePath>
+					<CachePath>SFX/neonSustain_FED175CC.wem</CachePath>
 				</File>
 				<File Id="53288716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-001.wav</ShortName>
@@ -102,7 +102,7 @@
 				</File>
 				<File Id="130825561" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-006.wav</ShortName>
-					<CachePath>SFX/VocalsWally-006_0D657923.wem</CachePath>
+					<CachePath>SFX/VocalsWally-006_F311770F.wem</CachePath>
 				</File>
 				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-008.wav</ShortName>
@@ -146,7 +146,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_20E2C849.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_11182801.wem</CachePath>
 				</File>
 				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-002.wav</ShortName>
@@ -250,7 +250,7 @@
 				</File>
 				<File Id="526299618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_63E42BAC.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_B571C842.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
@@ -290,7 +290,7 @@
 				</File>
 				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>cigExtinguish.wav</ShortName>
-					<CachePath>SFX/cigExtinguish_A1931EF3.wem</CachePath>
+					<CachePath>SFX/cigExtinguish_BE342829.wem</CachePath>
 				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
@@ -322,7 +322,7 @@
 				</File>
 				<File Id="772547028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exhale.wav</ShortName>
-					<CachePath>SFX/exhale_C56622D7.wem</CachePath>
+					<CachePath>SFX/exhale_F3B18C1B.wem</CachePath>
 				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
@@ -334,7 +334,7 @@
 				</File>
 				<File Id="857239412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_595CCA58.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_36F2A10C.wem</CachePath>
 				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -386,7 +386,7 @@
 				</File>
 				<File Id="1018112364" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>neonStartGame.wav</ShortName>
-					<CachePath>SFX/neonStartGame_F0939E07.wem</CachePath>
+					<CachePath>SFX/neonStartGame_22DD5C8F.wem</CachePath>
 				</File>
 				<File Id="1018975967" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-005.wav</ShortName>
@@ -644,5 +644,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5FF4DA9F-C52E-CEBE-1F2F-9C067110AC83}</FileHash>
+	<FileHash>{0435A522-C531-DDA2-000A-9FD02BB411A6}</FileHash>
 </SoundBanksInfo>
