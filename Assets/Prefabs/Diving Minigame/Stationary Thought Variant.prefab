@@ -58,6 +58,17 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7385596382223782396, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+--- !u!114 &229076173935997503 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4335873229909653509, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
+  m_PrefabInstance: {fileID: 4540132189392996922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &381671338790934404 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4200224735218556350, guid: 532e1fdd8c754e84b89306b070e5fb45, type: 3}
@@ -69,7 +80,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 4540132189392996922}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4648988248598745063}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19fa32b4b3f4cee49a0d48ebd2bb6166, type: 3}
   m_Name: 
@@ -105,6 +116,7 @@ MonoBehaviour:
   minSpeed: 0.5
   maxSpeed: 2
   speed: 2
+  feelingTMP: {fileID: 229076173935997503}
   thoughtText: 
   spriteRenderer: {fileID: 8371996530126252128}
   trailParticles: {fileID: 2700724607039068003}
