@@ -5,35 +5,39 @@ using UnityEngine.UI;
 
 public class ChangeVolumeLevel : MonoBehaviour
 {
-    public Slider thisSlider;
-    public float SFXVolume;
+    public const string SFX_VOLUME_PREF = "SFXVolume";
+    public const string MUSIC_VOLUME_PREF = "musicVolume";
+
+    [SerializeField]
+    public Slider sfxSlider;
+    [SerializeField]
+    public Slider musicSlider;
+    [SerializeField]
+    public float sfxVolume;
+    [SerializeField]
     public float musicVolume;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    private void Start() {
+        float currentSFXVolume = PlayerPrefs.GetFloat(SFX_VOLUME_PREF, 100f);
+        sfxSlider.value = currentSFXVolume;
+        AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, currentSFXVolume);
+
+        float currentMusicVolume = PlayerPrefs.GetFloat(MUSIC_VOLUME_PREF, 100f);
+        musicSlider.value = currentMusicVolume;
+        AkSoundEngine.SetRTPCValue(MUSIC_VOLUME_PREF, currentMusicVolume);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetSFXVolume()
     {
-
+        sfxVolume = sfxSlider.value;
+        PlayerPrefs.SetFloat(SFX_VOLUME_PREF, sfxVolume);
+        AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, sfxVolume);
     }
-    public void SetSpecificVolume(string whatValue)
-    {
-        float sliderValue = thisSlider.value;
 
-        if (whatValue == "SetBGMVolume")
-        {
-            Debug.Log("changed BGM volume to :" + thisSlider.value);
-            musicVolume = thisSlider.value;
-            AkSoundEngine.SetRTPCValue("musicVolume", musicVolume);
-        }
-        if (whatValue == "SetSFXVolume")
-        {
-            Debug.Log("changed SFX volume to:" + thisSlider.value);
-            SFXVolume = thisSlider.value;
-            AkSoundEngine.SetRTPCValue("SFXVolume", SFXVolume);
-        }
+    public void SetMusicVolume()
+    {
+        musicVolume = musicSlider.value;
+        PlayerPrefs.SetFloat(MUSIC_VOLUME_PREF, musicVolume);
+        AkSoundEngine.SetRTPCValue(MUSIC_VOLUME_PREF, musicVolume);
     }
 }
