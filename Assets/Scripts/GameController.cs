@@ -36,6 +36,9 @@ public class GameController : MonoBehaviour
     public bool wasThatMe; // Same thing as above
     public GameObject wasThatMeGameObject;
 
+    public bool barTenderIntro;
+    public GameObject barTenderIntroGameObject;
+
     void Awake() {
         if (controller == null) {
             controller = this;
@@ -49,6 +52,7 @@ public class GameController : MonoBehaviour
 
         didIJustShootSomeone = false;
         wasThatMe = false;
+        barTenderIntro = true;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
@@ -67,6 +71,11 @@ public class GameController : MonoBehaviour
                 if(wasThatMe) {
                     wasThatMeGameObject.SetActive(true);
                     wasThatMe = false;
+                }
+                if(barTenderIntro)
+                {
+                    barTenderIntroGameObject.SetActive(true);
+                    barTenderIntro = false;
                 }
                 break;
 
