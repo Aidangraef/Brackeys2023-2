@@ -22,10 +22,6 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -36,6 +32,18 @@
 						<Module>
 							<ObjectRef Name="neonStartGame" ID="{5E033DF6-DC74-4024-93DD-44C94C165405}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}"/>
 							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}"/>
+							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

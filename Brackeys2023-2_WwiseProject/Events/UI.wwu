@@ -49,6 +49,16 @@
 				</Event>
 				<Event Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}">
 					<ChildrenList>
+						<Action Name="" ID="{CD9BEAD7-D244-42C6-B2BB-B762B1DC0A15}" ShortID="649359680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{63304EA6-93C1-46E3-9BC7-2084EDE99749}" ShortID="303549641">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="1"/>
