@@ -47,7 +47,6 @@ public class GameController : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             ResetDialogueManagerVariables();
-            NewMemorySeen(MemoryEnum.VINNIE_YOU_SHOT_VINNIE);
 
             SceneManager.sceneLoaded += OnSceneLoaded;
         } else {
