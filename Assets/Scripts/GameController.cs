@@ -121,6 +121,17 @@ public class GameController : MonoBehaviour
         characterController.FacingRight = playerFacingRight;
     }
 
+    // Goes back to main menu and allows script to be destroyed (and then created anew in the main menu)
+    public void GoToMainMenu() {
+        // Becomes destructible on load
+        transform.parent = (new GameObject()).transform;
+
+        // Resets controller variable
+        controller = null;
+
+        SceneManager.LoadScene((int)UnityScenes.StartMenu);
+    }
+
 #if UNITY_EDITOR
     private void OnValidate() {
         foreach (CharacterEnum character in Enum.GetValues(typeof(CharacterEnum))) {
