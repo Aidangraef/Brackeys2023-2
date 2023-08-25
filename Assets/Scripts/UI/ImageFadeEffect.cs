@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ImageFadeInEffect : MonoBehaviour {
+public class ImageFadeEffect : MonoBehaviour {
     Image image;
 
+    [SerializeField]
     float targetAlpha = 0f;
     [SerializeField]
     float fadeSpeed = 2f;
