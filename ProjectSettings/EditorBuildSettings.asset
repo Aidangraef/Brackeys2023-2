@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TheBigReveal.unity
     guid: 1ad90d3eb9fa5764cbb18b2ef8eb5cd2
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: c0810d5dbb929e24687d86aabedcf122
+  - enabled: 1
     path: Assets/Scenes/Sample2DScene.unity
     guid: 90a2224c41155f04b99b104dfd62d751
   - enabled: 1
