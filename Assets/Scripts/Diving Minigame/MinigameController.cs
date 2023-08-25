@@ -169,7 +169,7 @@ public class MinigameController : MonoBehaviour
 
             case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
             case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
-            case MemoryEnum.WALLY_YOU_SHOT_VINNIE:
+            case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
                 return CharacterEnum.WALLY;
 
             default:
