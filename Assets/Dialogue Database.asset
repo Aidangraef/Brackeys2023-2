@@ -8123,11 +8123,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 6
         type: 5
@@ -8139,19 +8139,19 @@ MonoBehaviour:
       - title: Menu Text
         value: Don't make that kinda cash gamblin' I suppose.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 5aa2268a-d8a7-4283-ba35-6d50764127e2
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -8178,15 +8178,15 @@ MonoBehaviour:
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
+              m_IntArgument: 12
               m_FloatArgument: 0
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 199.04141
-        y: 482.2031
+        x: 197.86496
+        y: 481.02658
         width: 160
         height: 30
     - id: 17
@@ -8366,11 +8366,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 6
         type: 5
@@ -8382,19 +8382,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Not get up all in my beeswax.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 3f069344-3bf3-420d-a253-284b2f505481
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -8433,7 +8433,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 30.588242, y: 234.11761}
     canvasZoom: 0.85000014
   - id: 9
     fields:
@@ -8988,11 +8988,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 3
+        value: 5
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -9043,11 +9043,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 5
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 3
+        value: 5
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -9098,11 +9098,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 3
+        value: 5
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -9141,8 +9141,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 3.2786865}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 96.44811, y: 222.17952}
+    canvasZoom: 0.8800001
   - id: 10
     fields:
     - title: Title
@@ -14472,7 +14472,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: d35459e2-aeb7-4392-8e90-8a31e8d71e83
+        value: 503771d6-0570-4e4a-af2a-439e861582b3
         type: 0
         typeString: 
       conversationID: 15
@@ -14495,8 +14495,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 9, y: 174}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 116.634964}
+    canvasZoom: 0.8200002
   - id: 16
     fields:
     - title: Title

@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToSwitchTo: 0
 --- !u!4 &13525218
 Transform:
   m_ObjectHideFlags: 0
@@ -973,6 +972,22 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - guid: a8efaa07-2128-47b9-8aa3-3f5c3c297ce2
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 13525217}
+          m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+          m_MethodName: ReturnToBar
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 503771d6-0570-4e4a-af2a-439e861582b3
     onExecute:
       m_PersistentCalls:
         m_Calls:
