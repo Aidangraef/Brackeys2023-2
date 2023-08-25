@@ -14,7 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="gameLight" ID="{DDFC3101-C173-4A61-A998-DCCEA4D349E4}"/>
 				<Event Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}"/>
 				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}"/>
 				<Event Name="diveFail" ID="{DBF17C7F-3EE2-46B9-91DC-448A8DB242BD}"/>

@@ -56,7 +56,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{4D8E0540-D01A-B02C-79B3-F81E96C1560E}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0EB08BFC-E2FB-1AAB-358B-F2171CA22C4A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -110,11 +110,15 @@
 				</File>
 				<File Id="147227719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>murderShots.wav</ShortName>
-					<CachePath>SFX/murderShots_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/murderShots_041A86A6.wem</CachePath>
 				</File>
 				<File Id="149329997" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-011.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-011_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="152384243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-008.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-008_0F1E0F75.wem</CachePath>
 				</File>
 				<File Id="156683581" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-008.wav</ShortName>
@@ -132,6 +136,10 @@
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
 					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_8A4EC9BF.wem</CachePath>
 				</File>
+				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-002.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-002_668DB8C7.wem</CachePath>
+				</File>
 				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-004.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-004_3F75BDB9.wem</CachePath>
@@ -148,9 +156,17 @@
 					<ShortName>Wood Footstep-006.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-006_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="245953949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-001.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-001_471249F3.wem</CachePath>
+				</File>
 				<File Id="248109132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-003.wav</ShortName>
 					<CachePath>SFX/vocalsVinnie2-003_46DA28FF.wem</CachePath>
+				</File>
+				<File Id="262041955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-007.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-007_1CD53F42.wem</CachePath>
 				</File>
 				<File Id="289387898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-001.wav</ShortName>
@@ -167,6 +183,10 @@
 				<File Id="363383916" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-007.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="365395187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-003.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-003_D5564CAF.wem</CachePath>
 				</File>
 				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-007.wav</ShortName>
@@ -252,6 +272,10 @@
 					<ShortName>concreteFootsteps-012.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-012_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="766243243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-006.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-006_5EDF091C.wem</CachePath>
+				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-004_F7D5790F.wem</CachePath>
@@ -267,6 +291,10 @@
 				<File Id="895541830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Failure_01-10_Ensemble-Small_DRY.wav</ShortName>
 					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_4FD7D9B3.wem</CachePath>
+				</File>
+				<File Id="903007647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-005.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-005_323DBF9B.wem</CachePath>
 				</File>
 				<File Id="912247419" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-008.wav</ShortName>
@@ -292,6 +320,10 @@
 					<ShortName>vocalsTina2-007.wav</ShortName>
 					<CachePath>SFX/vocalsTina2-007_942A7DCB.wem</CachePath>
 				</File>
+				<File Id="975461600" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-004.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-004_0B811D7A.wem</CachePath>
+				</File>
 				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-008.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-008_3F75BDB9.wem</CachePath>
@@ -311,6 +343,10 @@
 						<MediaRef Id="892375809"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1618867687" Name="diveFail" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2973970440" Name="diveSuccess" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="425063146" Name="diveWrong" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.2291875" DurationMax="0.38945964">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -344,8 +380,8 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="783992069" Name="gameLight" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="5" DurationMax="5">
+				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2097039607" Name="murderShots" DurationType="OneShot" DurationMin="2.0011601" DurationMax="2.0011601">
 					<MediaRefs>
 						<MediaRef Id="147227719"/>
 					</MediaRefs>
@@ -373,7 +409,8 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.29647765" DurationMax="0.516084">
+				<Event Id="133505754" Name="npcPhone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0" DurationMax="0.516084">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="385597812"/>
@@ -425,6 +462,19 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="2596618219"/>
+							<MediaRefs>
+								<MediaRef Id="152384243"/>
+								<MediaRef Id="209933720"/>
+								<MediaRef Id="245953949"/>
+								<MediaRef Id="262041955"/>
+								<MediaRef Id="365395187"/>
+								<MediaRef Id="766243243"/>
+								<MediaRef Id="903007647"/>
+								<MediaRef Id="975461600"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="414330125"/>
@@ -443,6 +493,7 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="3928776531" Name="switchTina"/>
 					</ActionSetSwitch>
 				</Event>
+				<Event Id="4101721491" Name="npcVinnie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1157041911" Name="npcWally" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry GroupId="3858903546" Id="3053756386" Name="switchWally"/>
@@ -488,5 +539,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3CD12576-47C9-9B2F-9230-4DD11F719905}</FileHash>
+	<FileHash>{F99D6097-AB43-EFC3-C820-08124285E795}</FileHash>
 </SoundBanksInfo>

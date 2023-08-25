@@ -1,18 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
+	133505754	npcPhone			\Default Work Unit\NPCs\npcPhone	
 	216426317	npcBen			\Default Work Unit\NPCs\npcBen	
 	315848864	npcTina			\Default Work Unit\NPCs\npcTina	
-	783992069	gameLight			\Default Work Unit\Player\gameLight	
+	425063146	diveWrong			\Default Work Unit\Player\diveWrong	
 	1122283870	musicStart			\Default Work Unit\Music\musicStart	
 	1157041911	npcWally			\Default Work Unit\NPCs\npcWally	
+	1229279613	diveStart			\Default Work Unit\Player\diveStart	
 	1336322353	testDing			\Default Work Unit\UI\testDing	
 	1435302941	testFail			\Default Work Unit\UI\testFail	
+	1618867687	diveFail			\Default Work Unit\Player\diveFail	
 	1776921608	testComplete			\Default Work Unit\UI\testComplete	
+	2097039607	murderShots			\Default Work Unit\Objects\murderShots	
 	2124506477	npcKevin			\Default Work Unit\NPCs\npcKevin	
+	2973970440	diveSuccess			\Default Work Unit\Player\diveSuccess	
 	3988978802	npcBarkeep			\Default Work Unit\NPCs\npcBarkeep	
 	3989513603	footStepping			\Default Work Unit\Player\footStepping	
 	4041656984	npcTalk			\Default Work Unit\NPCs\npcTalk	
 	4051332235	buttonClick			\Default Work Unit\UI\buttonClick	
-	4058101365	gameStart			\Default Work Unit\Music\gameStart	
+	4058101365	gameStart			\Default Work Unit\UI\gameStart	
+	4101721491	npcVinnie			\Default Work Unit\NPCs\npcVinnie	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3858903546	characterSwitch			\Default Work Unit\characterSwitch	
@@ -50,21 +56,26 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	131293917	vocalsTina2-008	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsTina2-008_180252C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsTina\vocalsTina2-008		7504
 	133817862	Wood Footstep-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\Wood Footstep-004_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\woodSteps\Wood Footstep-004		4244
 	137141922	testComplete	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\DeliverComplete_D296B342.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testComplete		32806
-	147227719	murderShots	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\murderShots_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\buttons\murderShots		57940
+	147227719	murderShots	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\murderShots_041A86A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\murderScene\murderShots		32531
 	149329997	concreteFootsteps-011	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-011_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-011		3849
+	152384243	vocalsBarkeep-008	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-008_0F1E0F75.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-008		7071
 	156683581	Wood Footstep-008	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\Wood Footstep-008_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\woodSteps\Wood Footstep-008		4529
 	165332797	Wood Footstep-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\Wood Footstep-003_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\woodSteps\Wood Footstep-003		4058
 	176846604	concreteFootsteps-010	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-010_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-010		3768
 	183604237	thunder_rain_helsinki_august_2014_04	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\thunder_rain_helsinki_august_2014_04_8A4EC9BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientRain\ambientRain\thunder_rain_helsinki_august_2014_04		1251459
+	209933720	vocalsBarkeep-002	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-002_668DB8C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-002		6951
 	218386730	concreteFootsteps-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-004_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-004		5041
 	226020652	testDing	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\mailReady_C2F9A30D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testDing		40827
 	229554145	vocalsKevin-005	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsKevin-005_71CCA37B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsKevin\vocalsKevin-005		5015
 	245039638	Wood Footstep-006	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\Wood Footstep-006_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\woodSteps\Wood Footstep-006		3991
+	245953949	vocalsBarkeep-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-001_471249F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-001		6831
 	248109132	vocalsVinnie2-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsVinnie2-003_46DA28FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-003		10311
+	262041955	vocalsBarkeep-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-007_1CD53F42.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-007		7215
 	289387898	VocalsWally-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\VocalsWally-001_D5CC2DD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsWally\VocalsWally-001		6683
 	328961177	concreteFootsteps-009	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-009_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-009		5584
 	361036282	vocalsVinnie2-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsVinnie2-001_EA29292B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-001		13252
 	363383916	concreteFootsteps-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-007_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-007		4072
+	365395187	vocalsBarkeep-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-003_D5564CAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-003		6980
 	382571462	VocalsWally-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\VocalsWally-007_02BB463F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsWally\VocalsWally-007		7096
 	409836546	vocalsTina2-006	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsTina2-006_708FC496.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsTina\vocalsTina2-006		6846
 	414330125	vocalsBen-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBen-003_9DDCF442.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBen\vocalsBen-003		8271
@@ -86,16 +97,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	736710810	vocalsBen-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBen-004_5D39340A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBen\vocalsBen-004		8289
 	753997685	vocalsVinnie2-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsVinnie2-007_248DD6CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-007		7128
 	754295549	concreteFootsteps-012	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-012_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-012		3852
+	766243243	vocalsBarkeep-006	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-006_5EDF091C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-006		6969
 	776453115	vocalsKevin-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsKevin-004_F7D5790F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsKevin\vocalsKevin-004		4779
 	892375809	buttonClick	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\buttonClick_ED1E115E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\buttons\buttonClick		971
 	894259500	vocalsVinnie2-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsVinnie2-004_E93AF8B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-004		9918
 	895541830	testFail	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\Failure_01-10_Ensemble-Small_DRY_4FD7D9B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		12444
+	903007647	vocalsBarkeep-005	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-005_323DBF9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-005		7159
 	912247419	vocalsVinnie2-008	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsVinnie2-008_3285CF1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsVinnie\vocalsVinnie2-008		7789
 	923676968	concreteFootsteps-001	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-001_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-001		5672
 	952124549	concreteFootsteps-002	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-002_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-002		3666
 	957187976	VocalsWally-005	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\VocalsWally-005_4DE7BA8B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsWally\VocalsWally-005		7095
 	959757076	concreteFootsteps-003	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-003_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-003		4120
 	962974613	vocalsTina2-007	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsTina2-007_942A7DCB.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsTina\vocalsTina2-007		6620
+	975461600	vocalsBarkeep-004	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\vocalsBarkeep-004_0B811D7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\dialogueSwitcher\vocalsBarkeep\vocalsBarkeep-004		6996
 	1015166504	concreteFootsteps-008	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-008_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-008		4138
 	1018975967	concreteFootsteps-005	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-005_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-005		5081
 	1064893621	concreteFootsteps-006	D:\Game_Production\UnityProjects\Brackeys2023-2\Brackeys2023-2_WwiseProject\.cache\Windows\SFX\concreteFootsteps-006_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footSteps\footSwitch\concreteSteps\concreteFootsteps-006		3987

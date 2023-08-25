@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
 	<Events>
-		<WorkUnit Name="Objects" ID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+		<WorkUnit Name="Objects" ID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="murderShots" ID="{71F55424-87E6-4690-93F1-776814C647E2}">
+					<ChildrenList>
+						<Action Name="" ID="{E81D6F18-7E9B-40BD-992D-91B26E2C2F8C}" ShortID="1045535441">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="murderShots" ID="{4C016B9C-A23E-4AB7-8C1D-B46FBA88FB25}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

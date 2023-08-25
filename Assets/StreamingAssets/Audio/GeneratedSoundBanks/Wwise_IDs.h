@@ -14,15 +14,21 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTONCLICK = 4051332235U;
+        static const AkUniqueID DIVEFAIL = 1618867687U;
+        static const AkUniqueID DIVESTART = 1229279613U;
+        static const AkUniqueID DIVESUCCESS = 2973970440U;
+        static const AkUniqueID DIVEWRONG = 425063146U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
-        static const AkUniqueID GAMELIGHT = 783992069U;
         static const AkUniqueID GAMESTART = 4058101365U;
+        static const AkUniqueID MURDERSHOTS = 2097039607U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID NPCBARKEEP = 3988978802U;
         static const AkUniqueID NPCBEN = 216426317U;
         static const AkUniqueID NPCKEVIN = 2124506477U;
+        static const AkUniqueID NPCPHONE = 133505754U;
         static const AkUniqueID NPCTALK = 4041656984U;
         static const AkUniqueID NPCTINA = 315848864U;
+        static const AkUniqueID NPCVINNIE = 4101721491U;
         static const AkUniqueID NPCWALLY = 1157041911U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTDING = 1336322353U;

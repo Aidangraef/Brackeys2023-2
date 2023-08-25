@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}">
+					<ChildrenList>
+						<Action Name="" ID="{CAD1DB06-CEF9-451C-8F6D-B78E1E51D447}" ShortID="551788363">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cigBurn" ID="{F832ED99-8794-44B0-BE16-D9DFC043C000}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
