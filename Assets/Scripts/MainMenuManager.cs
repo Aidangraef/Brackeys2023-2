@@ -16,6 +16,9 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     ImageFadeEffect fadeEffect;
 
+    [SerializeField]
+    LogoFlicker logoFlickerScript;
+
     // Start is called before the first frame update
     void Start() {
         menu.SetActive(true);
@@ -23,18 +26,9 @@ public class MainMenuManager : MonoBehaviour
         settings.SetActive(false);
     }
 
-    int i = 0;
-    private void FixedUpdate() {
-        i++;
-        if (i == 50) {
-            i = 0;
-            AkSoundEngine.PostEvent("npcTalk", this.gameObject);
-        }
-    }
-
     public void Play()
     {
-        FindObjectOfType<LogoFlicker>().StartSequence();
+        logoFlickerScript.StartSequence();
 
         // Disappear buttons
         menu.SetActive(false);

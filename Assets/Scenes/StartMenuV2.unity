@@ -1346,5 +1346,9 @@ PrefabInstance:
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 832895364}
+    - target: {fileID: 4025873967324202430, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
+      propertyPath: logoFlickerScript
+      value: 
+      objectReference: {fileID: 2081185729}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
