@@ -57,6 +57,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="gunCock" ID="{70EEAA8C-7F94-4B61-ACE3-520593E56DF2}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
