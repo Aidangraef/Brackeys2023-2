@@ -52,6 +52,13 @@ public class MinigameController : MonoBehaviour
     private void Awake() {
         if (controller == null) {
             controller = this;
+
+            // Load current memory dive index
+            currentMemory = (MemoryEnum)diso.DivingScene;
+
+            // Load character
+            currentCharacter = ConvertSceneIndexToCharacter((int)currentMemory);
+            SetCharacter(currentCharacter);
         } else {
             Destroy(gameObject);
         }
@@ -65,13 +72,6 @@ public class MinigameController : MonoBehaviour
         else {
             fadeEffect.TargetAlpha = 0f;
         }
-
-        // Load current memory dive index
-        currentMemory = (MemoryEnum)diso.DivingScene;
-
-        // Load character
-        currentCharacter = ConvertSceneIndexToCharacter((int)currentMemory);
-        SetCharacter(currentCharacter);
     }
 
     public void SetCharacter(CharacterEnum character) {
