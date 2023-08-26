@@ -60,7 +60,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{20E77605-BD18-58A6-2605-E927356BD88F}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{DF6A8DB9-CC49-D2A1-2119-047919D974AA}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -226,7 +226,7 @@
 				</File>
 				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryUnCrushed.wav</ShortName>
-					<CachePath>SFX/mysteryUnCrushed_46D27536.wem</CachePath>
+					<CachePath>SFX/mysteryUnCrushed_AC698B62.wem</CachePath>
 				</File>
 				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-001.wav</ShortName>
@@ -346,7 +346,7 @@
 				</File>
 				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>cigExtinguish.wav</ShortName>
-					<CachePath>SFX/cigExtinguish_BE342829.wem</CachePath>
+					<CachePath>SFX/cigExtinguish_B94DD5CB.wem</CachePath>
 				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
@@ -386,7 +386,7 @@
 				</File>
 				<File Id="772547028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exhale.wav</ShortName>
-					<CachePath>SFX/exhale_F3B18C1B.wem</CachePath>
+					<CachePath>SFX/exhale_E366E293.wem</CachePath>
 				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
@@ -536,7 +536,7 @@
 						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1501097736" Name="exitMemory" DurationType="OneShot" DurationMin="3.460386" DurationMax="3.460386">
+				<Event Id="1501097736" Name="exitMemory" DurationType="OneShot" DurationMin="2.9540613" DurationMax="2.9540613">
 					<MediaRefs>
 						<MediaRef Id="346905751"/>
 					</MediaRefs>
@@ -630,11 +630,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="6.6645327" DurationMax="6.9962006">
-					<MediaRefs>
-						<MediaRef Id="649754737"/>
-						<MediaRef Id="772547028"/>
-					</MediaRefs>
+				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3171753105" Name="neonStartGame"/>
 					</ActionPostEvent>
@@ -856,6 +852,16 @@
 						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3086529455" Name="smokeExhale" DurationType="OneShot" DurationMin="1.021497" DurationMax="1.1465918">
+					<MediaRefs>
+						<MediaRef Id="772547028"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="360445344" Name="smokeExtinguish" DurationType="OneShot" DurationMin="1.1678272" DurationMax="1.2735245">
+					<MediaRefs>
+						<MediaRef Id="649754737"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="2.0028148" DurationMax="2.0028148">
 					<MediaRefs>
 						<MediaRef Id="137141922"/>
@@ -900,5 +906,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A69FF97A-8C8A-8BA2-D9A2-2D19E3CCEAD0}</FileHash>
+	<FileHash>{8A236DFA-396A-5AE2-A593-F79D8B1F16A5}</FileHash>
 </SoundBanksInfo>

@@ -39,6 +39,8 @@ namespace AK
         static const AkUniqueID NPCVINNIE = 4101721491U;
         static const AkUniqueID NPCWALLY = 1157041911U;
         static const AkUniqueID RETURNTOMENU = 61023377U;
+        static const AkUniqueID SMOKEEXHALE = 3086529455U;
+        static const AkUniqueID SMOKEEXTINGUISH = 360445344U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTDING = 1336322353U;
         static const AkUniqueID TESTFAIL = 1435302941U;

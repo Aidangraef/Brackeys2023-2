@@ -309,6 +309,11 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="concreteSteps" ID="{F149753B-3A70-412A-83B2-7729D1EC6794}" ShortID="23425731">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>45</Value>
+													</ValueList>
+												</Property>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -325,7 +330,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -686,11 +691,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>4</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -704,9 +704,10 @@
 										<AudioFileSource Name="exhale" ID="{A1BFE18D-FC4F-49B1-BD73-F525A1431DF0}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.0348027842227378"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.118909512761021"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.02270445284091"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.27262180974478"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.35486018641811"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>exhale.wav</AudioFile>
@@ -751,11 +752,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="cigExtinguish" ID="{2A7304ED-3CE2-49C3-B18B-6DE28E1A890E}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0341067285382831"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.143248259860789"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0771693117606534"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.44468634241738"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.375174013921114"/>
-												<Property Name="TrimEnd" Type="Real64" Value="4.20194895591647"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.02156549195041"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.2410967588459"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>cigExtinguish.wav</AudioFile>

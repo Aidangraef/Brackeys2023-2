@@ -125,26 +125,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{63304EA6-93C1-46E3-9BC7-2084EDE99749}" ShortID="303549641">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="exhale" ID="{3F4DEA0D-541E-46B5-B4B9-104BAAEAACFC}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{FAF22135-9A9A-45D0-B4FC-20AF5D04D1D1}" ShortID="949077932">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="cigExtinguish" ID="{242174F3-4902-44BD-A15F-83F72E4F4764}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}">

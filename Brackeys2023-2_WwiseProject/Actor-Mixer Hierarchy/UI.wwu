@@ -241,7 +241,7 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.503328894806924"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0509320905459388"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.51131824234355"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.00499334221039"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>mysteryUnCrushed.wav</AudioFile>

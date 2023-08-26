@@ -13,6 +13,7 @@
 								<ObjectRef Name="testFail" ID="{0BB6097A-49D7-418A-9097-6BD0BE673BCF}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="smokeExtinguish" ID="{5D2AB083-AC01-42DA-9B12-A6BBD3F05CE8}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="divePlay" ID="{CEF50BF9-3204-42FC-A548-1A67D5AEB22F}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="buttonClick" ID="{65F98E0E-5A30-4407-866F-7A9796E70323}" WorkUnitID="{A93B5355-850B-4AE2-A78B-E1806490C4CC}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
@@ -32,6 +33,7 @@
 								<ObjectRef Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcBen" ID="{EF8E36AA-7614-4D9D-BCBD-FC70BF2DCAB1}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcBarkeep" ID="{A34B8619-1F34-4E4E-AD8A-34414DA73B96}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="smokeExhale" ID="{30EA73B1-3ED3-4E4F-9D76-54BEF6797412}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="detectiveSpeak" ID="{292D2E75-E739-4E6C-ACEF-D809D2D9F49C}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" Origin="Manual" Filter="7"/>

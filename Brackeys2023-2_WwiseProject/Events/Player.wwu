@@ -117,6 +117,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="smokeExhale" ID="{30EA73B1-3ED3-4E4F-9D76-54BEF6797412}">
+					<ChildrenList>
+						<Action Name="" ID="{DE4C8D9B-D3CA-4218-A47D-2F51B22D0A87}" ShortID="277325929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="exhale" ID="{3F4DEA0D-541E-46B5-B4B9-104BAAEAACFC}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="smokeExtinguish" ID="{5D2AB083-AC01-42DA-9B12-A6BBD3F05CE8}">
+					<ChildrenList>
+						<Action Name="" ID="{94EDD73F-3F41-41C6-A3A3-3142F0A7C88D}" ShortID="998805816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cigExtinguish" ID="{242174F3-4902-44BD-A15F-83F72E4F4764}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
