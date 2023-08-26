@@ -182,10 +182,6 @@ public class GameController : MonoBehaviour
         return memoriesSeen.Contains(memory);
     }
 
-    public void SubmitCulprit(CharacterEnum character) {
-        // TODO Prepare code to send to ending
-    }
-
     public void SavePlayerTransform() {
         CharacterController characterController = FindObjectOfType<CharacterController>();
         playerPosition = characterController.transform.position;

@@ -17503,7 +17503,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Someone must have erased my memory?
+        value: Could someone have erased my memory?
         type: 0
         typeString: 
       - title: Sequence
@@ -18265,7 +18265,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: So my memories must have been tampered with.
+        value: Could my memories have been tampered with?
         type: 0
         typeString: 
       - title: Sequence
