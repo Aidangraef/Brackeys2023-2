@@ -41,7 +41,7 @@ public class ThoughtController : MonoBehaviour
                 // Set right balloon
                 thoughtScript.Special = true;
 
-                // TODO Define feeling by getting current memory
+                // Define feeling by getting current memory
                 thoughtScript.FillBalloon(ConvertMemoryToFeeling(), "");
             } else {
                 // Fill with irrelevant thought
