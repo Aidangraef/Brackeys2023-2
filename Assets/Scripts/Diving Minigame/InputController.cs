@@ -49,9 +49,11 @@ public class InputController : MonoBehaviour
             if (clickedThought != null) {
                 ThoughtBalloon balloon = clickedThought.GetComponent<ThoughtBalloon>();
                 if (balloon.Special) {
+                    MinigameController.controller.PlaySound("diveSuccess");
                     MinigameController.controller.EndMinigame(true);
                 }
                 else {
+                    MinigameController.controller.PlaySound("divePop");
                     string thought = balloon.ReadThought();
 
                     MinigameController.controller.ShowThoughtText(thought);

@@ -16,14 +16,22 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField]
     float fadeToMenuDuration = 2.2f;
 
+    static PauseMenuManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
-        pauseMenu.SetActive(false);
-        settings.SetActive(false);
-        isPaused = false;
+        if (manager == null) {
+            manager = this;
+            pauseMenu.SetActive(false);
+            settings.SetActive(false);
+            isPaused = false;
 
-        DontDestroyOnLoad(transform.parent.gameObject);
+            DontDestroyOnLoad(transform.parent.gameObject);
+        } else {
+            Destroy(transform.parent.gameObject);
+        }
+
     }
 
     // Update is called once per frame
