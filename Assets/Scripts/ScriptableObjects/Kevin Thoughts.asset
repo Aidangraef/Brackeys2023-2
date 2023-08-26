@@ -13,4 +13,24 @@ MonoBehaviour:
   m_Name: Kevin Thoughts
   m_EditorClassIdentifier: 
   character: 2
-  thoughtsList: []
+  thoughtsList:
+  - feeling: Happiness
+    thought: I wonder if this guy will play pool with me.
+  - feeling: Envy
+    thought: Who is that Tina is looking at?
+  - feeling: Anxiety
+    thought: Should I be smoking this much?
+  - feeling: Calm
+    thought: I love the saxophone in this song.
+  - feeling: Jealousy
+    thought: I wish I was as buff as Ben...
+  - feeling: Annoyance
+    thought: Ugh, the hum of that fluorescent light is getting to me.
+  - feeling: Aloofness
+    thought: What's this detective guy's deal?
+  - feeling: Disgust
+    thought: This guy could use a shave.
+  - feeling: Nervousness
+    thought: Did I leave my keys at home?
+  - feeling: Wonder
+    thought: I wonder what my first grade teacher is up to these days...
