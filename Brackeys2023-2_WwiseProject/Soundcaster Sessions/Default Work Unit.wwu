@@ -22,6 +22,14 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}" WorkUnitID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -84,7 +92,7 @@
 						<CurrentStateRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+						<CurrentSwitchRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
