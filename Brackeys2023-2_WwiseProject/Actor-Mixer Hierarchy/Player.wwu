@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<ActorMixer Name="Player" ID="{70E413FC-94FF-4B2D-A636-E94609F21A0E}" ShortID="647670251">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -17,6 +19,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="footSteps" ID="{C414E858-3EBB-4622-B034-1E6CD814C9C9}" ShortID="621703588">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
@@ -57,11 +64,6 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -308,9 +310,22 @@
 										<RandomSequenceContainer Name="concreteSteps" ID="{F149753B-3A70-412A-83B2-7729D1EC6794}" ShortID="23425731">
 											<PropertyList>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3F1FEEFF-851A-4812-8CA1-77DCB46386AE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="75"/>
+																	<Property Name="Min" Type="Real64" Value="-75"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -642,6 +657,11 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="smonking" ID="{7FB1B59C-5705-416F-AB4E-00FC1991A3DB}" ShortID="1039944679">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
@@ -665,6 +685,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -709,6 +734,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -739,9 +769,13 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{EDAE8371-07E2-412A-AC63-68D8609A3297}"/>
+							</PositioningInfo>
 						</ActorMixer>
 						<RandomSequenceContainer Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" ShortID="64881735">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>

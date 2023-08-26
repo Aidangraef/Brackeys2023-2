@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<ActorMixer Name="NPCs" ID="{20D770C4-C05F-4710-89CC-2EDED02C8692}" ShortID="727254151">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>

@@ -59,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0E5FE205-5762-5209-F2B7-FD42934603C3}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{47CE19AA-90AE-56B8-6AEE-39F29BA44060}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -85,7 +85,7 @@
 				</File>
 				<File Id="58352512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-004.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-004_3E11272C.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-004_83CA53CA.wem</CachePath>
 				</File>
 				<File Id="64071679" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-004.wav</ShortName>
@@ -101,7 +101,7 @@
 				</File>
 				<File Id="98737313" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-003.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-003_A4A9A093.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-003_DE984A49.wem</CachePath>
 				</File>
 				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-004.wav</ShortName>
@@ -157,7 +157,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_5B970141.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_F6A5366D.wem</CachePath>
 				</File>
 				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-002.wav</ShortName>
@@ -221,7 +221,7 @@
 				</File>
 				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryUnCrushed.wav</ShortName>
-					<CachePath>SFX/mysteryUnCrushed_7CDE1403.wem</CachePath>
+					<CachePath>SFX/mysteryUnCrushed_46D27536.wem</CachePath>
 				</File>
 				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-001.wav</ShortName>
@@ -237,7 +237,7 @@
 				</File>
 				<File Id="373562971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-001.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-001_172645F2.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-001_EC7D7BE4.wem</CachePath>
 				</File>
 				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-007.wav</ShortName>
@@ -245,7 +245,7 @@
 				</File>
 				<File Id="397519460" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetectiveFinal.wav</ShortName>
-					<CachePath>SFX/vocalsDetectiveFinal_4F5D0847.wem</CachePath>
+					<CachePath>SFX/vocalsDetectiveFinal_DADB0DE1.wem</CachePath>
 				</File>
 				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-006.wav</ShortName>
@@ -289,7 +289,7 @@
 				</File>
 				<File Id="526299618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_121CD66F.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_988A8ACB.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
@@ -309,7 +309,7 @@
 				</File>
 				<File Id="594292726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-005.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-005_6C964B85.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-005_A8B5C760.wem</CachePath>
 				</File>
 				<File Id="596458017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-002.wav</ShortName>
@@ -329,7 +329,7 @@
 				</File>
 				<File Id="635973185" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-002.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-002_E097E479.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-002_78A2E40E.wem</CachePath>
 				</File>
 				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-007.wav</ShortName>
@@ -349,7 +349,7 @@
 				</File>
 				<File Id="701428879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-008.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-008_8F6A00EB.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-008_CA3D4E0C.wem</CachePath>
 				</File>
 				<File Id="729812094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-004.wav</ShortName>
@@ -381,7 +381,7 @@
 				</File>
 				<File Id="777666813" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-010.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-010_A86F661B.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-010_D8C68860.wem</CachePath>
 				</File>
 				<File Id="838841969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-008.wav</ShortName>
@@ -389,11 +389,11 @@
 				</File>
 				<File Id="857239412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_6A2B3215.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_AEF55DCA.wem</CachePath>
 				</File>
 				<File Id="867402550" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryCrushed.wav</ShortName>
-					<CachePath>SFX/mysteryCrushed_59711608.wem</CachePath>
+					<CachePath>SFX/mysteryCrushed_81C11EFB.wem</CachePath>
 				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -413,7 +413,7 @@
 				</File>
 				<File Id="911233467" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-007.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-007_A2E5BDA8.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-007_B5059390.wem</CachePath>
 				</File>
 				<File Id="912247419" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-008.wav</ShortName>
@@ -445,7 +445,7 @@
 				</File>
 				<File Id="980823149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-006.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-006_2FDEEC47.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-006_D7E98B72.wem</CachePath>
 				</File>
 				<File Id="984468348" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>The Blue Screen_Main Menu Theme_25Aug2023.wav</ShortName>
@@ -465,7 +465,7 @@
 				</File>
 				<File Id="1034921675" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-009.wav</ShortName>
-					<CachePath>SFX/vocalsDetective-009_96DE4285.wem</CachePath>
+					<CachePath>SFX/vocalsDetective-009_9C160706.wem</CachePath>
 				</File>
 				<File Id="1064893621" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-006.wav</ShortName>
@@ -522,7 +522,7 @@
 						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.2291875" DurationMax="0.38945964">
+				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.21947072" DurationMax="0.3999133">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="185713839" Id="438105790" Default="true"/>
@@ -865,5 +865,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6A6CF583-8C2D-3E49-93D2-DB73304E4502}</FileHash>
+	<FileHash>{2309DC31-694E-8783-3A04-47212343AE5F}</FileHash>
 </SoundBanksInfo>
