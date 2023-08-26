@@ -15,6 +15,363 @@
 							<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="murderScene" ID="{DF9B0DEA-ED3D-411C-A936-175D291EE305}" ShortID="1005320286">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="murderShots" ID="{4C016B9C-A23E-4AB7-8C1D-B46FBA88FB25}" ShortID="674562255">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI" ID="{9B9A0E03-EBA9-4B24-898B-B8247DE4B6F8}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="murderShots" ID="{601D5FEE-8546-44E0-B135-368B4A9AE784}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.168213457076566"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0348027842227378"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.03596287703016"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>murderShots.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="147227719"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="murderShots" ID="{601D5FEE-8546-44E0-B135-368B4A9AE784}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gunCock" ID="{B6F897CB-4503-4CCD-8026-1A2EE63316F5}" ShortID="56383249">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gunCock" ID="{1555C9E3-58DE-45E0-BE9A-EE48B0F485C8}">
+											<Language>SFX</Language>
+											<AudioFile>gunCock.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225175085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gunCock" ID="{1555C9E3-58DE-45E0-BE9A-EE48B0F485C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="neonSign" ID="{B6DD4807-9A0F-4221-9408-81E09808E9B9}" ShortID="298084341">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="neonStartGame" ID="{1C4B0CB0-962C-4A59-93A2-00F010D42824}" ShortID="463040204">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="neonStartGame" ID="{828818D9-6E4D-4F4F-85A3-0A6D0564474D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.076022403744145"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.266578568992831"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>neonStartGame.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1018112364"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="neonStartGame" ID="{828818D9-6E4D-4F4F-85A3-0A6D0564474D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="neonFlickers" ID="{269E79E2-C512-4189-A3A4-246F7549A663}" ShortID="159226200">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="neonFlicker" ID="{FEE523DE-32A9-44AC-81AE-0F04D7A74CFC}" ShortID="1016896931">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="neonFlicker" ID="{1B5A09DB-22FB-40C5-9002-A59B57E1EC94}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.967052590873936"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>neonFlicker.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="505014345"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="neonFlicker" ID="{1B5A09DB-22FB-40C5-9002-A59B57E1EC94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="neonSustain" ID="{EAB2EDAF-951A-4153-AFCF-2CDE65125E4A}" ShortID="624175236">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="neonSustain" ID="{6FAE878D-F5DD-4AA2-BB0D-3ECA2D832914}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.76668445475638"/>
+														<Property Name="LoopEnd" Type="Real64" Value="24.3719853054911"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>neonSustain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52227454"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="neonSustain" ID="{6FAE878D-F5DD-4AA2-BB0D-3ECA2D832914}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="neonFlicker" ID="{FEE523DE-32A9-44AC-81AE-0F04D7A74CFC}"/>
+										<ItemRef Name="neonSustain" ID="{EAB2EDAF-951A-4153-AFCF-2CDE65125E4A}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="diveAudio" ID="{2665FF06-1878-42D0-9000-D8561DE94590}" ShortID="997266006">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="divePop" ID="{4B7019F5-379C-4C65-A2F5-8D04DB11C576}" ShortID="585189575">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Objects" ID="{ABD85159-0345-4FA9-8AE8-3C7A63BB81D1}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="divePop" ID="{051982A9-3F0E-4477-AD76-2C0DF424A32B}">
+											<Language>SFX</Language>
+											<AudioFile>divePop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="345004469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="divePop" ID="{051982A9-3F0E-4477-AD76-2C0DF424A32B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="dripMemory" ID="{0E7A76BF-C042-48F5-89E6-AA3A17774252}" ShortID="449738598">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AFF03154-A5E0-40DE-B658-EB183E171D75}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="dripMemory" ID="{BC3170C0-48CA-4B48-A31F-BB8F6E771CC4}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.989934254327563"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.50436726031957"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>dripMemory.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="32867236"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="dripMemory" ID="{BC3170C0-48CA-4B48-A31F-BB8F6E771CC4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="divePop2nd" ID="{89E7A2BC-322B-4FC9-A628-2DC6579F878A}" ShortID="863664414">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{58FCC04E-E82A-4125-B7A9-1413DDCB674F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="divePop2nd" ID="{F1B4BEE6-CD8C-4B42-ACA3-7625C3723A38}">
+											<Language>SFX</Language>
+											<AudioFile>divePop2nd.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452076868"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="divePop2nd" ID="{F1B4BEE6-CD8C-4B42-ACA3-7625C3723A38}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

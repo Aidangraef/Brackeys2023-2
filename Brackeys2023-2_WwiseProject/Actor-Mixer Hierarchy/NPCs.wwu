@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<ActorMixer Name="NPCs" ID="{20D770C4-C05F-4710-89CC-2EDED02C8692}" ShortID="727254151">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -15,6 +17,1942 @@
 							<ObjectRef Name="NPCs" ID="{4D490F2F-7194-439D-B336-6C189D509A33}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="dialogueSwitcher" ID="{AD9F57D3-BA5C-4D4A-AEAB-128EE0ECDAD3}" ShortID="874440247">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="characterSwitch" ID="{A4FCCCFC-6E86-46EB-A5EB-C595DDC706DF}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="vocalsBen" ID="{EFFD8A63-6AA5-43E9-9D7B-555C702BFBA6}" ShortID="787063668">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{223A429F-5C29-4679-BBA5-B73C4D5D4482}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.25"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="NPCs" ID="{4D490F2F-7194-439D-B336-6C189D509A33}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsBen-001" ID="{C9437B07-7F1F-4DA2-A6D5-91E975A3809D}" ShortID="23069406">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-001" ID="{DD8D466C-2FA6-471A-8ABB-98F978F86E67}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0996101309365291"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.09916344873502"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.5007307478917"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="432340000"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-001" ID="{DD8D466C-2FA6-471A-8ABB-98F978F86E67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-002" ID="{D4B48006-4526-4873-AF83-492DCB098BAD}" ShortID="695655708">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-002" ID="{326DCAC2-E0D4-46A3-B28E-7FF3E1BC1FC9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100455434420772"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100897969374168"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.50139210219707"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="553687529"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-002" ID="{326DCAC2-E0D4-46A3-B28E-7FF3E1BC1FC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-003" ID="{334DDFCD-9E96-407E-BD5A-3CCA927747C1}" ShortID="916649426">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-003" ID="{96ACB372-F618-429F-AFD8-2074DDAF3842}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100405625832224"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.10083655126498"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501166278295606"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="414330125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-003" ID="{96ACB372-F618-429F-AFD8-2074DDAF3842}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-004" ID="{53215AAF-3738-48C4-AB70-82F224907E4B}" ShortID="302954732">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-004" ID="{B1D865C8-9CB4-4395-93AF-9370D5AA9AAF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0999730220816689"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0987488626276076"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.499865110408344"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="736710810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-004" ID="{B1D865C8-9CB4-4395-93AF-9370D5AA9AAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-005" ID="{939137E5-B4DA-4CFF-B441-70DDD4A4A147}" ShortID="413263332">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-005" ID="{80AA9838-5E00-43AF-B9BA-D355237CAAB8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102186612294718"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0984931202840657"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.499852585441633"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="532866258"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-005" ID="{80AA9838-5E00-43AF-B9BA-D355237CAAB8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-006" ID="{A7FD0A0C-BE2B-42CA-8FB4-A2B11561AF70}" ShortID="998991736">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-006" ID="{22CF26F7-D7B1-4680-B12E-63FFF12280EA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102203506435863"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100537144917887"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.50101936307146"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="493927494"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-006" ID="{22CF26F7-D7B1-4680-B12E-63FFF12280EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-007" ID="{FA122B9B-E584-487F-AC12-F140E54CA697}" ShortID="9583659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-007" ID="{E32AC34B-0575-498C-861F-4CAD895FD6CC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100717460053262"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.099362516644474"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.499974117842876"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="637710719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-007" ID="{E32AC34B-0575-498C-861F-4CAD895FD6CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBen-008" ID="{2722D94F-DF7D-434E-B366-DE2D6F9B708D}" ShortID="694329116">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBen-008" ID="{027FB800-1C9D-444E-99E5-4EF59140FAC8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101737128273413"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100427208166889"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.500826120727918"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBen-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983407212"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBen-008" ID="{027FB800-1C9D-444E-99E5-4EF59140FAC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsKevin" ID="{A60FC18D-7FBE-4A89-8F6F-1E354467B176}" ShortID="468438277">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2E6C731B-3DB0-4AA0-84CB-080EF22FFC02}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="NPCs" ID="{4D490F2F-7194-439D-B336-6C189D509A33}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsKevin-001" ID="{FC335342-777D-415F-AD73-76714DBC7549}" ShortID="146100960">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-001" ID="{1FE255CD-B92A-4F59-9840-FDFAF4962834}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.5027452563249"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.5027452563249"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="53288716"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-001" ID="{1FE255CD-B92A-4F59-9840-FDFAF4962834}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-002" ID="{EE44D131-216A-403B-91E5-901FDBBEE8E9}" ShortID="283005980">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-002" ID="{946061E5-9B56-44F5-9B0E-C6CA0FB56DF1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.500717099422991"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.500717099422991"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="555974561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-002" ID="{946061E5-9B56-44F5-9B0E-C6CA0FB56DF1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-003" ID="{453C9F52-6DF3-4ED1-90DD-E1357C10BE92}" ShortID="582541392">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-003" ID="{A9A5FA88-8938-4728-B83A-236D5E34FC6C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.501428553595206"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501428553595206"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="21251891"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-003" ID="{A9A5FA88-8938-4728-B83A-236D5E34FC6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-004" ID="{BBF88D30-F81B-4D80-80F1-92ECA6CFABE9}" ShortID="1051078532">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-004" ID="{28AA17E1-4C29-447C-B1CE-9EC6E1B59ECB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.501200621393697"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501200621393697"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776453115"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-004" ID="{28AA17E1-4C29-447C-B1CE-9EC6E1B59ECB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-005" ID="{89C10E00-E9B3-436C-A079-9F63DF81A7C5}" ShortID="140123675">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-005" ID="{154348EC-C87D-4A9A-B7C2-6D7FD3F86BC5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.502485144806924"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.502485144806924"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="229554145"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-005" ID="{154348EC-C87D-4A9A-B7C2-6D7FD3F86BC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-006" ID="{F5D3CC32-4DFB-4F85-B120-E88AE9F67763}" ShortID="632019129">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-006" ID="{942CD02B-45CF-49C3-9752-DD60F8737ADA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.500178428761651"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.500178428761651"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="92909319"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-006" ID="{942CD02B-45CF-49C3-9752-DD60F8737ADA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-007" ID="{9DD95A09-9CD9-4CE1-8C5B-08B9B60D67AC}" ShortID="423971626">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-007" ID="{3B1067D3-C0F4-4D5D-811C-A53F865EBA5B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101595289613848"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0992993508655127"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501088631824235"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="378289587"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-007" ID="{3B1067D3-C0F4-4D5D-811C-A53F865EBA5B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsKevin-008" ID="{1F022EEF-D046-4D92-846F-13914BF03FED}" ShortID="590672599">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsKevin-008" ID="{2916154D-48D8-462C-8843-7752D8B3E50A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100627996005326"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0989224367509987"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.500865901020861"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsKevin-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="489609137"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsKevin-008" ID="{2916154D-48D8-462C-8843-7752D8B3E50A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsTina" ID="{27394528-0262-486A-B04E-9131A8E218C5}" ShortID="42864028">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7E4FE554-3F58-4598-AEDC-2C79A2C1C902}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsTina2-001" ID="{AB6FF62A-9EA7-470F-B3EC-8C278C91B346}" ShortID="413468472">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-001" ID="{AA5B319D-F7F7-4ACE-B6A1-DD58F82D6456}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.103434379161118"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0985089325343986"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501410466600089"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="560825894"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-001" ID="{AA5B319D-F7F7-4ACE-B6A1-DD58F82D6456}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-002" ID="{4DA925F4-F53D-4226-8AFA-97A670431BEE}" ShortID="487403636">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-002" ID="{3DE611DB-3A13-4C6C-8B0D-284656ED17C8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.103787949400799"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.101792027296937"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.502972370173102"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509130527"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-002" ID="{3DE611DB-3A13-4C6C-8B0D-284656ED17C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-003" ID="{E0A423F5-5908-4F6F-A5C6-5AAD90C26B6D}" ShortID="764756802">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-003" ID="{78F90E1C-59B3-4CC4-A406-CF12514AE614}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100559420772304"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.101490526520195"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.502797103861517"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84863909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-003" ID="{78F90E1C-59B3-4CC4-A406-CF12514AE614}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-004" ID="{EAA4F6F0-500A-4C65-9176-D69FF5FFA571}" ShortID="889030783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-004" ID="{0865BA6E-51B6-4E03-9E1A-583EEF0D56EF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.103179926764314"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.101303928095872"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503705642476698"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="64071679"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-004" ID="{0865BA6E-51B6-4E03-9E1A-583EEF0D56EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-005" ID="{0F9330E9-50B8-4680-903C-86A773766ECF}" ShortID="588647081">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-005" ID="{171F500C-4CFF-422E-8272-E55DCA159774}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102977002885042"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100168539169996"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503651159565025"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="660616321"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-005" ID="{171F500C-4CFF-422E-8272-E55DCA159774}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-006" ID="{387B5693-D2EA-4759-980E-92BB8C5ABA30}" ShortID="328661742">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-006" ID="{4B28D81E-4EA7-4646-8B1B-0227ABB1E486}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102393558588549"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0996261651131825"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.502743148024856"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409836546"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-006" ID="{4B28D81E-4EA7-4646-8B1B-0227ABB1E486}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-007" ID="{DB55DAE9-8782-48BD-A3C6-B571133E576E}" ShortID="753714564">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-007" ID="{CE738252-A222-4EFA-B733-125E97EABB90}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101698651797603"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100701606191744"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.501513939747004"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="962974613"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-007" ID="{CE738252-A222-4EFA-B733-125E97EABB90}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsTina2-008" ID="{DC407989-AE61-4AFB-B623-467D58A403FF}" ShortID="210964754">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsTina2-008" ID="{8B0A4723-6803-4188-A897-4B7582888700}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102141977363515"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100380908788282"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503665612516645"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsTina2-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="131293917"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsTina2-008" ID="{8B0A4723-6803-4188-A897-4B7582888700}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsWally" ID="{8C95F95F-5F90-4431-97F1-DF06A6E84DFE}" ShortID="280488064">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{45629B57-EE7D-4E03-9D55-5E0E1E5F9E00}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VocalsWally-001" ID="{0E1CF02C-0209-4784-9093-ABF5C6A4E38F}" ShortID="864273952">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-001" ID="{0AB350F5-91A5-4711-BE5E-7E91F6568915}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.305076566125289"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.305076566125289"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="289387898"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-001" ID="{0AB350F5-91A5-4711-BE5E-7E91F6568915}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-002" ID="{D2005762-418B-4CB1-B531-D9F401B92CD9}" ShortID="342695092">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-002" ID="{60E8587F-C4AA-4CCE-9F99-9924012F0DB8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.300790023201856"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.300790023201856"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="616338181"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-002" ID="{60E8587F-C4AA-4CCE-9F99-9924012F0DB8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-003" ID="{9CD25050-7B35-48FB-85BE-2436ABE27B41}" ShortID="310915435">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>53</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-003" ID="{BC0BE2A0-6B2D-4120-99FC-A473D02A4373}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.302126232598609"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.302126232598609"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="4833183"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-003" ID="{BC0BE2A0-6B2D-4120-99FC-A473D02A4373}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-004" ID="{1B2CAC3A-1224-4CE9-84EF-5CF72063CA81}" ShortID="332544071">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-004" ID="{30EB4254-9048-4DF3-A9B6-F8264A24A283}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.301982453596283"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.301982453596283"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100112895"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-004" ID="{30EB4254-9048-4DF3-A9B6-F8264A24A283}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-005" ID="{68388648-D778-4A2E-ACBD-85C7FB764AA9}" ShortID="911375336">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-005" ID="{45684199-D221-4DA2-AB11-BAC4929EB450}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.30650744392885"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.30650744392885"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="957187976"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-005" ID="{45684199-D221-4DA2-AB11-BAC4929EB450}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-006" ID="{1CFDB34D-D9D0-40B3-A838-095C7B8D09CD}" ShortID="464866753">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-006" ID="{F054C3CC-45B9-498A-BCD5-17541AC806E9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.302739849187935"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.302739849187935"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="130825561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-006" ID="{F054C3CC-45B9-498A-BCD5-17541AC806E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-007" ID="{DA3B9AB1-F693-4FFD-9611-B1D73ED0CF50}" ShortID="937280391">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-007" ID="{5F913D75-776A-467C-ABD1-0D11FCB97461}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.302557521268368"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.302557521268368"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="382571462"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-007" ID="{5F913D75-776A-467C-ABD1-0D11FCB97461}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VocalsWally-008" ID="{B2E01C99-7C75-44C0-B64D-C6CDCC6DF6AA}" ShortID="563741262">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VocalsWally-008" ID="{D4B25FF2-3B8B-4BDE-A57B-29B7DF07FEE5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.303832414926527"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.303832414926527"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VocalsWally-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="121403949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VocalsWally-008" ID="{D4B25FF2-3B8B-4BDE-A57B-29B7DF07FEE5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsVinnie" ID="{1C4699BC-7914-4028-8A0F-D507DCBF9174}" ShortID="941100994">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D4615506-3531-43DB-AFFA-5ECC96389805}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsVinnie2-001" ID="{367D42BC-43E4-4B23-99F6-E97CA8B92E4A}" ShortID="403231201">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-001" ID="{99A4BE26-82E1-4F36-8CAF-FD40C8C98A4E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.503198955916471"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503198955916471"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="361036282"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-001" ID="{99A4BE26-82E1-4F36-8CAF-FD40C8C98A4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-002" ID="{D92E8E7A-1D4F-4A80-A0C2-970AE7285F44}" ShortID="135838605">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-002" ID="{68456A61-EDB1-412D-914A-86C2F03400E8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.507098317865431"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.507098317865431"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632492742"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-002" ID="{68456A61-EDB1-412D-914A-86C2F03400E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-003" ID="{1116881B-FED2-4806-94EF-1DB9F4CEF50D}" ShortID="674195505">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-003" ID="{AEBE8BB2-6C75-4B0C-9F43-1361FA06EC6F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.505600928074247"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.505600928074247"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="248109132"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-003" ID="{AEBE8BB2-6C75-4B0C-9F43-1361FA06EC6F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-004" ID="{AF37382A-65C9-4667-BB90-57025CF6E1AA}" ShortID="939551361">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-004" ID="{36974B4E-6C51-4A19-B95C-4DB3F3DFAE8A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.503671113689095"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503671113689095"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="894259500"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-004" ID="{36974B4E-6C51-4A19-B95C-4DB3F3DFAE8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-005" ID="{7731ABB6-3302-4B50-83E1-0DAA55915EA7}" ShortID="263747954">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-005" ID="{06E0F011-96F3-4C9F-8249-012C7AFFEBAC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.503632830626451"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503632830626451"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="625714746"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-005" ID="{06E0F011-96F3-4C9F-8249-012C7AFFEBAC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-006" ID="{67BD136E-DDE6-4D0A-86DE-F3CF182C5752}" ShortID="904417756">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-006" ID="{9C8B5C08-59D4-4A69-8DF4-DC831D3A90DB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.503419591067285"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503419591067285"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="485430302"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-006" ID="{9C8B5C08-59D4-4A69-8DF4-DC831D3A90DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-007" ID="{179041C0-CC54-43A1-8224-EA6CCA1FC0B9}" ShortID="756342854">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-007" ID="{B75A46D4-9461-4F9C-8F05-7C6DD5511846}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.505262422660478"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.505262422660478"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="753997685"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-007" ID="{B75A46D4-9461-4F9C-8F05-7C6DD5511846}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsVinnie2-008" ID="{48DA820F-8734-43BF-8C02-855757FB6A53}" ShortID="1006982504">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsVinnie2-008" ID="{680B733A-9F84-43C5-BECB-FE0D7E2C9D78}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.505581133990719"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.505581133990719"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsVinnie2-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="912247419"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsVinnie2-008" ID="{680B733A-9F84-43C5-BECB-FE0D7E2C9D78}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsPhone" ID="{3B1CDF2D-DF29-4360-81D2-BA653A06AB40}" ShortID="284251489">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1600</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E1BFCF2C-97F0-48FA-A93B-75E0CDBCEAA4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsBarkeep-001" ID="{7A59017B-3299-4D1B-A455-A1F1FD6220E7}" ShortID="634696923">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-001" ID="{7BD155D3-FCFE-418B-8DCF-B93F1AD0E407}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100937258313999"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0962786156225832"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.504686291569992"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="245953949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-001" ID="{7BD155D3-FCFE-418B-8DCF-B93F1AD0E407}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-002" ID="{B21A6E47-5F0D-4B2B-9605-F6DD3A6873D9}" ShortID="689571678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-002" ID="{E1718FA6-A9D8-4F54-A8BF-63B309259C32}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.102582439095128"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.098247969837587"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.504243256960559"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="209933720"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-002" ID="{E1718FA6-A9D8-4F54-A8BF-63B309259C32}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-003" ID="{073EF5B6-32DD-4866-84B0-822AB04B37E5}" ShortID="687798154">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-003" ID="{B94E4EBE-0119-45B8-8872-6C1D65EA9831}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100032990139211"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.100032990139211"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.504514211136891"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365395187"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-003" ID="{B94E4EBE-0119-45B8-8872-6C1D65EA9831}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-004" ID="{EAEFC6CA-BAF8-42CD-8DDF-9F680E671B2F}" ShortID="839972403">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-004" ID="{0CDDC924-C682-4C5B-B6A8-96D5B80FBDB2}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.100496664733179"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.105856486852281"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.50650319025522"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="975461600"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-004" ID="{0CDDC924-C682-4C5B-B6A8-96D5B80FBDB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-005" ID="{BFF14119-92E7-4F41-9784-D1F30EE345F7}" ShortID="113136">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-005" ID="{D2FC432B-FDD0-49F7-99F5-5DD925539024}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.103560034802784"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.10079843387471"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.503992169373549"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="903007647"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-005" ID="{D2FC432B-FDD0-49F7-99F5-5DD925539024}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-006" ID="{BE0AD884-E593-4235-BC1B-BDE3EBDCBBA8}" ShortID="581529006">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-006" ID="{991E4346-A791-4E8B-A61F-A022DC4C0B07}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.106535648685228"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.101001329273009"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.505006646365042"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766243243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-006" ID="{991E4346-A791-4E8B-A61F-A022DC4C0B07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-007" ID="{B9D3FCE2-6341-404D-BBEE-8F989B0C69FB}" ShortID="27779631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-007" ID="{3A105061-5AFB-400B-9AB7-91AC6D06F533}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101117314385151"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.102561847447796"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.505586571925754"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="262041955"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-007" ID="{3A105061-5AFB-400B-9AB7-91AC6D06F533}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep-008" ID="{A8E0C776-035F-42AF-BDE1-EF399ABF3D4E}" ShortID="401708754">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep-008" ID="{317E9DED-9639-49B9-95C5-78417152C1CB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101012253480278"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.109029098994586"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.506664636504253"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="152384243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep-008" ID="{317E9DED-9639-49B9-95C5-78417152C1CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="vocalsBarkeep" ID="{5307FFD0-E73B-4632-90BD-78C9BFBD2AAD}" ShortID="785099671">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0317C5F7-62A3-429B-9F8C-A73EAA084975}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vocalsBarkeep2-001" ID="{A0007222-5EDB-4B32-89C4-83CA8154CF34}" ShortID="123367516">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-001" ID="{F22574D1-C770-4E29-8841-83BDF9529B75}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="519605749"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-001" ID="{F22574D1-C770-4E29-8841-83BDF9529B75}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-002" ID="{1CFDABA8-AADC-4F88-B47A-8302FA9CD27C}" ShortID="514780761">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-002" ID="{9005A4A7-123B-406D-B269-E68230CD4B4D}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="596458017"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-002" ID="{9005A4A7-123B-406D-B269-E68230CD4B4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-003" ID="{EFF76187-B03F-4328-BA07-C77C33D65D26}" ShortID="299196310">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-003" ID="{109688C9-6041-47B3-B9A5-166C9E15C81A}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="278849896"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-003" ID="{109688C9-6041-47B3-B9A5-166C9E15C81A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-004" ID="{E4405BFB-6EF1-482F-906D-75FEFABE07C5}" ShortID="291944846">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-004" ID="{C78F7624-BFEA-440C-ACDF-F1551936C61D}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="729812094"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-004" ID="{C78F7624-BFEA-440C-ACDF-F1551936C61D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-005" ID="{52AED87F-51A4-4687-BE00-8E3DA01E6560}" ShortID="127503701">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-005" ID="{D7517763-205B-4990-959F-EE219C1E9B33}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="157001152"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-005" ID="{D7517763-205B-4990-959F-EE219C1E9B33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-006" ID="{A52832AF-10A0-421F-AD13-81D9A706C210}" ShortID="900174855">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-006" ID="{56FD6B96-055F-4FEF-9C4E-EC32D24438E9}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="454510249"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-006" ID="{56FD6B96-055F-4FEF-9C4E-EC32D24438E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-007" ID="{45EBE678-0BE4-405F-AF7E-41721D7FC5BE}" ShortID="979932870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-007" ID="{03DB5E20-609C-405B-9934-0BBFCA4F1BF6}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="56598575"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-007" ID="{03DB5E20-609C-405B-9934-0BBFCA4F1BF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vocalsBarkeep2-008" ID="{114E43D2-C1DC-4AE4-8792-6E4F780A4445}" ShortID="486669121">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vocalsBarkeep2-008" ID="{1A2978BF-4B9A-4A42-BAF9-DB7A1CD3B119}">
+													<Language>SFX</Language>
+													<AudioFile>vocalsBarkeep2-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="838841969"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vocalsBarkeep2-008" ID="{1A2978BF-4B9A-4A42-BAF9-DB7A1CD3B119}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsTina" ID="{27394528-0262-486A-B04E-9131A8E218C5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsPhone" ID="{3B1CDF2D-DF29-4360-81D2-BA653A06AB40}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsWally" ID="{8C95F95F-5F90-4431-97F1-DF06A6E84DFE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsBen" ID="{EFFD8A63-6AA5-43E9-9D7B-555C702BFBA6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsKevin" ID="{A60FC18D-7FBE-4A89-8F6F-1E354467B176}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsVinnie" ID="{1C4699BC-7914-4028-8A0F-D507DCBF9174}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="vocalsBarkeep" ID="{5307FFD0-E73B-4632-90BD-78C9BFBD2AAD}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="switchKevin" ID="{9FB83119-932B-4A84-8A0E-3B8320C841C0}"/>
+										<ItemList>
+											<ItemRef Name="vocalsKevin" ID="{A60FC18D-7FBE-4A89-8F6F-1E354467B176}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchPhone" ID="{EC0FC65E-C14E-4CBE-B72F-219AB1D7895F}"/>
+										<ItemList>
+											<ItemRef Name="vocalsPhone" ID="{3B1CDF2D-DF29-4360-81D2-BA653A06AB40}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
+										<ItemList>
+											<ItemRef Name="vocalsTina" ID="{27394528-0262-486A-B04E-9131A8E218C5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchWally" ID="{A278707C-0006-45D3-BF98-44229ACE3593}"/>
+										<ItemList>
+											<ItemRef Name="vocalsWally" ID="{8C95F95F-5F90-4431-97F1-DF06A6E84DFE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchVinnie" ID="{91C20481-F05F-4FCE-A2C6-A283AF73B80F}"/>
+										<ItemList>
+											<ItemRef Name="vocalsVinnie" ID="{1C4699BC-7914-4028-8A0F-D507DCBF9174}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+										<ItemList>
+											<ItemRef Name="vocalsBarkeep" ID="{5307FFD0-E73B-4632-90BD-78C9BFBD2AAD}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="switchBen" ID="{27FB8BD2-91EE-4D4A-9F76-0A27C6B51E45}"/>
+										<ItemList>
+											<ItemRef Name="vocalsBen" ID="{EFFD8A63-6AA5-43E9-9D7B-555C702BFBA6}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

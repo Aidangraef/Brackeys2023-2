@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
   defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenHeightWeb: 540
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -156,7 +156,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.---Studios.Brackeys-2023.2-Jam
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -617,7 +618,10 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: USE_PHYSICS2D;USE_CINEMACHINE;TMP_PRESENT;USE_PHYSICS2D;TMP_PRESENT;USE_TIMELINE
+    WebGL: USE_PHYSICS2D;TMP_PRESENT;USE_TIMELINE
+    Windows Store Apps: USE_PHYSICS2D;TMP_PRESENT;USE_TIMELINE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

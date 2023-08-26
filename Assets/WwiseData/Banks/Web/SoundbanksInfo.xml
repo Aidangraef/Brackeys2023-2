@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{02931163-AF92-764F-FA92-11600772EC44}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D195639F-FB82-7982-9488-C83ABD854A64}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -33,25 +33,835 @@
 				<GameParameter Id="988953028" Name="SFXVolume"/>
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="185713839" Name="roomState">
+					<States>
+						<State Id="340271938" Name="walking"/>
+						<State Id="438105790" Name="outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2608492946" Name="diving"/>
+						<State Id="3509424520" Name="memory"/>
+						<State Id="3553349781" Name="inside"/>
+						<State Id="3966194980" Name="ending"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3858903546" Name="characterSwitch">
+					<Switches>
+						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="1025251668" Name="switchVinnie"/>
+						<Switch Id="2596618219" Name="switchBarkeep"/>
+						<Switch Id="3053756386" Name="switchWally"/>
+						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3661604879" Name="switchPhone"/>
+						<Switch Id="3928776531" Name="switchTina"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{746A2EF7-1D57-1E8B-9388-4B7C76250D66}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E62DE69B-FBD0-39A5-55A1-7C11A2E18DEA}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="4833183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-003.wav</ShortName>
+					<CachePath>SFX/VocalsWally-003_7316207B.wem</CachePath>
+				</File>
+				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-003.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-003_563DD58F.wem</CachePath>
+				</File>
+				<File Id="32867236" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dripMemory.wav</ShortName>
+					<CachePath>SFX/dripMemory_0C56AEE0.wem</CachePath>
+				</File>
+				<File Id="52227454" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonSustain.wav</ShortName>
+					<CachePath>SFX/neonSustain_FED175CC.wem</CachePath>
+				</File>
+				<File Id="53288716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-001.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-001_F34FEF3F.wem</CachePath>
+				</File>
+				<File Id="56598575" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-007.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="58352512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-004.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-004_83CA53CA.wem</CachePath>
+				</File>
+				<File Id="64071679" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-004.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-004_08B47BC6.wem</CachePath>
+				</File>
+				<File Id="84863909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-003.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-003_DF39ADDA.wem</CachePath>
+				</File>
+				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-006.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-006_C8C15967.wem</CachePath>
+				</File>
+				<File Id="98737313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-003.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-003_DE984A49.wem</CachePath>
+				</File>
+				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-004.wav</ShortName>
+					<CachePath>SFX/VocalsWally-004_066B5527.wem</CachePath>
+				</File>
+				<File Id="113882134" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Ending Theme_26Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Ending Theme_26Aug2023_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="121403949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-008.wav</ShortName>
+					<CachePath>SFX/VocalsWally-008_8DF222D7.wem</CachePath>
+				</File>
+				<File Id="130825561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-006.wav</ShortName>
+					<CachePath>SFX/VocalsWally-006_F311770F.wem</CachePath>
+				</File>
+				<File Id="131293917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-008.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-008_180252C5.wem</CachePath>
+				</File>
+				<File Id="133817862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-004.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-004_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="137141922" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DeliverComplete.wav</ShortName>
-					<CachePath>SFX/DeliverComplete_024042DF.wem</CachePath>
+					<CachePath>SFX/DeliverComplete_D296B342.wem</CachePath>
+				</File>
+				<File Id="147227719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>murderShots.wav</ShortName>
+					<CachePath>SFX/murderShots_CBE3D817.wem</CachePath>
+				</File>
+				<File Id="149329997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-011.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-011_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="152384243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-008.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-008_DE68216E.wem</CachePath>
+				</File>
+				<File Id="156683581" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-008.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="157001152" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-005.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="165332797" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-003.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="176846604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-010.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-010_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_F6A5366D.wem</CachePath>
+				</File>
+				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-002.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-002_EAACE599.wem</CachePath>
+				</File>
+				<File Id="218386730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-004.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-004_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="225175085" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gunCock.wav</ShortName>
+					<CachePath>SFX/gunCock_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="226020652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailReady.wav</ShortName>
-					<CachePath>SFX/mailReady_5004E827.wem</CachePath>
+					<CachePath>SFX/mailReady_C2F9A30D.wem</CachePath>
+				</File>
+				<File Id="229554145" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-005.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-005_71CCA37B.wem</CachePath>
+				</File>
+				<File Id="245039638" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-006.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-006_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="245953949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-001.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-001_88F253A3.wem</CachePath>
+				</File>
+				<File Id="248109132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-003.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-003_3FC805C7.wem</CachePath>
+				</File>
+				<File Id="254834334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The_Blue_Screen_Dive_Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The_Blue_Screen_Dive_Theme_25Aug2023_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="262041955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-007.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-007_D9694653.wem</CachePath>
+				</File>
+				<File Id="278849896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-003.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="287062502" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Bar Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Bar Theme_25Aug2023_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="289387898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-001.wav</ShortName>
+					<CachePath>SFX/VocalsWally-001_D5CC2DD7.wem</CachePath>
+				</File>
+				<File Id="328961177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-009.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mysteryUnCrushed.wav</ShortName>
+					<CachePath>SFX/mysteryUnCrushed_64B81097.wem</CachePath>
+				</File>
+				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-001.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-001_226B8B7F.wem</CachePath>
+				</File>
+				<File Id="363383916" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-007.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-007_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="365395187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-003.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-003_851C99F3.wem</CachePath>
+				</File>
+				<File Id="373562971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-001.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-001_EC7D7BE4.wem</CachePath>
+				</File>
+				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-007.wav</ShortName>
+					<CachePath>SFX/VocalsWally-007_02BB463F.wem</CachePath>
+				</File>
+				<File Id="397519460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetectiveFinal.wav</ShortName>
+					<CachePath>SFX/vocalsDetectiveFinal_DADB0DE1.wem</CachePath>
+				</File>
+				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-006.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-006_708FC496.wem</CachePath>
+				</File>
+				<File Id="414330125" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-003.wav</ShortName>
+					<CachePath>SFX/vocalsBen-003_9DDCF442.wem</CachePath>
+				</File>
+				<File Id="432340000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-001.wav</ShortName>
+					<CachePath>SFX/vocalsBen-001_0CE7D5AD.wem</CachePath>
+				</File>
+				<File Id="452076868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>divePop2nd.wav</ShortName>
+					<CachePath>SFX/divePop2nd_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="454510249" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-006.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-006_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="485430302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-006.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-006_E602AE1F.wem</CachePath>
+				</File>
+				<File Id="491441777" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-002.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="493927494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-006.wav</ShortName>
+					<CachePath>SFX/vocalsBen-006_10F647BC.wem</CachePath>
+				</File>
+				<File Id="505014345" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonFlicker.wav</ShortName>
+					<CachePath>SFX/neonFlicker_520D05E3.wem</CachePath>
+				</File>
+				<File Id="509130527" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-002.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-002_55AE7C1C.wem</CachePath>
+				</File>
+				<File Id="519605749" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-001.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="526299618" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_988A8ACB.wem</CachePath>
+				</File>
+				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-005.wav</ShortName>
+					<CachePath>SFX/vocalsBen-005_EBA2F5B0.wem</CachePath>
+				</File>
+				<File Id="549967391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-001.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="553687529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-002.wav</ShortName>
+					<CachePath>SFX/vocalsBen-002_051ADCE7.wem</CachePath>
+				</File>
+				<File Id="555974561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-002.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-002_A1E9C817.wem</CachePath>
+				</File>
+				<File Id="594292726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-005.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-005_A8B5C760.wem</CachePath>
+				</File>
+				<File Id="596458017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-002.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="616338181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-002.wav</ShortName>
+					<CachePath>SFX/VocalsWally-002_33886FAF.wem</CachePath>
+				</File>
+				<File Id="625714746" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-005.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-005_12AE5883.wem</CachePath>
+				</File>
+				<File Id="632492742" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-002.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-002_B99AAD37.wem</CachePath>
+				</File>
+				<File Id="635973185" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-002.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-002_78A2E40E.wem</CachePath>
+				</File>
+				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-007.wav</ShortName>
+					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
+				</File>
+				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cigExtinguish.wav</ShortName>
+					<CachePath>SFX/cigExtinguish_E15BDDB9.wem</CachePath>
+				</File>
+				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-005.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="660616321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-005.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-005_78F679F7.wem</CachePath>
+				</File>
+				<File Id="701428879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-008.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-008_CA3D4E0C.wem</CachePath>
+				</File>
+				<File Id="723186884" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Memory Theme_26Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Memory Theme_26Aug2023_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="729812094" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-004.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-004_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="736710810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBen-004.wav</ShortName>
+					<CachePath>SFX/vocalsBen-004_5D39340A.wem</CachePath>
+				</File>
+				<File Id="753997685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-007.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-007_248DD6CF.wem</CachePath>
+				</File>
+				<File Id="754295549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-012.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-012_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="766243243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-006.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-006_7BAB9924.wem</CachePath>
+				</File>
+				<File Id="772547028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>exhale.wav</ShortName>
+					<CachePath>SFX/exhale_832CEAF3.wem</CachePath>
+				</File>
+				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsKevin-004.wav</ShortName>
+					<CachePath>SFX/vocalsKevin-004_F7D5790F.wem</CachePath>
+				</File>
+				<File Id="777666813" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-010.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-010_D8C68860.wem</CachePath>
+				</File>
+				<File Id="838841969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep2-008.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep2-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="857239412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_AEF55DCA.wem</CachePath>
+				</File>
+				<File Id="867402550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mysteryCrushed.wav</ShortName>
+					<CachePath>SFX/mysteryCrushed_81C11EFB.wem</CachePath>
+				</File>
+				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>buttonClick.wav</ShortName>
+					<CachePath>SFX/buttonClick_ED1E115E.wem</CachePath>
+				</File>
+				<File Id="894259500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-004.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-004_0E299167.wem</CachePath>
 				</File>
 				<File Id="895541830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Failure_01-10_Ensemble-Small_DRY.wav</ShortName>
-					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_8549DCFE.wem</CachePath>
+					<CachePath>SFX/Failure_01-10_Ensemble-Small_DRY_4FD7D9B3.wem</CachePath>
+				</File>
+				<File Id="903007647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-005.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-005_18D86DB6.wem</CachePath>
+				</File>
+				<File Id="911233467" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-007.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-007_B5059390.wem</CachePath>
+				</File>
+				<File Id="912247419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsVinnie2-008.wav</ShortName>
+					<CachePath>SFX/vocalsVinnie2-008_3285CF1F.wem</CachePath>
+				</File>
+				<File Id="923676968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-001.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-001_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="952124549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-002.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-002_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="957187976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VocalsWally-005.wav</ShortName>
+					<CachePath>SFX/VocalsWally-005_4DE7BA8B.wem</CachePath>
+				</File>
+				<File Id="959757076" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-003.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-003_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="962974613" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsTina2-007.wav</ShortName>
+					<CachePath>SFX/vocalsTina2-007_942A7DCB.wem</CachePath>
+				</File>
+				<File Id="975461600" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsBarkeep-004.wav</ShortName>
+					<CachePath>SFX/vocalsBarkeep-004_470C1E51.wem</CachePath>
+				</File>
+				<File Id="980823149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-006.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-006_D7E98B72.wem</CachePath>
+				</File>
+				<File Id="984468348" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Main Menu Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Main Menu Theme_25Aug2023_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-008.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-008_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1018112364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>neonStartGame.wav</ShortName>
+					<CachePath>SFX/neonStartGame_22DD5C8F.wem</CachePath>
+				</File>
+				<File Id="1018975967" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-005.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-005_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1034921675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-009.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-009_9C160706.wem</CachePath>
+				</File>
+				<File Id="1064893621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>concreteFootsteps-006.wav</ShortName>
+					<CachePath>SFX/concreteFootsteps-006_3F75BDB9.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="4051332235" Name="buttonClick" DurationType="OneShot" DurationMin="0.02078266" DurationMax="0.02078266">
+					<MediaRefs>
+						<MediaRef Id="892375809"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="2.5361304" DurationMax="2.8005846">
+					<MediaRefs>
+						<MediaRef Id="58352512"/>
+						<MediaRef Id="98737313"/>
+						<MediaRef Id="373562971"/>
+						<MediaRef Id="397519460"/>
+						<MediaRef Id="594292726"/>
+						<MediaRef Id="635973185"/>
+						<MediaRef Id="701428879"/>
+						<MediaRef Id="777666813"/>
+						<MediaRef Id="911233467"/>
+						<MediaRef Id="980823149"/>
+						<MediaRef Id="1034921675"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1686862521" Name="divePlay" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
+					<MediaRefs>
+						<MediaRef Id="867402550"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1997425944" Name="divePop" DurationType="OneShot" DurationMin="1.9807397" DurationMax="2.2233055">
+					<MediaRefs>
+						<MediaRef Id="452076868"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2973970440" Name="diveSuccess" DurationType="OneShot" DurationMin="3.4046047" DurationMax="3.6070533">
+					<MediaRefs>
+						<MediaRef Id="32867236"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3875678176" Name="endingStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3966194980" Name="ending"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4122450220" Name="enterBar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1501097736" Name="exitMemory" DurationType="OneShot" DurationMin="2.9540613" DurationMax="2.9540613">
+					<MediaRefs>
+						<MediaRef Id="346905751"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.21947072" DurationMax="0.3999133">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="438105790" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="149329997"/>
+								<MediaRef Id="176846604"/>
+								<MediaRef Id="218386730"/>
+								<MediaRef Id="328961177"/>
+								<MediaRef Id="363383916"/>
+								<MediaRef Id="754295549"/>
+								<MediaRef Id="923676968"/>
+								<MediaRef Id="952124549"/>
+								<MediaRef Id="959757076"/>
+								<MediaRef Id="1015166504"/>
+								<MediaRef Id="1018975967"/>
+								<MediaRef Id="1064893621"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3509424520"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="2608492946"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3553349781"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="340271938"/>
+							<MediaRefs>
+								<MediaRef Id="149329997"/>
+								<MediaRef Id="176846604"/>
+								<MediaRef Id="218386730"/>
+								<MediaRef Id="328961177"/>
+								<MediaRef Id="363383916"/>
+								<MediaRef Id="754295549"/>
+								<MediaRef Id="923676968"/>
+								<MediaRef Id="952124549"/>
+								<MediaRef Id="959757076"/>
+								<MediaRef Id="1015166504"/>
+								<MediaRef Id="1018975967"/>
+								<MediaRef Id="1064893621"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3171753105" Name="neonStartGame"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="340271938" Name="walking"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2610950761" Name="gunCock" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="225175085"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4118680780" Name="memoryStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3509424520" Name="memory"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2097039607" Name="murderShots" DurationType="OneShot" DurationMin="2.0011601" DurationMax="2.0011601">
+					<MediaRefs>
+						<MediaRef Id="147227719"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="183604237"/>
+						<MediaRef Id="526299618"/>
+						<MediaRef Id="857239412"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3553349781"/>
+							<MediaRefs>
+								<MediaRef Id="287062502"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="340271938"/>
+							<MediaRefs>
+								<MediaRef Id="287062502"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="438105790"/>
+							<MediaRefs>
+								<MediaRef Id="984468348"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="984468348"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3966194980"/>
+							<MediaRefs>
+								<MediaRef Id="113882134"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="2608492946"/>
+							<MediaRefs>
+								<MediaRef Id="254834334"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3509424520"/>
+							<MediaRefs>
+								<MediaRef Id="723186884"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="2626890067" Name="neonFlicker"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2626890067" Name="neonFlicker" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="52227454"/>
+						<MediaRef Id="505014345"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3171753105" Name="neonStartGame" DurationType="OneShot" DurationMin="26.11813" DurationMax="26.11813">
+					<MediaRefs>
+						<MediaRef Id="1018112364"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3988978802" Name="npcBarkeep" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="2596618219" Name="switchBarkeep"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="216426317" Name="npcBen" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3469465608" Name="switchBen"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="2124506477" Name="npcKevin" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="385597812" Name="switchKevin"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="133505754" Name="npcPhone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3661604879" Name="switchPhone"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="4041656984" Name="npcTalk" DurationType="OneShot" DurationMin="0.19431554" DurationMax="0.805">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="385597812"/>
+							<MediaRefs>
+								<MediaRef Id="21251891"/>
+								<MediaRef Id="53288716"/>
+								<MediaRef Id="92909319"/>
+								<MediaRef Id="229554145"/>
+								<MediaRef Id="555974561"/>
+								<MediaRef Id="776453115"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3661604879"/>
+							<MediaRefs>
+								<MediaRef Id="152384243"/>
+								<MediaRef Id="209933720"/>
+								<MediaRef Id="245953949"/>
+								<MediaRef Id="262041955"/>
+								<MediaRef Id="365395187"/>
+								<MediaRef Id="766243243"/>
+								<MediaRef Id="903007647"/>
+								<MediaRef Id="975461600"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3928776531"/>
+							<MediaRefs>
+								<MediaRef Id="64071679"/>
+								<MediaRef Id="84863909"/>
+								<MediaRef Id="131293917"/>
+								<MediaRef Id="409836546"/>
+								<MediaRef Id="509130527"/>
+								<MediaRef Id="660616321"/>
+								<MediaRef Id="962974613"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3053756386"/>
+							<MediaRefs>
+								<MediaRef Id="4833183"/>
+								<MediaRef Id="100112895"/>
+								<MediaRef Id="121403949"/>
+								<MediaRef Id="130825561"/>
+								<MediaRef Id="289387898"/>
+								<MediaRef Id="382571462"/>
+								<MediaRef Id="616338181"/>
+								<MediaRef Id="957187976"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="1025251668"/>
+							<MediaRefs>
+								<MediaRef Id="248109132"/>
+								<MediaRef Id="361036282"/>
+								<MediaRef Id="485430302"/>
+								<MediaRef Id="625714746"/>
+								<MediaRef Id="632492742"/>
+								<MediaRef Id="753997685"/>
+								<MediaRef Id="894259500"/>
+								<MediaRef Id="912247419"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="2596618219" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="56598575"/>
+								<MediaRef Id="157001152"/>
+								<MediaRef Id="278849896"/>
+								<MediaRef Id="454510249"/>
+								<MediaRef Id="519605749"/>
+								<MediaRef Id="596458017"/>
+								<MediaRef Id="729812094"/>
+								<MediaRef Id="838841969"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3858903546" Id="3469465608"/>
+							<MediaRefs>
+								<MediaRef Id="414330125"/>
+								<MediaRef Id="432340000"/>
+								<MediaRef Id="493927494"/>
+								<MediaRef Id="532866258"/>
+								<MediaRef Id="553687529"/>
+								<MediaRef Id="637710719"/>
+								<MediaRef Id="736710810"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="315848864" Name="npcTina" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3928776531" Name="switchTina"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="4101721491" Name="npcVinnie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="1025251668" Name="switchVinnie"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1157041911" Name="npcWally" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="3858903546" Id="3053756386" Name="switchWally"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="61023377" Name="returnToMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3086529455" Name="smokeExhale" DurationType="OneShot" DurationMin="1.021497" DurationMax="1.1465918">
+					<MediaRefs>
+						<MediaRef Id="772547028"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="360445344" Name="smokeExtinguish" DurationType="OneShot" DurationMin="1.1678272" DurationMax="1.2735245">
+					<MediaRefs>
+						<MediaRef Id="649754737"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="2.0028148" DurationMax="2.0028148">
 					<MediaRefs>
 						<MediaRef Id="137141922"/>
@@ -68,7 +878,33 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="185713839" Name="roomState">
+					<States>
+						<State Id="340271938" Name="walking"/>
+						<State Id="438105790" Name="outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2608492946" Name="diving"/>
+						<State Id="3509424520" Name="memory"/>
+						<State Id="3553349781" Name="inside"/>
+						<State Id="3966194980" Name="ending"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3858903546" Name="characterSwitch">
+					<Switches>
+						<Switch Id="385597812" Name="switchKevin"/>
+						<Switch Id="1025251668" Name="switchVinnie"/>
+						<Switch Id="2596618219" Name="switchBarkeep"/>
+						<Switch Id="3053756386" Name="switchWally"/>
+						<Switch Id="3469465608" Name="switchBen"/>
+						<Switch Id="3661604879" Name="switchPhone"/>
+						<Switch Id="3928776531" Name="switchTina"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D3160A67-54F0-A002-A5C3-92AF2457CF5B}</FileHash>
+	<FileHash>{B56E23F1-CF41-9D1D-855B-1EBA3E075F9B}</FileHash>
 </SoundBanksInfo>

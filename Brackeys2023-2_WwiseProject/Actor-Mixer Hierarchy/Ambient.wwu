@@ -15,6 +15,207 @@
 							<ObjectRef Name="Ambient" ID="{F43F2D53-735F-4D2D-95CF-3BE9897737CE}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="ambientRain" ID="{2BF0CA13-629F-483B-A588-77687BF9F093}" ShortID="1061038901">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" ShortID="860325990">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambient" ID="{F43F2D53-735F-4D2D-95CF-3BE9897737CE}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="thunder_rain_helsinki_august_2014_04" ID="{164B5A74-A4C1-4AC7-8A0F-C69BD765145B}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.552082917221481"/>
+												<Property Name="LoopBegin" Type="Real64" Value="14.8145238302397"/>
+												<Property Name="LoopEnd" Type="Real64" Value="78.4509825371726"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="12.5057668696829"/>
+												<Property Name="TrimEnd" Type="Real64" Value="79.996814705393"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>thunder_rain_helsinki_august_2014_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183604237"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="thunder_rain_helsinki_august_2014_04" ID="{164B5A74-A4C1-4AC7-8A0F-C69BD765145B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" ShortID="1023748257">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="45">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7A572B3B-F407-40F5-8B5D-EAE198EABC49}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Min" Type="Real64" Value="-15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambient" ID="{F43F2D53-735F-4D2D-95CF-3BE9897737CE}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="loudThunder" ID="{30C2AD74-F89F-47CF-BA53-CAF65C913E5D}" ShortID="832492449">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_rain_helsinki_august_2014_04" ID="{36CA7308-23C9-4345-AE44-7DF1FCA8F1E6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.288594620069605"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.480991033449343"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.63536951372777"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.75606047279833"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_rain_helsinki_august_2014_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="857239412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_rain_helsinki_august_2014_04" ID="{36CA7308-23C9-4345-AE44-7DF1FCA8F1E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="quietThunder" ID="{532A1B45-93A3-47D0-A253-E2D25661FDCD}" ShortID="506888639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F62352BD-900E-4CB3-A32D-AC8463F28AFC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052E8C94-14C2-4193-A649-37E829738605}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_rain_helsinki_august_2014_04" ID="{6DB96F86-3481-4CB8-B74D-E40832119A86}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.480991033449343"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.578854455434775"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.31106370842999"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.8294591044435"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_rain_helsinki_august_2014_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="526299618"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_rain_helsinki_august_2014_04" ID="{6DB96F86-3481-4CB8-B74D-E40832119A86}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="roomState" ID="{F8442905-DC11-4414-8E94-3FC41F913E6E}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}"/>
+										<CustomState Name="" ID="{E069409E-C81B-4C04-9116-49A647EAF773}" ShortID="179751243"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
+										<CustomState Name="" ID="{BA59EDCC-1E59-4454-9421-7EFC812B471B}" ShortID="116292467"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}"/>
+										<CustomState Name="" ID="{0DCBDB08-2959-4A27-9A11-BB882F0F4205}" ShortID="592891409"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
+										<CustomState Name="" ID="{40718518-CBC3-4FEF-A4F5-90A4E3DE8748}" ShortID="1057061261">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
+										<CustomState Name="" ID="{052EC6F8-CCE1-41DD-9ED8-18EE217F8159}" ShortID="682608021">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}"/>
+										<CustomState Name="" ID="{55A18596-CA65-4D46-87B0-2773ACA746F5}" ShortID="372876724"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</ActorMixer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

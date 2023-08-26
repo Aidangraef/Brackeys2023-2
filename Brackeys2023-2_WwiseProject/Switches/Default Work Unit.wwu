@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0319E78E-8D41-43BB-AA3B-747451296856}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{0319E78E-8D41-43BB-AA3B-747451296856}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0319E78E-8D41-43BB-AA3B-747451296856}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="characterSwitch" ID="{A4FCCCFC-6E86-46EB-A5EB-C595DDC706DF}">
+					<ChildrenList>
+						<Switch Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
+						<Switch Name="switchWally" ID="{A278707C-0006-45D3-BF98-44229ACE3593}"/>
+						<Switch Name="switchKevin" ID="{9FB83119-932B-4A84-8A0E-3B8320C841C0}"/>
+						<Switch Name="switchBen" ID="{27FB8BD2-91EE-4D4A-9F76-0A27C6B51E45}"/>
+						<Switch Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
+						<Switch Name="switchVinnie" ID="{91C20481-F05F-4FCE-A2C6-A283AF73B80F}"/>
+						<Switch Name="switchPhone" ID="{EC0FC65E-C14E-4CBE-B72F-219AB1D7895F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

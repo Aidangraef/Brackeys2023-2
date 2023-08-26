@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
 	<Events>
-		<WorkUnit Name="NPCs" ID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+		<WorkUnit Name="NPCs" ID="{7A390EE8-FC90-4C4C-A90D-2D2D44EFE77B}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}">
+					<ChildrenList>
+						<Action Name="" ID="{8442502C-D222-47D2-865B-AFCED23DE773}" ShortID="395051823">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0F5F769C-BAA1-4D52-A827-357221EA409A}" ShortID="806004353">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dialogueSwitcher" ID="{AD9F57D3-BA5C-4D4A-AEAB-128EE0ECDAD3}" WorkUnitID="{00266615-5F6D-492B-A842-52B3CB2DB2E5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcBarkeep" ID="{A34B8619-1F34-4E4E-AD8A-34414DA73B96}">
+					<ChildrenList>
+						<Action Name="" ID="{0AE610F0-B44F-480A-8812-B763747BED1D}" ShortID="5237699">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcTina" ID="{4FC9DBF5-60B6-4F2E-BB0F-DE424A22FE6B}">
+					<ChildrenList>
+						<Action Name="" ID="{CD02B4D5-2AB3-4096-AFA5-D520C6029ED7}" ShortID="912422617">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcWally" ID="{A2C1C9FD-8987-4C5E-B45F-18B64B5B441B}">
+					<ChildrenList>
+						<Action Name="" ID="{E5F4D528-FF02-4C0A-B1D5-3696867AC621}" ShortID="799643234">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchWally" ID="{A278707C-0006-45D3-BF98-44229ACE3593}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcKevin" ID="{5336D7A8-4B55-47A1-AE21-191EA16736A8}">
+					<ChildrenList>
+						<Action Name="" ID="{4701B3BC-5E71-4E35-802E-B422A265469D}" ShortID="304249843">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchKevin" ID="{9FB83119-932B-4A84-8A0E-3B8320C841C0}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcBen" ID="{EF8E36AA-7614-4D9D-BCBD-FC70BF2DCAB1}">
+					<ChildrenList>
+						<Action Name="" ID="{81D2CC63-13BF-4635-8FB2-B4A9BB0F1090}" ShortID="421653361">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchBen" ID="{27FB8BD2-91EE-4D4A-9F76-0A27C6B51E45}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcPhone" ID="{BDFDB84E-3224-41EB-9F40-EDFCF4E4B33F}">
+					<ChildrenList>
+						<Action Name="" ID="{9A2E63AA-AFB6-4B57-9B99-996D6158BDA8}" ShortID="14439104">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchPhone" ID="{EC0FC65E-C14E-4CBE-B72F-219AB1D7895F}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="npcVinnie" ID="{117D8FCC-DD35-4E63-896B-58F9B9FE90D3}">
+					<ChildrenList>
+						<Action Name="" ID="{5F5CB9BE-A4C8-4ADA-802C-2ED1E0E2BA54}" ShortID="783094879">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="switchVinnie" ID="{91C20481-F05F-4FCE-A2C6-A283AF73B80F}" WorkUnitID="{0319E78E-8D41-43BB-AA3B-747451296856}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

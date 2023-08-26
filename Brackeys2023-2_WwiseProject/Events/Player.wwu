@@ -1,6 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" SchemaVersion="110" RootDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" ParentDocumentID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}">
 	<Events>
-		<WorkUnit Name="Player" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{5196A394-5B21-44BA-98AB-602F985DF8BD}" OwnerID="{FCF95761-E16C-4F29-90D0-595C77F30AB0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="footStepping" ID="{6D86B6AF-5B93-478D-B675-5985BB6A9018}">
+					<ChildrenList>
+						<Action Name="" ID="{44006458-1606-4DA2-970F-83F1C0367451}" ShortID="408732143">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footSwitch" ID="{DE886B43-53C7-412E-89CA-2351F8F5A736}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}">
+					<ChildrenList>
+						<Action Name="" ID="{14EA149F-D7C0-4FF3-A987-879E7CBBE614}" ShortID="435569147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dripMemory" ID="{0E7A76BF-C042-48F5-89E6-AA3A17774252}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="detectiveSpeak" ID="{292D2E75-E739-4E6C-ACEF-D809D2D9F49C}">
+					<ChildrenList>
+						<Action Name="" ID="{EF8CC445-E3A7-4A0C-9B99-06F1323741B8}" ShortID="1022001919">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F5B173C8-0841-4253-A2EF-791CB850A976}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{90243F3B-3B72-4B3A-9F2A-6BE4B0CC8458}" ShortID="173847965">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="divePlay" ID="{CEF50BF9-3204-42FC-A548-1A67D5AEB22F}">
+					<ChildrenList>
+						<Action Name="" ID="{CC96658F-7331-421D-BD07-2FFB73FFAFED}" ShortID="236835532">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{632E9265-8771-4004-BA19-0BF90D6B48AA}" ShortID="892232686">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{615D4EF9-7BC1-4267-870D-CF66AB264DEE}" ShortID="289331560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2C0E4666-B41C-4146-B2BD-B03496943505}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CEC12905-B379-4667-849C-088D25C5EDB7}" ShortID="280816099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mysteryCrushed" ID="{E16CA9F2-E41B-4A36-B80E-4D22D58A13C1}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}">
+					<ChildrenList>
+						<Action Name="" ID="{3B6B8773-5201-446C-BA42-E5FA40042643}" ShortID="69486523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="divePop2nd" ID="{89E7A2BC-322B-4FC9-A628-2DC6579F878A}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="smokeExhale" ID="{30EA73B1-3ED3-4E4F-9D76-54BEF6797412}">
+					<ChildrenList>
+						<Action Name="" ID="{DE4C8D9B-D3CA-4218-A47D-2F51B22D0A87}" ShortID="277325929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="exhale" ID="{3F4DEA0D-541E-46B5-B4B9-104BAAEAACFC}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="smokeExtinguish" ID="{5D2AB083-AC01-42DA-9B12-A6BBD3F05CE8}">
+					<ChildrenList>
+						<Action Name="" ID="{94EDD73F-3F41-41C6-A3A3-3142F0A7C88D}" ShortID="998805816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cigExtinguish" ID="{242174F3-4902-44BD-A15F-83F72E4F4764}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

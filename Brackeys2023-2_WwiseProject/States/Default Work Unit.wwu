@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="roomState" ID="{F8442905-DC11-4414-8E94-3FC41F913E6E}">
+					<ChildrenList>
+						<State Name="None" ID="{9E33B6DD-8BBB-43C7-BD16-42655A9B897F}"/>
+						<State Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
+						<State Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}"/>
+						<State Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
+						<State Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}"/>
+						<State Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}"/>
+						<State Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

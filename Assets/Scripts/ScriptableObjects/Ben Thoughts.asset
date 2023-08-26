@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 619efd3ba79f5fe48b927daa67ca6149, type: 3}
+  m_Name: Ben Thoughts
+  m_EditorClassIdentifier: 
+  character: 0
+  thoughtsList:
+  - feeling: Wonder
+    thought: Just saw the new AR-64, what a gun!
+  - feeling: Confusion
+    thought: What does the word "stupefy" mean?
+  - feeling: Confusion
+    thought: I I wonder why this place is called The Blue Screen?
+  - feeling: Anger
+    thought: I'll get that Wally for what he did...
+  - feeling: Concern
+    thought: Is that patron causing trouble over there?
+  - feeling: Thoughtful
+    thought: I wonder if I should've let this guy in...
+  - feeling: Happiness
+    thought: I love my job.
+  - feeling: Longing
+    thought: I wish I could go back to the space marines just for a day.
+  - feeling: Sadness
+    thought: I hope my cat is okay at home by herself.
+  - feeling: Confidence
+    thought: Gun is still at my hip.
+  - feeling: Vigilance
+    thought: Scan the room - keep an eye out.

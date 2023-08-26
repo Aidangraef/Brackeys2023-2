@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7614816528962177027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7614816528962177025}
+  - component: {fileID: 7614816528962177024}
+  - component: {fileID: 7614816528962177054}
+  m_Layer: 0
+  m_Name: Minigame Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7614816528962177025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614816528962177027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7614816528962177024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614816528962177027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050a7af3a83f9e442b64cda32c9e6636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 10
+  startDelay: 1
+  textElement: {fileID: 0}
+  inputController: {fileID: 0}
+  fadeEffect: {fileID: 7614816528962177054}
+  characterSprites:
+  - {fileID: 21300000, guid: e8be3c41b5762294482fb2ee780fda5b, type: 3}
+  - {fileID: 21300000, guid: d63e7ae8861a6d94e8c4db9e5b6649a3, type: 3}
+  - {fileID: 21300000, guid: 61a81ce3678a77d4d97a27fde0981dee, type: 3}
+  - {fileID: 21300000, guid: c71f752f60aa9974090fbd0d76900766, type: 3}
+  - {fileID: 21300000, guid: c14fa9a15ad9987469632f6413d04701, type: 3}
+  characterSpriteRenderer: {fileID: 0}
+  currentCharacter: 0
+  diso: {fileID: 11400000, guid: ecfb6b681ec2a3d4db7a5c421b4ba0c9, type: 2}
+  tutorial: {fileID: 0}
+  tutorialDuration: 2
+--- !u!114 &7614816528962177054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614816528962177027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3ec7297bf3ed94d828d04d9e7b4c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkScreen: {fileID: 0}
+  fadeSpeed: 2

@@ -66,6 +66,8 @@ Build/
 *.unitypackage
 *.unitypackage.meta
 *.app
+Web-Build/
+*.zip
 
 # Crashlytics generated file
 crashlytics-build.properties
