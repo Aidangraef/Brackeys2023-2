@@ -2459,7 +2459,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: 6a046ff4-38b1-49a3-88e4-e4470a690629
+        value: 
         type: 0
         typeString: 
       conversationID: 3
@@ -2495,8 +2495,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 49
-        y: 324
+        x: 75.13788
+        y: 322.27588
         width: 160
         height: 30
     - id: 4
@@ -2526,6 +2526,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
         value: 
         type: 0
         typeString: 
@@ -2583,6 +2587,10 @@ MonoBehaviour:
         typeString: 
       - title: Sequence
         value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 4651ddd5-2f7d-4e75-9f48-b64fa6e4d1b8
         type: 0
         typeString: 
       conversationID: 3
@@ -2800,8 +2808,8 @@ MonoBehaviour:
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 59.531647
-        y: 624
+        x: 149.0053
+        y: 634.52625
         width: 160
         height: 30
     - id: 10
@@ -2831,6 +2839,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
         value: 
         type: 0
         typeString: 
@@ -2915,7 +2927,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 322.40427
-        y: 433.57443
+        y: 431.13544
         width: 160
         height: 30
     - id: 12
@@ -4182,8 +4194,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 255.51749}
-    canvasZoom: 0.5800004
+    canvasScrollPosition: {x: 531.4447, y: 210.86032}
+    canvasZoom: 0.7900002
   - id: 4
     fields:
     - title: Title
