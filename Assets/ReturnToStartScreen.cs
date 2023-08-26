@@ -5,20 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToStartScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GoBackToStartScreen()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(WaitThenGoToMenu());
+
+        // Start fade effect
+        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
+    }
+
+    IEnumerator WaitThenGoToMenu() {
+        yield return new WaitForSeconds(1);
+        GameController.controller.GoToMainMenu();
     }
 }
