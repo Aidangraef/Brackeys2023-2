@@ -92,7 +92,7 @@
 						<CurrentStateRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="switchTina" ID="{6A774170-22C2-45AA-AE9A-BBBFDF967D1D}"/>
+						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

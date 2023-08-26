@@ -13,6 +13,13 @@
 						<Bus Name="Non-World" ID="{75C5D2F7-9F7D-4A63-BC19-310CFB940AED}">
 							<ChildrenList>
 								<Bus Name="Music" ID="{2F135520-F1C4-46DB-8D12-DC4DBA8CE833}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
 											<Reference>

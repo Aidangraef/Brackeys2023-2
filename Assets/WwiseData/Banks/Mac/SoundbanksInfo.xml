@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A05E1993-8023-87A6-469F-2A8CE293D00A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4F532273-6655-F5C7-C625-CF135CA84D8B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -60,7 +60,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{C5320369-63F1-9196-FCFB-D3701B92A9CD}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{4B5E71EC-15A7-EFD0-CEF2-C7FC4A57015F}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -74,7 +74,7 @@
 				</File>
 				<File Id="32867236" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dripMemory.wav</ShortName>
-					<CachePath>SFX/dripMemory_9DAF6310.wem</CachePath>
+					<CachePath>SFX/dripMemory_0C56AEE0.wem</CachePath>
 				</File>
 				<File Id="52227454" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>neonSustain.wav</ShortName>
@@ -226,7 +226,7 @@
 				</File>
 				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryUnCrushed.wav</ShortName>
-					<CachePath>SFX/mysteryUnCrushed_AC698B62.wem</CachePath>
+					<CachePath>SFX/mysteryUnCrushed_64B81097.wem</CachePath>
 				</File>
 				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-001.wav</ShortName>
@@ -346,7 +346,7 @@
 				</File>
 				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>cigExtinguish.wav</ShortName>
-					<CachePath>SFX/cigExtinguish_B94DD5CB.wem</CachePath>
+					<CachePath>SFX/cigExtinguish_E15BDDB9.wem</CachePath>
 				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
@@ -386,7 +386,7 @@
 				</File>
 				<File Id="772547028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exhale.wav</ShortName>
-					<CachePath>SFX/exhale_E366E293.wem</CachePath>
+					<CachePath>SFX/exhale_832CEAF3.wem</CachePath>
 				</File>
 				<File Id="776453115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-004.wav</ShortName>
@@ -906,5 +906,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{29B3D50E-A1C2-8557-6D92-46B6732E7536}</FileHash>
+	<FileHash>{10898B41-F730-9A73-BD06-36554F61388A}</FileHash>
 </SoundBanksInfo>

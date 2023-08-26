@@ -2,9 +2,13 @@ State Group	ID	Name			Wwise Object Path	Notes
 	185713839	roomState			\Default Work Unit\roomState	
 
 State	ID	Name	State Group			Notes
+	340271938	walking	roomState			
 	438105790	outside	roomState			
 	748895195	None	roomState			
+	2608492946	diving	roomState			
+	3509424520	memory	roomState			
 	3553349781	inside	roomState			
+	3966194980	ending	roomState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
