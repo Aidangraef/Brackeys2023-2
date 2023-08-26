@@ -15,7 +15,7 @@ MonoBehaviour:
   character: 3
   thoughtsList:
   - feeling: Serious
-    thought: Been a while since a AK suited.
+    thought: Been a while since AK suited.
   - feeling: Hurt
     thought: I swear the guy in that last hand was cheating...
   - feeling: Regret
