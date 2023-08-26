@@ -480,7 +480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Okay... got into his memories, I just need to find the one that's being
+  m_text: Okay... got into their memories, I just need to find the one that's being
     kept hidden! I'm sure it will stand out among basic thoughts.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 894fa2c771cd3ba4083347f22ec728c2, type: 2}
