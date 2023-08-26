@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID DIVEPOP = 1997425944U;
         static const AkUniqueID DIVESTART = 1229279613U;
         static const AkUniqueID DIVESUCCESS = 2973970440U;
+        static const AkUniqueID ENDINGSTART = 3875678176U;
         static const AkUniqueID ENTERBAR = 4122450220U;
         static const AkUniqueID EXITMEMORY = 1501097736U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
@@ -52,6 +53,7 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID DIVING = 2608492946U;
+                static const AkUniqueID ENDING = 3966194980U;
                 static const AkUniqueID INSIDE = 3553349781U;
                 static const AkUniqueID MEMORY = 3509424520U;
                 static const AkUniqueID NONE = 748895195U;

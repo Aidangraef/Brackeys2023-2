@@ -11,6 +11,7 @@
 						<State Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
 						<State Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}"/>
 						<State Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}"/>
+						<State Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

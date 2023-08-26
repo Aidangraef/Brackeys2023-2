@@ -14,7 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}"/>
+				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}">
+					<ChildrenList>
+						<Action Name="" ID="{14EA149F-D7C0-4FF3-A987-879E7CBBE614}" ShortID="435569147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dripMemory" ID="{0E7A76BF-C042-48F5-89E6-AA3A17774252}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="detectiveSpeak" ID="{292D2E75-E739-4E6C-ACEF-D809D2D9F49C}">
 					<ChildrenList>
 						<Action Name="" ID="{EF8CC445-E3A7-4A0C-9B99-06F1323741B8}" ShortID="1022001919">
@@ -101,7 +111,7 @@
 						<Action Name="" ID="{3B6B8773-5201-446C-BA42-E5FA40042643}" ShortID="69486523">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="divePop" ID="{4B7019F5-379C-4C65-A2F5-8D04DB11C576}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+									<ObjectRef Name="divePop2nd" ID="{89E7A2BC-322B-4FC9-A628-2DC6579F878A}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

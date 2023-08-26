@@ -186,6 +186,10 @@
 										<CustomState Name="" ID="{0DCBDB08-2959-4A27-9A11-BB882F0F4205}" ShortID="592891409"/>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
+										<CustomState Name="" ID="{40718518-CBC3-4FEF-A4F5-90A4E3DE8748}" ShortID="1057061261"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
 										<CustomState Name="" ID="{052EC6F8-CCE1-41DD-9ED8-18EE217F8159}" ShortID="682608021">
 											<PropertyList>

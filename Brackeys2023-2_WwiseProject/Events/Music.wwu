@@ -220,7 +220,7 @@
 						<Action Name="" ID="{2499E9DC-C958-4B25-B6C4-48541DB7B939}" ShortID="509088396">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="9"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -264,6 +264,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="endingStart" ID="{02487EBF-605E-4A80-8CEC-EC6D9A58DD67}">
+					<ChildrenList>
+						<Action Name="" ID="{4A4A9A3C-E3BE-4048-AB87-1453449CBABC}" ShortID="803393590">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

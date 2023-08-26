@@ -42,6 +42,7 @@
 						<State Id="2608492946" Name="diving"/>
 						<State Id="3509424520" Name="memory"/>
 						<State Id="3553349781" Name="inside"/>
+						<State Id="3966194980" Name="ending"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -59,7 +60,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{47CE19AA-90AE-56B8-6AEE-39F29BA44060}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{20E77605-BD18-58A6-2605-E927356BD88F}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -70,6 +71,10 @@
 				<File Id="21251891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-003.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-003_563DD58F.wem</CachePath>
+				</File>
+				<File Id="32867236" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dripMemory.wav</ShortName>
+					<CachePath>SFX/dripMemory_9DAF6310.wem</CachePath>
 				</File>
 				<File Id="52227454" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>neonSustain.wav</ShortName>
@@ -106,6 +111,10 @@
 				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-004.wav</ShortName>
 					<CachePath>SFX/VocalsWally-004_066B5527.wem</CachePath>
+				</File>
+				<File Id="113882134" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Ending Theme_26Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Ending Theme_26Aug2023_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="121403949" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-008.wav</ShortName>
@@ -215,10 +224,6 @@
 					<ShortName>concreteFootsteps-009.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
 				</File>
-				<File Id="345004469" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>divePop.wav</ShortName>
-					<CachePath>SFX/divePop_3F75BDB9.wem</CachePath>
-				</File>
 				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryUnCrushed.wav</ShortName>
 					<CachePath>SFX/mysteryUnCrushed_46D27536.wem</CachePath>
@@ -258,6 +263,10 @@
 				<File Id="432340000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-001.wav</ShortName>
 					<CachePath>SFX/vocalsBen-001_0CE7D5AD.wem</CachePath>
+				</File>
+				<File Id="452076868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>divePop2nd.wav</ShortName>
+					<CachePath>SFX/divePop2nd_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="454510249" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-006.wav</ShortName>
@@ -350,6 +359,10 @@
 				<File Id="701428879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsDetective-008.wav</ShortName>
 					<CachePath>SFX/vocalsDetective-008_CA3D4E0C.wem</CachePath>
+				</File>
+				<File Id="723186884" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Memory Theme_26Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Memory Theme_26Aug2023_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="729812094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-004.wav</ShortName>
@@ -498,9 +511,9 @@
 						<MediaRef Id="867402550"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1997425944" Name="divePop" DurationType="OneShot" DurationMin="2.0985208" DurationMax="2.0985208">
+				<Event Id="1997425944" Name="divePop" DurationType="OneShot" DurationMin="1.9807397" DurationMax="2.2233055">
 					<MediaRefs>
-						<MediaRef Id="345004469"/>
+						<MediaRef Id="452076868"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -508,7 +521,16 @@
 						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2973970440" Name="diveSuccess" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2973970440" Name="diveSuccess" DurationType="OneShot" DurationMin="3.4046047" DurationMax="3.6070533">
+					<MediaRefs>
+						<MediaRef Id="32867236"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3875678176" Name="endingStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3966194980" Name="ending"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="4122450220" Name="enterBar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
@@ -667,9 +689,21 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3966194980"/>
+							<MediaRefs>
+								<MediaRef Id="113882134"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="185713839" Id="2608492946"/>
 							<MediaRefs>
 								<MediaRef Id="254834334"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3509424520"/>
+							<MediaRefs>
+								<MediaRef Id="723186884"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -847,6 +881,7 @@
 						<State Id="2608492946" Name="diving"/>
 						<State Id="3509424520" Name="memory"/>
 						<State Id="3553349781" Name="inside"/>
+						<State Id="3966194980" Name="ending"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -865,5 +900,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2309DC31-694E-8783-3A04-47212343AE5F}</FileHash>
+	<FileHash>{9D56F00C-66FB-F6B8-3ECE-88DFFE05C948}</FileHash>
 </SoundBanksInfo>

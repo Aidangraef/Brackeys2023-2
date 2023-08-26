@@ -42,8 +42,12 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
+							<ObjectRef Name="divePlay" ID="{CEF50BF9-3204-42FC-A548-1A67D5AEB22F}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}"/>
 							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
+							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
@@ -52,6 +56,10 @@
 						<Module>
 							<ObjectRef Name="memoryStart" ID="{C1807306-3299-46FB-9048-8BBBC111B40F}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
 							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="endingStart" ID="{02487EBF-605E-4A80-8CEC-EC6D9A58DD67}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
+							<Position X="3" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
@@ -73,7 +81,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
+						<CurrentStateRef Name="ending" ID="{CA4C904A-AF6F-494D-B53E-9889AF6E604F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
