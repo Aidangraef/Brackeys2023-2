@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+
         switch ((UnityScenes)scene.buildIndex) {
             case UnityScenes.Bar:
                 // If there is a player saved, load the transform to keep player at the same place/direction
@@ -176,14 +177,30 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene((int)UnityScenes.StartMenu);
     }
 
-    public void SwitchToBigReveal()
-    {
-        SceneManager.LoadScene(15);
+    public void SwitchToBigReveal() {
+        // Prepare fade out effect
+        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
+        StartCoroutine(WaitThenLoadScene(15));
     }
 
     public void SwitchToBadEnding()
     {
-        SceneManager.LoadScene(17);
+        // Prepare fade out effect
+        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
+
+        // Check if no memories were seen
+        if (memoriesSeen.Count == 0) {
+            // Load good ending but it will be empty
+            StartCoroutine(WaitThenLoadScene(15));
+        }
+        else {
+            StartCoroutine(WaitThenLoadScene(17));
+        }
+    }
+
+    IEnumerator WaitThenLoadScene(int scene) {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(scene);
     }
 
 #if UNITY_EDITOR
