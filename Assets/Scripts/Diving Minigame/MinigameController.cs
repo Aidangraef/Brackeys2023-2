@@ -47,6 +47,7 @@ public class MinigameController : MonoBehaviour
     public static MinigameController controller;
 
     public CharacterEnum CurrentCharacter { get => currentCharacter; set => currentCharacter = value; }
+    public MemoryEnum CurrentMemory { get => currentMemory; set => currentMemory = value; }
 
     private void Awake() {
         if (controller == null) {
