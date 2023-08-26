@@ -48,8 +48,11 @@ public class ThoughtController : MonoBehaviour
                 int thoughtIndex = Random.Range(0, characterThoughts.Count);
                 IrrelevantThought irrelevantThought = characterThoughts[thoughtIndex];
                 thoughtScript.FillBalloon(irrelevantThought.feeling, irrelevantThought.thought);
-                if (characterThoughts.Count > 1) {
-                    characterThoughts.RemoveAt(thoughtIndex);
+                characterThoughts.RemoveAt(thoughtIndex);
+
+                // Checks if there are no more thoughts and reloads the list
+                if (characterThoughts.Count == 0) {
+                    characterThoughts = new List<IrrelevantThought>(GameController.controller.CharacterThoughts[(int)MinigameController.controller.CurrentCharacter].thoughtsList);
                 }
             }
 
