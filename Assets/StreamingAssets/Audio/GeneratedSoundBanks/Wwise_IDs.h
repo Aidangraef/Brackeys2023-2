@@ -15,12 +15,10 @@ namespace AK
     {
         static const AkUniqueID BUTTONCLICK = 4051332235U;
         static const AkUniqueID DETECTIVESPEAK = 1127674584U;
-        static const AkUniqueID DIVEFAIL = 1618867687U;
         static const AkUniqueID DIVEPLAY = 1686862521U;
         static const AkUniqueID DIVEPOP = 1997425944U;
         static const AkUniqueID DIVESTART = 1229279613U;
         static const AkUniqueID DIVESUCCESS = 2973970440U;
-        static const AkUniqueID DIVEWRONG = 425063146U;
         static const AkUniqueID ENTERBAR = 4122450220U;
         static const AkUniqueID EXITMEMORY = 1501097736U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
@@ -39,6 +37,7 @@ namespace AK
         static const AkUniqueID NPCTINA = 315848864U;
         static const AkUniqueID NPCVINNIE = 4101721491U;
         static const AkUniqueID NPCWALLY = 1157041911U;
+        static const AkUniqueID RETURNTOMENU = 61023377U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTDING = 1336322353U;
         static const AkUniqueID TESTFAIL = 1435302941U;

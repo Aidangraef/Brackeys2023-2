@@ -15,8 +15,6 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}"/>
-				<Event Name="diveFail" ID="{DBF17C7F-3EE2-46B9-91DC-448A8DB242BD}"/>
-				<Event Name="diveWrong" ID="{E2518E44-F8D4-4C37-AF8E-10511EE08D2E}"/>
 				<Event Name="detectiveSpeak" ID="{292D2E75-E739-4E6C-ACEF-D809D2D9F49C}">
 					<ChildrenList>
 						<Action Name="" ID="{90243F3B-3B72-4B3A-9F2A-6BE4B0CC8458}" ShortID="173847965">

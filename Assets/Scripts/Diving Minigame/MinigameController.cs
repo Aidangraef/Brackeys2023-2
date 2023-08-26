@@ -185,6 +185,7 @@ public class MinigameController : MonoBehaviour
     }
 
     public void PlaySound(string eventSound) {
-        //AkSoundEngine.PostEvent(eventSound, gameObject);
+        AkSoundEngine.PostEvent(eventSound, this.gameObject);
+        Debug.Log("Tried to Play:" + eventSound);
     }
 }

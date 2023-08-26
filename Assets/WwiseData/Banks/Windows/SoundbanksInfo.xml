@@ -59,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{32656EEA-8491-FF26-8CA9-897706477907}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0D66F011-5B19-8982-9C59-D1AF11CF0697}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -431,7 +431,6 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1618867687" Name="diveFail" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1686862521" Name="divePlay" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
 					<MediaRefs>
 						<MediaRef Id="867402550"/>
@@ -444,7 +443,6 @@
 					</ActionSetState>
 				</Event>
 				<Event Id="2973970440" Name="diveSuccess" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="425063146" Name="diveWrong" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4122450220" Name="enterBar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
@@ -717,6 +715,11 @@
 						<ActionSetSwitchEntry GroupId="3858903546" Id="3053756386" Name="switchWally"/>
 					</ActionSetSwitch>
 				</Event>
+				<Event Id="61023377" Name="returnToMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="438105790" Name="outside"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="2.0028148" DurationMax="2.0028148">
 					<MediaRefs>
 						<MediaRef Id="137141922"/>
@@ -760,5 +763,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{54B951B2-C050-554D-4642-7AA15DD4BF81}</FileHash>
+	<FileHash>{37E42D82-7DB2-3819-F0CA-2D168B83431B}</FileHash>
 </SoundBanksInfo>
