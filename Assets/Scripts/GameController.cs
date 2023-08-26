@@ -210,6 +210,8 @@ public class GameController : MonoBehaviour
         // Resets controller variable
         controller = null;
 
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
         SceneManager.LoadScene((int)UnityScenes.StartMenu);
     }
 

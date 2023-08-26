@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class ImageFadeEffect : MonoBehaviour {
     Image image;
@@ -30,4 +31,10 @@ public class ImageFadeEffect : MonoBehaviour {
             enabled = false;
         }
     }
+
+#if UNITY_EDITOR
+    private void OnValidate() {
+        SceneVisibilityManager.instance.Hide(gameObject, false);
+    }
+#endif
 }

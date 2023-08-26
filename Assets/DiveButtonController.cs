@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityTypes;
 
 public class DiveButtonController : MonoBehaviour
@@ -11,11 +12,6 @@ public class DiveButtonController : MonoBehaviour
     public int sceneIndex;
 
     private GameObject _diveButtonGo;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void ShowDiveButton()
     {
@@ -29,18 +25,24 @@ public class DiveButtonController : MonoBehaviour
         _diveButtonGo.transform.SetParent(transform, false);
     }
 
+    public void ShowAndUseDiveButton() {
+        if (_diveButtonGo != null) {
+            Destroy(_diveButtonGo);
+        }
+        _diveButtonGo = Instantiate(diveButton,
+                new Vector3(0, 0, 0),
+                Quaternion.identity);
+        _diveButtonGo.transform.SetParent(transform, false);
+        _diveButtonGo.SetActive(false);
+        _diveButtonGo.GetComponent<DiveBtn>().GoToMiniGame();
+    }
+
     public void HideDiveButton()
     {
         if (_diveButtonGo != null)
         {
             Destroy(_diveButtonGo);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SetSceneIndex(int si)
