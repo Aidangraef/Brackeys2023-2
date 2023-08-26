@@ -20,6 +20,9 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     LogoFlicker logoFlickerScript;
 
+    [SerializeField]
+    Animator detectiveAnimator;
+
     // Start is called before the first frame update
     void Start() {
         menu.SetActive(true);
@@ -46,6 +49,8 @@ public class MainMenuManager : MonoBehaviour
     }
 
     IEnumerator WaitAndStartGame() {
+        detectiveAnimator.SetTrigger("PlayPressed");
+
         yield return new WaitForSeconds(playDelay);
         SceneManager.LoadScene(1);
     }

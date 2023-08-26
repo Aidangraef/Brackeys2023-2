@@ -160,6 +160,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 22394bf03e9be3645b03afefacdd9c86, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &175436544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,6 +993,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 22394bf03e9be3645b03afefacdd9c86, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1762805658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1201,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0e0bf78a48329a448b79fe63808ee0e6, type: 3}
+  m_Sprite: {fileID: 1401010650, guid: f93265c42416ce947ad51d0c49929999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1304,6 +1312,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4681056945572020257, guid: e2c0c094a468c294c8019805ed978fb9, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681056945572020257, guid: e2c0c094a468c294c8019805ed978fb9, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4681056945572020260, guid: e2c0c094a468c294c8019805ed978fb9, type: 3}
@@ -1563,6 +1575,10 @@ PrefabInstance:
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 112088718}
+    - target: {fileID: 4025873967324202430, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
+      propertyPath: detectiveAnimator
+      value: 
+      objectReference: {fileID: 1836616641}
     - target: {fileID: 4025873967324202430, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
       propertyPath: logoFlickerScript
       value: 
