@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ShootingScene : MonoBehaviour
 {
-    GameController gc;
+    //GameController gc;
 
     // Start is called before the first frame update
     void Start()
     {
-        gc = FindObjectOfType<GameController>();
-        gc.didIJustShootSomeone = true;
+        //gc = FindObjectOfType<GameController>();
+        GameController.controller.didIJustShootSomeone = true;
     }
 
     // Update is called once per frame

@@ -607,6 +607,18 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}"/>
+												<ItemList>
+													<ItemRef Name="woodSteps" ID="{246ECFCB-D895-4CCA-8C26-8C7943F04C76}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}"/>
+												<ItemList>
+													<ItemRef Name="woodSteps" ID="{246ECFCB-D895-4CCA-8C26-8C7943F04C76}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
 												<ItemList>
 													<ItemRef Name="woodSteps" ID="{246ECFCB-D895-4CCA-8C26-8C7943F04C76}"/>
@@ -616,6 +628,12 @@
 												<SwitchRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
 												<ItemList>
 													<ItemRef Name="concreteSteps" ID="{F149753B-3A70-412A-83B2-7729D1EC6794}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="None" ID="{9E33B6DD-8BBB-43C7-BD16-42655A9B897F}"/>
+												<ItemList>
+													<ItemRef Name="woodSteps" ID="{246ECFCB-D895-4CCA-8C26-8C7943F04C76}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>

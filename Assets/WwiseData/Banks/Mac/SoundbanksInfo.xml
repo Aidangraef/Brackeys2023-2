@@ -59,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0D66F011-5B19-8982-9C59-D1AF11CF0697}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{06318E05-A835-D85A-06C3-5E1C8E2D67B9}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -476,6 +476,30 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3509424520"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="2608492946"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="185713839" Id="3553349781"/>
 							<MediaRefs>
 								<MediaRef Id="133817862"/>
@@ -502,6 +526,18 @@
 								<MediaRef Id="1015166504"/>
 								<MediaRef Id="1018975967"/>
 								<MediaRef Id="1064893621"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="133817862"/>
+								<MediaRef Id="156683581"/>
+								<MediaRef Id="165332797"/>
+								<MediaRef Id="245039638"/>
+								<MediaRef Id="491441777"/>
+								<MediaRef Id="549967391"/>
+								<MediaRef Id="650103668"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -763,5 +799,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{395A7C19-83EF-06EF-3E67-7AC22A4A86D7}</FileHash>
+	<FileHash>{A5324D69-0CD2-7E6A-7E50-2AA546312662}</FileHash>
 </SoundBanksInfo>
