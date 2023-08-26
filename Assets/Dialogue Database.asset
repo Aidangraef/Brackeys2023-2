@@ -940,7 +940,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I see your armed?
+        value: I see you're armed?
         type: 0
         typeString: 
       - title: Sequence
