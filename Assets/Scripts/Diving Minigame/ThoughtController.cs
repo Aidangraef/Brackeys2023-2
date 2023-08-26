@@ -40,6 +40,9 @@ public class ThoughtController : MonoBehaviour
             if (i == 0) {
                 // Set right balloon
                 thoughtScript.Special = true;
+
+                // TODO Define feeling by getting current memory
+                thoughtScript.FillBalloon(ConvertMemoryToFeeling(), "");
             } else {
                 // Fill with irrelevant thought
                 int thoughtIndex = Random.Range(0, characterThoughts.Count);
@@ -54,5 +57,11 @@ public class ThoughtController : MonoBehaviour
             thoughtScript.SetSortingOrder(i * 2);
         }
     }
+
+    string ConvertMemoryToFeeling() {
+      switch (MinigameController.controller.CurrentMemory) {
+      case MemoryEnum.BEN_WALLY_GET_TIPSY:
+      return "Guilt";
+      }
 
 }
