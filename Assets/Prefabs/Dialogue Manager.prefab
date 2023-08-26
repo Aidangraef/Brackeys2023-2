@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4738228794899302170}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3617,6 +3617,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &4738228795997892956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4502,7 +4506,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4738228794573613348}
   m_HandleRect: {fileID: 4738228794573613349}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4724,6 +4728,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 01106c762c6e7d344a5836b0df18f09a, type: 2}
   MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent3:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

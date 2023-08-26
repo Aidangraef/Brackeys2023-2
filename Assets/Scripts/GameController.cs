@@ -211,27 +211,6 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene((int)UnityScenes.StartMenu);
     }
 
-    public void SwitchToBigReveal() {
-        // Prepare fade out effect
-        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
-        StartCoroutine(WaitThenLoadScene(15));
-    }
-
-    public void SwitchToBadEnding()
-    {
-        // Prepare fade out effect
-        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
-
-        // Check if no memories were seen
-        if (memoriesSeen.Count == 0) {
-            // Load good ending but it will be empty
-            StartCoroutine(WaitThenLoadScene(15));
-        }
-        else {
-            StartCoroutine(WaitThenLoadScene(17));
-        }
-    }
-
     IEnumerator WaitThenLoadScene(int scene) {
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(scene);

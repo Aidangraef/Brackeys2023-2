@@ -122,7 +122,7 @@ public class MinigameController : MonoBehaviour
             AkSoundEngine.PostEvent("diveSuccess", this.gameObject);
         } else {
             // Play failure sound
-            AkSoundEngine.PostEvent("diveFail", this.gameObject);
+            //AkSoundEngine.PostEvent("diveFail", this.gameObject);
         }
 
         // Fade off

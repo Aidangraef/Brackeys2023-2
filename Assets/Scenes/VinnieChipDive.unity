@@ -615,7 +615,7 @@ MonoBehaviour:
   MyEvent3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 5231148cd409ec845ab0d380dfb20c08, type: 2}
 --- !u!1 &801959695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,8 +1565,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15400001, y: -0.00024998188, z: 0}
-    m_Extent: {x: 1.0962, y: 0.60385, z: 0}
+    m_Center: {x: -0.15470001, y: -0.004150003, z: 0}
+    m_Extent: {x: 1.0989, y: 0.60854995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

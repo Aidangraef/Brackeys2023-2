@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityTypes;
+using PixelCrushers.DialogueSystem;
 
 public class DiveBtn : MonoBehaviour
 {
     public DiveInfoScriptableObject DiveInfo;
 
     public void GoToMiniGame() {
+        DialogueManager.StopConversation();
         AkSoundEngine.PostEvent("divePlay", this.gameObject);
         GameController.controller.SavePlayerTransform();
         Invoke("GoToMiniGameScene", 3f);
