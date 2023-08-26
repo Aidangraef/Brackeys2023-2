@@ -1581,7 +1581,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1021987343}
           m_TargetAssemblyTypeName: DiveButtonController, Assembly-CSharp
-          m_MethodName: ShowDiveButton
+          m_MethodName: ShowAndUseDiveButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4315,6 +4315,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4738228794827741265, guid: b4984becc3779c84dbb657babed44094, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738228794899302169, guid: b4984becc3779c84dbb657babed44094, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738228794899302169, guid: b4984becc3779c84dbb657babed44094, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738228794899302169, guid: b4984becc3779c84dbb657babed44094, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4738228795045514104, guid: b4984becc3779c84dbb657babed44094, type: 3}

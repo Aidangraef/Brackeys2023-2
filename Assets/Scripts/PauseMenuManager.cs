@@ -95,7 +95,6 @@ public class PauseMenuManager : MonoBehaviour
 
         // Allow to be destroyed on load
         transform.parent.parent = (new GameObject()).transform;
-        Debug.Break();
 
         // Reset time scale
         Time.timeScale = 1f;
