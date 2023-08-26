@@ -11,11 +11,6 @@ public class DiveButtonController : MonoBehaviour
     public int sceneIndex;
 
     private GameObject _diveButtonGo;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void ShowDiveButton()
     {
@@ -35,12 +30,6 @@ public class DiveButtonController : MonoBehaviour
         {
             Destroy(_diveButtonGo);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SetSceneIndex(int si)
