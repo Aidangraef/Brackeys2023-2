@@ -41,6 +41,7 @@ public class GameController : MonoBehaviour
     public GameObject barTenderIntroGameObject;
 
     void Awake() {
+        Debug.Log("Awake");
         if (controller == null) {
             controller = this;
 
@@ -59,8 +60,12 @@ public class GameController : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        Debug.Log("Load Scene");
         // For every scene loaded, reinitialize Dialogue Manager variables
         PopulateDialogueVariables();
+
+        Debug.Log(didIJustShootSomeoneGameObject);
+        Debug.Break();
 
         switch ((UnityScenes)scene.buildIndex) {
             case UnityScenes.Bar:
@@ -209,6 +214,8 @@ public class GameController : MonoBehaviour
 
         // Resets controller variable
         controller = null;
+
+        SceneManager.sceneLoaded -= OnSceneLoaded;
 
         SceneManager.LoadScene((int)UnityScenes.StartMenu);
     }
