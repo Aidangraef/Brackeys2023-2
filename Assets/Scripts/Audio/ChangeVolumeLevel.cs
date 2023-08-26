@@ -7,6 +7,7 @@ public class ChangeVolumeLevel : MonoBehaviour
 {
     public const string SFX_VOLUME_PREF = "SFXVolume";
     public const string MUSIC_VOLUME_PREF = "musicVolume";
+    public const float DEFAULT_VOLUME = 80f;
 
     [SerializeField]
     public Slider sfxSlider;
@@ -18,11 +19,11 @@ public class ChangeVolumeLevel : MonoBehaviour
     public float musicVolume;
 
     private void Start() {
-        float currentSFXVolume = PlayerPrefs.GetFloat(SFX_VOLUME_PREF, 100f);
+        float currentSFXVolume = PlayerPrefs.GetFloat(SFX_VOLUME_PREF, DEFAULT_VOLUME);
         sfxSlider.value = currentSFXVolume;
         AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, currentSFXVolume);
 
-        float currentMusicVolume = PlayerPrefs.GetFloat(MUSIC_VOLUME_PREF, 100f);
+        float currentMusicVolume = PlayerPrefs.GetFloat(MUSIC_VOLUME_PREF, DEFAULT_VOLUME);
         musicSlider.value = currentMusicVolume;
         AkSoundEngine.SetRTPCValue(MUSIC_VOLUME_PREF, currentMusicVolume);
     }
