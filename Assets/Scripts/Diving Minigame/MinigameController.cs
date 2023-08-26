@@ -171,8 +171,10 @@ public class MinigameController : MonoBehaviour
 
             case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
             case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
-            case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
                 return CharacterEnum.WALLY;
+
+            case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
+                return CharacterEnum.VINNIE;
 
             default:
                 Debug.LogError("Character not found!");
