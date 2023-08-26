@@ -68,7 +68,7 @@
 						</Action>
 						<Action Name="" ID="{AF7F30F9-3FBD-4687-AA53-ECE66E59D069}" ShortID="216129447">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="10">
+								<Property Name="Delay" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{5A57317E-2930-42D5-BE53-D41F78205ECD}">
@@ -185,6 +185,8 @@
 						<Action Name="" ID="{DBF39CB2-AB72-456F-BBBC-8BE14E6CB829}" ShortID="790837547">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -195,6 +197,8 @@
 						<Action Name="" ID="{50184CB8-180E-43F1-B151-44DD92F8ECD0}" ShortID="930180405">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -206,6 +210,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="9"/>
 								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -220,6 +225,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}">
+					<ChildrenList>
+						<Action Name="" ID="{336C64BA-3107-4FCF-B41B-433B373DAC24}" ShortID="254889011">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="returnToMenu" ID="{5C17A9AF-D0B1-4BD2-9906-7C60CC49BE3C}">
+					<ChildrenList>
+						<Action Name="" ID="{9AC262D1-9399-4C00-80B7-8118F0338D4F}" ShortID="733175476">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

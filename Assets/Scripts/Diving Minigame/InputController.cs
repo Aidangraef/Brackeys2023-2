@@ -31,9 +31,11 @@ public class InputController : MonoBehaviour
             GameObject clickedThought = null;
             int currentClickedThoughtSortingOrder = -1;
             foreach (RaycastHit2D hit in hits) {
-                if (hit.collider.CompareTag("ThoughtBalloon")) {
+                if (hit.collider.CompareTag("ThoughtBalloon"))
+                {
                     // Catch thought balloon
                     ThoughtBalloon thought = hit.collider.GetComponent<ThoughtBalloon>();
+                    AkSoundEngine.PostEvent("divePop", this.gameObject);
 
                     // If no one was clicked yet, select this one
                     if (clickedThought == null || currentClickedThoughtSortingOrder < thought.SpriteRenderer.sortingOrder) {

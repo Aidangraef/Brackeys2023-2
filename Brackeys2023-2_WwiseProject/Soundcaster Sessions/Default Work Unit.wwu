@@ -38,7 +38,7 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}"/>
+							<ObjectRef Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}" WorkUnitID="{B8D13D66-5FA2-412D-A97E-278ECC59FCBA}"/>
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
@@ -69,10 +69,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}"/>
+						<CurrentStateRef Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="switchWally" ID="{A278707C-0006-45D3-BF98-44229ACE3593}"/>
+						<CurrentSwitchRef Name="switchBarkeep" ID="{ECD3E7C4-1A47-45E0-A15F-0C232F1D0BD2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

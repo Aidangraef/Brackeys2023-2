@@ -264,13 +264,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="BarTheme" ID="{FF9A3720-8F42-42F6-8231-E6DAA0B4A6A1}" ShortID="881725861">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -283,6 +276,11 @@
 								<MusicSegment Name="The Blue Screen_Bar Theme_25Aug2023" ID="{70C964D6-B581-4F74-93B2-87107C2A5D04}" ShortID="83605427">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="187636.375"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

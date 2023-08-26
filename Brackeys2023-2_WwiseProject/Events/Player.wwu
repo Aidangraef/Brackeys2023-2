@@ -14,58 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="diveStart" ID="{C2067827-20F7-46FA-955B-0DB0AE30669E}">
-					<ChildrenList>
-						<Action Name="" ID="{CEC12905-B379-4667-849C-088D25C5EDB7}" ShortID="280816099">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="mysteryCrushed" ID="{E16CA9F2-E41B-4A36-B80E-4D22D58A13C1}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{CC96658F-7331-421D-BD07-2FFB73FFAFED}" ShortID="236835532">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{632E9265-8771-4004-BA19-0BF90D6B48AA}" ShortID="892232686">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{615D4EF9-7BC1-4267-870D-CF66AB264DEE}" ShortID="289331560">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{336C64BA-3107-4FCF-B41B-433B373DAC24}" ShortID="254889011">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Delay" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="diveSuccess" ID="{40D9BC64-8A92-4F0B-B7C0-01BC9DEA432C}"/>
 				<Event Name="diveFail" ID="{DBF17C7F-3EE2-46B9-91DC-448A8DB242BD}"/>
 				<Event Name="diveWrong" ID="{E2518E44-F8D4-4C37-AF8E-10511EE08D2E}"/>
@@ -80,6 +28,60 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="divePlay" ID="{CEF50BF9-3204-42FC-A548-1A67D5AEB22F}">
+					<ChildrenList>
+						<Action Name="" ID="{CC96658F-7331-421D-BD07-2FFB73FFAFED}" ShortID="236835532">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{632E9265-8771-4004-BA19-0BF90D6B48AA}" ShortID="892232686">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{615D4EF9-7BC1-4267-870D-CF66AB264DEE}" ShortID="289331560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2C0E4666-B41C-4146-B2BD-B03496943505}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CEC12905-B379-4667-849C-088D25C5EDB7}" ShortID="280816099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mysteryCrushed" ID="{E16CA9F2-E41B-4A36-B80E-4D22D58A13C1}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

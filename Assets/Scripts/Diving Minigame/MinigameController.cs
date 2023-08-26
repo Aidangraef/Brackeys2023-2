@@ -91,7 +91,7 @@ public class MinigameController : MonoBehaviour
     IEnumerator StartMinigame() {
         yield return new WaitForSeconds(startDelay);
 
-        PlaySound("minigameStart");
+        AkSoundEngine.PostEvent("diveStart", this.gameObject);
 
         endMinigameCoroutine = StartCoroutine(WaitToEndMinigame());
     }
@@ -118,10 +118,10 @@ public class MinigameController : MonoBehaviour
             GameController.controller.NewMemorySeen(currentMemory);
 
             // Play victory sound
-            PlaySound("minigameVictory");
+            AkSoundEngine.PostEvent("diveSuccess", this.gameObject);
         } else {
             // Play failure sound
-            PlaySound("minigameFailure");
+            AkSoundEngine.PostEvent("diveFail", this.gameObject);
         }
 
         // Fade off
@@ -134,10 +134,12 @@ public class MinigameController : MonoBehaviour
             if (foundSpecialThought) {
                 // Load memory
                 SceneManager.LoadScene(((int)diso.DivingScene));
+                AkSoundEngine.PostEvent("memoryStart", this.gameObject);
 
             } else {
                 // Load bar scene
                 SceneManager.LoadScene(1);
+                AkSoundEngine.PostEvent("exitMemory", this.gameObject);
 
             }
         } else {

@@ -1280,6 +1280,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4025873967324202430, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
+      propertyPath: playDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025873967324202430, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 832895364}
@@ -1287,5 +1291,13 @@ PrefabInstance:
       propertyPath: logoFlickerScript
       value: 
       objectReference: {fileID: 2081185729}
+    - target: {fileID: 4025873967589061385, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
+      propertyPath: sfxVolume
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025873967589061385, guid: ea0958238372e2f48b642f35986dcef1, type: 3}
+      propertyPath: musicVolume
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea0958238372e2f48b642f35986dcef1, type: 3}

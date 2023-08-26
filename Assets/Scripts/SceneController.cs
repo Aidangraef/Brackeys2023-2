@@ -32,7 +32,8 @@ public class SceneController : MonoBehaviour
 
     IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        AkSoundEngine.PostEvent("exitMemory", this.gameObject);
         SceneManager.LoadScene(1);
     }
 }

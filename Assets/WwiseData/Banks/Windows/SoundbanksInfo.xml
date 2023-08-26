@@ -59,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{92FBF3DD-EF72-E22C-D4A5-4B614E7504D1}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{32656EEA-8491-FF26-8CA9-897706477907}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -432,10 +432,13 @@
 				</Event>
 				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1618867687" Name="diveFail" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1229279613" Name="diveStart" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
+				<Event Id="1686862521" Name="divePlay" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
 					<MediaRefs>
 						<MediaRef Id="867402550"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1997425944" Name="divePop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
 					</ActionSetState>
@@ -757,5 +760,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AB93695D-E638-5771-6392-1C6791DD4BA5}</FileHash>
+	<FileHash>{54B951B2-C050-554D-4642-7AA15DD4BF81}</FileHash>
 </SoundBanksInfo>
