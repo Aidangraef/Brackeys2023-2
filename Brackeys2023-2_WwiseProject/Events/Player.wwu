@@ -20,7 +20,7 @@
 						<Action Name="" ID="{90243F3B-3B72-4B3A-9F2A-6BE4B0CC8458}" ShortID="173847965">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="vocalsDetective" ID="{C4A25330-BFA1-4C5F-BA0C-B627A7CA685D}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+									<ObjectRef Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -79,7 +79,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}"/>
+				<Event Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}">
+					<ChildrenList>
+						<Action Name="" ID="{3B6B8773-5201-446C-BA42-E5FA40042643}" ShortID="69486523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="divePop" ID="{4B7019F5-379C-4C65-A2F5-8D04DB11C576}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

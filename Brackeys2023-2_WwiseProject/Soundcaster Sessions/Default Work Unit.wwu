@@ -26,6 +26,10 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="detectiveSpeak" ID="{292D2E75-E739-4E6C-ACEF-D809D2D9F49C}" WorkUnitID="{5196A394-5B21-44BA-98AB-602F985DF8BD}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="neonFlicker" ID="{5C5FBA5D-C18C-493D-B45B-F57A59660308}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}"/>
 							<Position X="2" Y="1"/>
 						</Module>

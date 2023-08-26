@@ -5,6 +5,17 @@
 			<ChildrenList>
 				<Event Name="npcTalk" ID="{34862F30-E040-4AD9-B188-B0A308642F50}">
 					<ChildrenList>
+						<Action Name="" ID="{8442502C-D222-47D2-865B-AFCED23DE773}" ShortID="395051823">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vocalsDetective" ID="{1E86A67A-3228-493B-ABFC-956A085E1514}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{0F5F769C-BAA1-4D52-A827-357221EA409A}" ShortID="806004353">
 							<ReferenceList>
 								<Reference Name="Target">

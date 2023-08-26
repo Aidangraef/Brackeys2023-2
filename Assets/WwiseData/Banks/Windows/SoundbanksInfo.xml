@@ -59,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0121FB3A-94D6-5C74-00F3-DA82D71DFD70}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0E5FE205-5762-5209-F2B7-FD42934603C3}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -83,6 +83,10 @@
 					<ShortName>vocalsBarkeep2-007.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-007_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="58352512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-004.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-004_3E11272C.wem</CachePath>
+				</File>
 				<File Id="64071679" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-004.wav</ShortName>
 					<CachePath>SFX/vocalsTina2-004_08B47BC6.wem</CachePath>
@@ -94,6 +98,10 @@
 				<File Id="92909319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsKevin-006.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-006_C8C15967.wem</CachePath>
+				</File>
+				<File Id="98737313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-003.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-003_A4A9A093.wem</CachePath>
 				</File>
 				<File Id="100112895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-004.wav</ShortName>
@@ -207,6 +215,10 @@
 					<ShortName>concreteFootsteps-009.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="345004469" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>divePop.wav</ShortName>
+					<CachePath>SFX/divePop_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mysteryUnCrushed.wav</ShortName>
 					<CachePath>SFX/mysteryUnCrushed_7CDE1403.wem</CachePath>
@@ -223,9 +235,17 @@
 					<ShortName>vocalsBarkeep-003.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-003_851C99F3.wem</CachePath>
 				</File>
+				<File Id="373562971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-001.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-001_172645F2.wem</CachePath>
+				</File>
 				<File Id="382571462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VocalsWally-007.wav</ShortName>
 					<CachePath>SFX/VocalsWally-007_02BB463F.wem</CachePath>
+				</File>
+				<File Id="397519460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetectiveFinal.wav</ShortName>
+					<CachePath>SFX/vocalsDetectiveFinal_4F5D0847.wem</CachePath>
 				</File>
 				<File Id="409836546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-006.wav</ShortName>
@@ -287,6 +307,10 @@
 					<ShortName>vocalsKevin-002.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-002_A1E9C817.wem</CachePath>
 				</File>
+				<File Id="594292726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-005.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-005_6C964B85.wem</CachePath>
+				</File>
 				<File Id="596458017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-002.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-002_3F75BDB9.wem</CachePath>
@@ -303,6 +327,10 @@
 					<ShortName>vocalsVinnie2-002.wav</ShortName>
 					<CachePath>SFX/vocalsVinnie2-002_B99AAD37.wem</CachePath>
 				</File>
+				<File Id="635973185" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-002.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-002_E097E479.wem</CachePath>
+				</File>
 				<File Id="637710719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-007.wav</ShortName>
 					<CachePath>SFX/vocalsBen-007_FE357414.wem</CachePath>
@@ -318,6 +346,10 @@
 				<File Id="660616321" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsTina2-005.wav</ShortName>
 					<CachePath>SFX/vocalsTina2-005_78F679F7.wem</CachePath>
+				</File>
+				<File Id="701428879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-008.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-008_8F6A00EB.wem</CachePath>
 				</File>
 				<File Id="729812094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-004.wav</ShortName>
@@ -347,6 +379,10 @@
 					<ShortName>vocalsKevin-004.wav</ShortName>
 					<CachePath>SFX/vocalsKevin-004_F7D5790F.wem</CachePath>
 				</File>
+				<File Id="777666813" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-010.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-010_A86F661B.wem</CachePath>
+				</File>
 				<File Id="838841969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep2-008.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep2-008_3F75BDB9.wem</CachePath>
@@ -374,6 +410,10 @@
 				<File Id="903007647" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-005.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-005_18D86DB6.wem</CachePath>
+				</File>
+				<File Id="911233467" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-007.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-007_A2E5BDA8.wem</CachePath>
 				</File>
 				<File Id="912247419" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-008.wav</ShortName>
@@ -403,6 +443,10 @@
 					<ShortName>vocalsBarkeep-004.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-004_470C1E51.wem</CachePath>
 				</File>
+				<File Id="980823149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-006.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-006_2FDEEC47.wem</CachePath>
+				</File>
 				<File Id="984468348" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>The Blue Screen_Main Menu Theme_25Aug2023.wav</ShortName>
 					<CachePath>SFX/The Blue Screen_Main Menu Theme_25Aug2023_9EDFC787.wem</CachePath>
@@ -419,6 +463,10 @@
 					<ShortName>concreteFootsteps-005.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-005_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="1034921675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vocalsDetective-009.wav</ShortName>
+					<CachePath>SFX/vocalsDetective-009_96DE4285.wem</CachePath>
+				</File>
 				<File Id="1064893621" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-006.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-006_3F75BDB9.wem</CachePath>
@@ -430,13 +478,31 @@
 						<MediaRef Id="892375809"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="2.5361304" DurationMax="2.8005846">
+					<MediaRefs>
+						<MediaRef Id="58352512"/>
+						<MediaRef Id="98737313"/>
+						<MediaRef Id="373562971"/>
+						<MediaRef Id="397519460"/>
+						<MediaRef Id="594292726"/>
+						<MediaRef Id="635973185"/>
+						<MediaRef Id="701428879"/>
+						<MediaRef Id="777666813"/>
+						<MediaRef Id="911233467"/>
+						<MediaRef Id="980823149"/>
+						<MediaRef Id="1034921675"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1686862521" Name="divePlay" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
 					<MediaRefs>
 						<MediaRef Id="867402550"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1997425944" Name="divePop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1997425944" Name="divePop" DurationType="OneShot" DurationMin="2.0985208" DurationMax="2.0985208">
+					<MediaRefs>
+						<MediaRef Id="345004469"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
@@ -799,5 +865,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{27B8C112-ABC3-975E-DF47-4B9B54E85F1B}</FileHash>
+	<FileHash>{6A6CF583-8C2D-3E49-93D2-DB73304E4502}</FileHash>
 </SoundBanksInfo>
