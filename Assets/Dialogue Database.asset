@@ -16126,11 +16126,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -16142,19 +16142,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Kevin
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 6819580e-a2a4-4a5b-a66e-c927d1554690
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 17
       isRoot: 0
       isGroup: 0
@@ -16179,11 +16179,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -16195,19 +16195,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Wally Pevels
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 3af36974-8391-4d38-9a81-107fca2c339b
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 17
       isRoot: 0
       isGroup: 0
@@ -16228,7 +16228,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 98.10253}
+    canvasScrollPosition: {x: 0, y: 64.8936}
     canvasZoom: 0.94000006
   - id: 18
     fields:
@@ -18400,11 +18400,11 @@ MonoBehaviour:
       - title: Title
         value: START
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -18416,15 +18416,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: None()
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 22
       isRoot: 0
       isGroup: 0
@@ -18437,6 +18437,18 @@ MonoBehaviour:
         originDialogueID: 0
         destinationConversationID: 22
         destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 22
+        originDialogueID: 0
+        destinationConversationID: 22
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      - originConversationID: 22
+        originDialogueID: 0
+        destinationConversationID: 22
+        destinationDialogueID: 28
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -18494,19 +18506,11 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      - originConversationID: 22
-        originDialogueID: 1
-        destinationConversationID: 22
-        destinationDialogueID: 27
-        isConnector: 0
-        priority: 2
-      - originConversationID: 22
-        originDialogueID: 1
-        destinationConversationID: 22
-        destinationDialogueID: 28
-        isConnector: 0
-        priority: 2
-      conditionsString: 
+      conditionsString: (Variable["SawNoMemory"] == false) and ((Variable["SawMemory4"]
+        == true and Variable["SawMemory5"] == true) or (Variable["SawMemory6"] ==
+        true) or (Variable["SawMemory10"] == true and Variable["SawMemory11"] ==
+        true) or (Variable["SawMemory12"] == true) or (Variable["SawMemory14"] ==
+        true))
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19532,7 +19536,9 @@ MonoBehaviour:
         destinationDialogueID: 20
         isConnector: 0
         priority: 2
-      conditionsString: Variable["SawMemory14"] == true
+      conditionsString: (Variable["SawMemory10"] == true and Variable["SawMemory11"]
+        == true and Variable["SawMemory13"] == true and Variable["SawMemory14"] ==
+        true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19548,11 +19554,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 2
         type: 5
@@ -19564,19 +19570,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: WHAT?! YOU?
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 450d6064-7515-4408-a029-b25f9e2776c8
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 22
       isRoot: 0
       isGroup: 0
@@ -19591,7 +19597,9 @@ MonoBehaviour:
         destinationDialogueID: 21
         isConnector: 0
         priority: 2
-      conditionsString: Variable["SawMemory14"] == true
+      conditionsString: (Variable["SawMemory10"] == true and Variable["SawMemory11"]
+        == true and Variable["SawMemory13"] == true and Variable["SawMemory14"] ==
+        true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19647,7 +19655,9 @@ MonoBehaviour:
         destinationDialogueID: 22
         isConnector: 0
         priority: 2
-      conditionsString: Variable["SawMemory14"] == true
+      conditionsString: (Variable["SawMemory10"] == true and Variable["SawMemory11"]
+        == true and Variable["SawMemory13"] == true and Variable["SawMemory14"] ==
+        true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19702,7 +19712,9 @@ MonoBehaviour:
         destinationDialogueID: 23
         isConnector: 0
         priority: 2
-      conditionsString: Variable["SawMemory14"] == true
+      conditionsString: (Variable["SawMemory10"] == true and Variable["SawMemory11"]
+        == true and Variable["SawMemory13"] == true and Variable["SawMemory14"] ==
+        true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19757,11 +19769,7 @@ MonoBehaviour:
         destinationDialogueID: 24
         isConnector: 0
         priority: 2
-      conditionsString: (Variable["SawNoMemory"] == false) and ((Variable["SawMemory4"]
-        == true and Variable["SawMemory5"] == true) or (Variable["SawMemory6"] ==
-        true) or (Variable["SawMemory10"] == true and Variable["SawMemory11"] ==
-        true) or (Variable["SawMemory12"] == true) or (Variable["SawMemory14"] ==
-        true))
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19960,7 +19968,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Actually... are you really sure you cracked this mystery?
+        value: Actually... are you really sure you got anything at all?!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -20035,9 +20043,10 @@ MonoBehaviour:
       outgoingLinks: []
       conditionsString: (Variable["SawNoMemory"] == false) and ((Variable["SawMemory4"]
         == false or Variable["SawMemory5"] == false) and (Variable["SawMemory6"]
-        == false) and (Variable["SawMemory10"] == false or Variable["SawMemory11"]
-        == false) and (Variable["SawMemory12"] == false) and (Variable["SawMemory14"]
-        == false))
+        == false) and (Variable["SawMemory11"] == false or Variable["SawMemory13"]
+        == false) and (Variable["SawMemory12"] == false) and (Variable["SawMemory10"]
+        == false or Variable["SawMemory11"] == false or Variable["SawMemory13"] ==
+        false or Variable["SawMemory14"] == false))
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -20049,8 +20058,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 82.59907, y: 644.73706}
-    canvasZoom: 0.67000026
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.85000014
   syncInfo:
     syncActors: 0
     syncItems: 0

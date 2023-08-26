@@ -4206,7 +4206,7 @@ MonoBehaviour:
   preloadResources: 1
   warmUpConversationController: 0
   dontHideImmediateDuringWarmup: 0
-  dontDestroyOnLoad: 0
+  dontDestroyOnLoad: 1
   allowOnlyOneInstance: 1
   onStartTriggerWaitForSaveDataApplied: 0
   dialogueTimeMode: 0
