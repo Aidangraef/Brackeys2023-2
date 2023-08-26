@@ -5,32 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // keep the scene controller between scenes.
-        //DontDestroyOnLoad(gameObject);
-    }
-
     public void ReturnToBar()
     {
-        StartCoroutine(ChangeScene());
+        StartCoroutine(WaitThenGoToBar());
     }
 
     public void ReturnToMenu()
     {
-        StartCoroutine(ChangeScene2());
+        StartCoroutine(WaitThenGoToMenu());
+
+        // Start fade effect
+        FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
     }
 
-    IEnumerator ChangeScene2()
+    IEnumerator WaitThenGoToMenu()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(0);
+        GameController.controller.GoToMainMenu();
     }
 
-    IEnumerator ChangeScene()
+    IEnumerator WaitThenGoToBar()
     {
         yield return new WaitForSeconds(3);
         AkSoundEngine.PostEvent("exitMemory", this.gameObject);
