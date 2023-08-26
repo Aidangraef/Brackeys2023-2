@@ -36,8 +36,11 @@
 			<StateGroups>
 				<StateGroup Id="185713839" Name="roomState">
 					<States>
+						<State Id="340271938" Name="walking"/>
 						<State Id="438105790" Name="outside"/>
 						<State Id="748895195" Name="None"/>
+						<State Id="2608492946" Name="diving"/>
+						<State Id="3509424520" Name="memory"/>
 						<State Id="3553349781" Name="inside"/>
 					</States>
 				</StateGroup>
@@ -56,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{3E2C7006-1D55-CDD4-1876-FD392A3E7783}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{92FBF3DD-EF72-E22C-D4A5-4B614E7504D1}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -146,7 +149,7 @@
 				</File>
 				<File Id="183604237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_11182801.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_5B970141.wem</CachePath>
 				</File>
 				<File Id="209933720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-002.wav</ShortName>
@@ -180,6 +183,10 @@
 					<ShortName>vocalsVinnie2-003.wav</ShortName>
 					<CachePath>SFX/vocalsVinnie2-003_3FC805C7.wem</CachePath>
 				</File>
+				<File Id="254834334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The_Blue_Screen_Dive_Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The_Blue_Screen_Dive_Theme_25Aug2023_9EDFC787.wem</CachePath>
+				</File>
 				<File Id="262041955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBarkeep-007.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-007_D9694653.wem</CachePath>
@@ -199,6 +206,10 @@
 				<File Id="328961177" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-009.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-009_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="346905751" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mysteryUnCrushed.wav</ShortName>
+					<CachePath>SFX/mysteryUnCrushed_7CDE1403.wem</CachePath>
 				</File>
 				<File Id="361036282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsVinnie2-001.wav</ShortName>
@@ -258,7 +269,7 @@
 				</File>
 				<File Id="526299618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_B571C842.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_121CD66F.wem</CachePath>
 				</File>
 				<File Id="532866258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>vocalsBen-005.wav</ShortName>
@@ -342,7 +353,11 @@
 				</File>
 				<File Id="857239412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thunder_rain_helsinki_august_2014_04.wav</ShortName>
-					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_36F2A10C.wem</CachePath>
+					<CachePath>SFX/thunder_rain_helsinki_august_2014_04_6A2B3215.wem</CachePath>
+				</File>
+				<File Id="867402550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mysteryCrushed.wav</ShortName>
+					<CachePath>SFX/mysteryCrushed_59711608.wem</CachePath>
 				</File>
 				<File Id="892375809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -388,6 +403,10 @@
 					<ShortName>vocalsBarkeep-004.wav</ShortName>
 					<CachePath>SFX/vocalsBarkeep-004_470C1E51.wem</CachePath>
 				</File>
+				<File Id="984468348" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>The Blue Screen_Main Menu Theme_25Aug2023.wav</ShortName>
+					<CachePath>SFX/The Blue Screen_Main Menu Theme_25Aug2023_9EDFC787.wem</CachePath>
+				</File>
 				<File Id="1015166504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>concreteFootsteps-008.wav</ShortName>
 					<CachePath>SFX/concreteFootsteps-008_3F75BDB9.wem</CachePath>
@@ -411,11 +430,27 @@
 						<MediaRef Id="892375809"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1127674584" Name="detectiveSpeak" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1618867687" Name="diveFail" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1229279613" Name="diveStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1229279613" Name="diveStart" DurationType="OneShot" DurationMin="3.4663782" DurationMax="3.4663782">
+					<MediaRefs>
+						<MediaRef Id="867402550"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2973970440" Name="diveSuccess" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="425063146" Name="diveWrong" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4122450220" Name="enterBar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1501097736" Name="exitMemory" DurationType="OneShot" DurationMin="3.460386" DurationMax="3.460386">
+					<MediaRefs>
+						<MediaRef Id="346905751"/>
+					</MediaRefs>
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="185713839" Id="3553349781" Name="inside"/>
 					</ActionSetState>
@@ -451,6 +486,23 @@
 								<MediaRef Id="650103668"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="340271938"/>
+							<MediaRefs>
+								<MediaRef Id="149329997"/>
+								<MediaRef Id="176846604"/>
+								<MediaRef Id="218386730"/>
+								<MediaRef Id="328961177"/>
+								<MediaRef Id="363383916"/>
+								<MediaRef Id="754295549"/>
+								<MediaRef Id="923676968"/>
+								<MediaRef Id="952124549"/>
+								<MediaRef Id="959757076"/>
+								<MediaRef Id="1015166504"/>
+								<MediaRef Id="1018975967"/>
+								<MediaRef Id="1064893621"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="4058101365" Name="gameStart" DurationType="OneShot" DurationMin="6.6645327" DurationMax="6.9962006">
@@ -461,11 +513,19 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3171753105" Name="neonStartGame"/>
 					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="340271938" Name="walking"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="2610950761" Name="gunCock" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="225175085"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="4118680780" Name="memoryStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="3509424520" Name="memory"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="2097039607" Name="murderShots" DurationType="OneShot" DurationMin="2.0011601" DurationMax="2.0011601">
 					<MediaRefs>
@@ -480,15 +540,34 @@
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="185713839" Id="0"/>
-							<Children>
-								<SwitchContainer>
-									<SwitchValue GroupType="Switch" GroupId="3858903546" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="287062502"/>
-									</MediaRefs>
-								</SwitchContainer>
-							</Children>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="3553349781"/>
+							<MediaRefs>
+								<MediaRef Id="287062502"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="340271938"/>
+							<MediaRefs>
+								<MediaRef Id="287062502"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="438105790"/>
+							<MediaRefs>
+								<MediaRef Id="984468348"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="984468348"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="185713839" Id="2608492946"/>
+							<MediaRefs>
+								<MediaRef Id="254834334"/>
+							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionPostEvent>
@@ -654,8 +733,11 @@
 			<StateGroups>
 				<StateGroup Id="185713839" Name="roomState">
 					<States>
+						<State Id="340271938" Name="walking"/>
 						<State Id="438105790" Name="outside"/>
 						<State Id="748895195" Name="None"/>
+						<State Id="2608492946" Name="diving"/>
+						<State Id="3509424520" Name="memory"/>
 						<State Id="3553349781" Name="inside"/>
 					</States>
 				</StateGroup>
@@ -675,5 +757,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F925C19-4960-534A-C865-A74D10BE02FC}</FileHash>
+	<FileHash>{43DF07CE-6659-D3E1-EEF3-99267826DF63}</FileHash>
 </SoundBanksInfo>

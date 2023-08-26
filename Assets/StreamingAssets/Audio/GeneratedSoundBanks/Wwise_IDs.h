@@ -14,14 +14,17 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTONCLICK = 4051332235U;
+        static const AkUniqueID DETECTIVESPEAK = 1127674584U;
         static const AkUniqueID DIVEFAIL = 1618867687U;
         static const AkUniqueID DIVESTART = 1229279613U;
         static const AkUniqueID DIVESUCCESS = 2973970440U;
         static const AkUniqueID DIVEWRONG = 425063146U;
         static const AkUniqueID ENTERBAR = 4122450220U;
+        static const AkUniqueID EXITMEMORY = 1501097736U;
         static const AkUniqueID FOOTSTEPPING = 3989513603U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID GUNCOCK = 2610950761U;
+        static const AkUniqueID MEMORYSTART = 4118680780U;
         static const AkUniqueID MURDERSHOTS = 2097039607U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID NEONFLICKER = 2626890067U;
@@ -47,9 +50,12 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID DIVING = 2608492946U;
                 static const AkUniqueID INSIDE = 3553349781U;
+                static const AkUniqueID MEMORY = 3509424520U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID WALKING = 340271938U;
             } // namespace STATE
         } // namespace ROOMSTATE
 

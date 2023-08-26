@@ -5,13 +5,23 @@
 			<ChildrenList>
 				<Event Name="musicStart" ID="{0A26BE76-D1E1-425B-A8F7-B6321C682D7B}">
 					<ChildrenList>
-						<Action Name="" ID="{E17A0004-B72D-4BCD-BFAB-3A9499874C11}" ShortID="352650616">
+						<Action Name="" ID="{E99BF70C-46AE-4573-9391-B5695B5F5F96}" ShortID="697983098">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="musicSwitch" ID="{4446E7BB-69F8-41F6-B510-40B00537C9F3}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2BFF4243-A2D3-4D7B-9527-E00A89A47964}" ShortID="73904534">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diveMemorySwitch" ID="{A0026A4E-2FC7-488D-BB42-A14158F7DE25}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -25,13 +35,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{785E5508-341C-4FC5-995E-8D77DC693322}" ShortID="693342311">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="musicSwitch" ID="{4446E7BB-69F8-41F6-B510-40B00537C9F3}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{5942F77C-8D72-4882-A11D-2183FD144D8F}" ShortID="916660186">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="41"/>
@@ -39,6 +42,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="neonFlicker" ID="{5C5FBA5D-C18C-493D-B45B-F57A59660308}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{92E5B554-26E1-4809-B605-54C4F1AC0D38}" ShortID="390079571">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E4BF820F-48A0-42E3-B607-208BF445F837}" ShortID="123282331">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diveMemorySwitch" ID="{A0026A4E-2FC7-488D-BB42-A14158F7DE25}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -51,12 +68,11 @@
 						</Action>
 						<Action Name="" ID="{AF7F30F9-3FBD-4687-AA53-ECE66E59D069}" ShortID="216129447">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="15">
+								<Property Name="Delay" Type="Real64" Value="10">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{5A57317E-2930-42D5-BE53-D41F78205ECD}">
 												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="15"/>
 													<Property Name="Min" Type="Real64" Value="-15"/>
 												</PropertyList>
@@ -67,7 +83,143 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="testRain" ID="{660E37AB-EFFA-4ED1-871A-E6F8783F62BC}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="memoryStart" ID="{C1807306-3299-46FB-9048-8BBBC111B40F}">
+					<ChildrenList>
+						<Action Name="" ID="{A62C43E4-B6EE-4417-9707-DB8F5C589515}" ShortID="580858637">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="memory" ID="{B880FD5F-EF2C-4271-B329-FABBA07B1A37}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="gameStart" ID="{2F8BD17A-24E1-4AC4-97D3-B226EA2E2849}">
+					<ChildrenList>
+						<Action Name="" ID="{CD9BEAD7-D244-42C6-B2BB-B762B1DC0A15}" ShortID="649359680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BB3890B5-A400-4FBA-AD08-138D1D29ACA4}" ShortID="1019690438">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonStartGame" ID="{5E033DF6-DC74-4024-93DD-44C94C165405}" WorkUnitID="{BDCD393C-3C25-465E-B264-A7AF1BA8F4B7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{63304EA6-93C1-46E3-9BC7-2084EDE99749}" ShortID="303549641">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="exhale" ID="{3F4DEA0D-541E-46B5-B4B9-104BAAEAACFC}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FAF22135-9A9A-45D0-B4FC-20AF5D04D1D1}" ShortID="949077932">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cigExtinguish" ID="{242174F3-4902-44BD-A15F-83F72E4F4764}" WorkUnitID="{5DCBABBD-1944-40DB-B0A5-699FB16F985E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="enterBar" ID="{B6F7633D-4EB4-4D00-AE41-FDA98B762319}">
+					<ChildrenList>
+						<Action Name="" ID="{22729622-B12F-4220-B6F3-D1C71EFA2A2D}" ShortID="167136584">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="neonStartGame" ID="{1C4B0CB0-962C-4A59-93A2-00F010D42824}" WorkUnitID="{0A78D8E9-11FB-4851-B542-590DC4185521}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4BD5F339-213D-4161-B564-CFDA2B52D599}" ShortID="535420727">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="exitMemory" ID="{122FF7D0-6427-401A-BB3F-F42C9FE6DAC6}">
+					<ChildrenList>
+						<Action Name="" ID="{583227AA-DED3-492D-8F88-9D25C57C1786}" ShortID="538361093">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mysteryUnCrushed" ID="{85EA6D4A-1DC0-4F7F-A67F-B885208271B2}" WorkUnitID="{08DE9BEF-2F6C-420A-AAD0-D5E1A5E59785}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DBF39CB2-AB72-456F-BBBC-8BE14E6CB829}" ShortID="790837547">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{50184CB8-180E-43F1-B151-44DD92F8ECD0}" ShortID="930180405">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2499E9DC-C958-4B25-B6C4-48541DB7B939}" ShortID="509088396">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mainThemeSwitch" ID="{E9ADACF1-F6E0-4D92-B6C2-6504DB35ACDF}" WorkUnitID="{5EFBA420-A517-4FA5-A881-6FC22B152953}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F396662B-1EC4-4F18-B50E-851C739A8D2A}" ShortID="884078092">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="inside" ID="{8A8184AF-D68F-4DDC-83C2-5EF9E01D79D8}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

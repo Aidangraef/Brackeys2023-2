@@ -612,6 +612,12 @@
 													<ItemRef Name="woodSteps" ID="{246ECFCB-D895-4CCA-8C26-8C7943F04C76}"/>
 												</ItemList>
 											</Grouping>
+											<Grouping>
+												<SwitchRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
+												<ItemList>
+													<ItemRef Name="concreteSteps" ID="{F149753B-3A70-412A-83B2-7729D1EC6794}"/>
+												</ItemList>
+											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
