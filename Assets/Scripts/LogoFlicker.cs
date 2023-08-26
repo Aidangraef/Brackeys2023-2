@@ -67,6 +67,7 @@ public class LogoFlicker : MonoBehaviour
         isFlickering = true;
         targetColor = Color.black;
         currentFlickerPosition = 0f;
+        AkSoundEngine.PostEvent("neonFlicker", this.gameObject);
     }
 
     public void StartSequence() {

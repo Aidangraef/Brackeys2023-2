@@ -891,6 +891,7 @@
 												<Value>40</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1149,6 +1150,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="vocalsVinnie" ID="{1C4699BC-7914-4028-8A0F-D507DCBF9174}" ShortID="941100994">
 									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1394,6 +1396,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="vocalsPhone" ID="{3B1CDF2D-DF29-4360-81D2-BA653A06AB40}" ShortID="284251489">
 									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>

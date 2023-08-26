@@ -22,6 +22,7 @@ public class ShootingScene : MonoBehaviour
 
     public void GoBackToBar()
     {
+        AkSoundEngine.PostEvent("exitMemory", this.gameObject);
         SceneManager.LoadScene(1);
     }
 
