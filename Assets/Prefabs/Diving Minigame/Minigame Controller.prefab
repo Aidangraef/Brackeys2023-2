@@ -51,10 +51,11 @@ MonoBehaviour:
   inputController: {fileID: 0}
   fadeEffect: {fileID: 7614816528962177054}
   characterSprites:
-  - {fileID: 21300000, guid: e8be3c41b5762294482fb2ee780fda5b, type: 3}
-  - {fileID: 21300000, guid: d63e7ae8861a6d94e8c4db9e5b6649a3, type: 3}
-  - {fileID: 21300000, guid: 61a81ce3678a77d4d97a27fde0981dee, type: 3}
-  - {fileID: 21300000, guid: c71f752f60aa9974090fbd0d76900766, type: 3}
+  - {fileID: 1252332653, guid: 699143781db3dc242b5751b7f9d12fb5, type: 3}
+  - {fileID: 21300000, guid: 065ef30bed1a7fa49856c25328fcc969, type: 3}
+  - {fileID: 21300000, guid: 6ee090b234640bd4c8e8b995b2cba8ff, type: 3}
+  - {fileID: 21300000, guid: 6f5fdec5edee7ee42981ab566c211050, type: 3}
+  - {fileID: 21300000, guid: c14fa9a15ad9987469632f6413d04701, type: 3}
   characterSpriteRenderer: {fileID: 0}
   currentCharacter: 0
   diso: {fileID: 11400000, guid: ecfb6b681ec2a3d4db7a5c421b4ba0c9, type: 2}
