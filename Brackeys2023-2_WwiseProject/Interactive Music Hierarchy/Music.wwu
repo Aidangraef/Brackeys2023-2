@@ -819,7 +819,7 @@
 								<StateRef Name="walking" ID="{B22505C6-A23E-414C-8C38-3ECE80F56394}"/>
 								<CustomState Name="" ID="{3BBBE2C1-9C91-4B4C-9338-9545E8E3B665}" ShortID="86500167">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="70"/>
+										<Property Name="Lowpass" Type="int16" Value="50"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
