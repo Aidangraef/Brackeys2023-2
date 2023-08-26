@@ -8,10 +8,12 @@ public class CharacterController : MonoBehaviour
     private Vector3 movement;
     private bool facingRight;
     private Animator animator;
+    bool isDiving = false;
 
     public int speed;
 
     public bool FacingRight { get => facingRight; set => facingRight = value; }
+    public bool IsDiving { get => isDiving; set => isDiving = value; }
 
     void Awake()
     {
@@ -22,7 +24,12 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxis("Horizontal");
+        // Ignores update if into diving transition
+        if (IsDiving) {
+            return;
+        }
+
+        movement.x = PlayerHoldingBothDirections() ? 0f : Input.GetAxis("Horizontal");
 
         // flip sprite
         if(!DialogueManager.IsConversationActive && 
@@ -33,7 +40,7 @@ public class CharacterController : MonoBehaviour
 
         // walking animation
         if(!DialogueManager.IsConversationActive && 
-                (Input.GetAxisRaw("Horizontal") >= 0.01 || Input.GetAxisRaw("Horizontal") <= -0.01))
+            (Input.GetAxisRaw("Horizontal") >= Mathf.Epsilon || Input.GetAxisRaw("Horizontal") <= -Mathf.Epsilon))
         {
             animator.SetBool("isMoving", true);
         }
@@ -59,5 +66,9 @@ public class CharacterController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x = theScale.x * -1;
         transform.localScale = theScale;
+    }
+
+    bool PlayerHoldingBothDirections() {
+        return (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.RightArrow));
     }
 }

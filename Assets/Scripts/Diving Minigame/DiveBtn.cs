@@ -12,7 +12,9 @@ public class DiveBtn : MonoBehaviour
         AkSoundEngine.PostEvent("divePlay", this.gameObject);
         GameController.controller.SavePlayerTransform();
         Invoke("GoToMiniGameScene", 3f);
-        //SceneManager.LoadScene((int)UnityScenes.Minigame);
+
+        // Avoid player movement
+        FindObjectOfType<CharacterController>().IsDiving = true;
     }
 
     public void SetDiveScene(int divingSceneId)
