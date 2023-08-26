@@ -99,12 +99,6 @@ public class ThoughtBalloon : MonoBehaviour
         trailParticles.Stop();
         pulseParticles.Stop();
 
-        // Play sound
-        if (special)
-        {
-            MinigameController.controller.PlaySound("diveSuccess");
-        } else MinigameController.controller.PlaySound("divePop");
-
         // Get text
         return thoughtText;
     }
