@@ -16,3 +16,25 @@ MonoBehaviour:
   thoughtsList:
   - feeling: Serious
     thought: Been a while since a AK suited.
+  - feeling: Hurt
+    thought: I swear the guy in that last hand was cheating...
+  - feeling: Regret
+    thought: I should've folded earlier.
+  - feeling: Unease
+    thought: It feels like it's too hot in here...
+  - feeling: Relief
+    thought: Despite the bad luck, things are looking up!
+  - feeling: Annoyance
+    thought: Get a breath mint, detective.
+  - feeling: Hunger
+    thought: I could really go for a bag of microchips right now.
+  - feeling: Hunger
+    thought: I could really go for a bag of microchips right now.
+  - feeling: Longing
+    thought: Maybe I should take a trip out to the country...
+  - feeling: Existential
+    thought: Why are we here? Who made us?
+  - feeling: Pride
+    thought: No one in here is better dressed than me!
+  - feeling: Confusion
+    thought: What does the word "quixotic" mean again?
