@@ -15,6 +15,9 @@ public class DiveBtn : MonoBehaviour
 
         // Avoid player movement
         FindObjectOfType<CharacterController>().IsDiving = true;
+
+        // Play dive transition
+        FindObjectOfType<DiveTransition>().enabled = true;
     }
 
     public void SetDiveScene(int divingSceneId)
