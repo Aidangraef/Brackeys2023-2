@@ -12,6 +12,8 @@ public class SetTypewriterForActor : MonoBehaviour
     public AK.Wwise.Event BarkeepEvent;
     public AK.Wwise.Event TinaEvent;
     public AK.Wwise.Event WallyEvent;
+    public AK.Wwise.Event VinnieEvent;
+    public AK.Wwise.Event PhoneEvent;
     public void OnBeginTypewriter() // Assign to typewriter's OnBegin() event.
     {
         // Look up character's switch and talking speed:
@@ -30,6 +32,10 @@ public class SetTypewriterForActor : MonoBehaviour
                 TinaEvent.Post(gameObject); break;
             case "npcWally":
                 WallyEvent.Post(gameObject); break;
+            case "npcVinnie":
+                VinnieEvent.Post(gameObject); break;
+            case "npcPhone":
+                PhoneEvent.Post(gameObject); break;
         }
         currentTalkSpeed = DialogueManager.masterDatabase.GetActor(actorName).LookupInt("speechSpeed");
         CharacterSpeech.currentSpeechSpeed = currentTalkSpeed;
