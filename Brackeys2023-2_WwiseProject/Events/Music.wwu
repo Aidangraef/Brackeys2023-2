@@ -8,6 +8,7 @@
 						<Action Name="" ID="{E99BF70C-46AE-4573-9391-B5695B5F5F96}" ShortID="697983098">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -18,6 +19,7 @@
 						<Action Name="" ID="{2BFF4243-A2D3-4D7B-9527-E00A89A47964}" ShortID="73904534">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -244,6 +246,26 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="outside" ID="{DC396B1A-B6FE-4145-AE16-A2EC6B29F9D0}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{961B8D19-4AAD-4FC3-8E97-255400DFC5B9}" ShortID="808943887">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rainThunderStinger" ID="{F89D8B49-72A4-4CD7-95DD-9512103EF9B0}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0A6494E6-1AAE-4B3A-9917-A2C1A9C42272}" ShortID="657900918">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{985B07F3-03A2-464D-A86C-DBC4DD0BDA06}" WorkUnitID="{C37FEA52-9570-4D19-B916-0634D5B57326}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
