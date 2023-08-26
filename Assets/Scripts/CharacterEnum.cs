@@ -6,6 +6,6 @@ public enum CharacterEnum {
     BEN,
     TINA,
     KEVIN,
-    WALLY
-
+    WALLY,
+    VINNIE
 }
