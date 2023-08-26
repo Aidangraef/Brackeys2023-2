@@ -385,7 +385,7 @@ MonoBehaviour:
   rectTransform: {fileID: 597476704}
   startingPosition: {x: 0, y: -1100}
   endingPosition: {x: 0, y: 3300}
-  duration: 16
+  duration: 25
 --- !u!1 &728313256
 GameObject:
   m_ObjectHideFlags: 0
