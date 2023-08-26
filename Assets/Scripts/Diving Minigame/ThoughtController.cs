@@ -59,9 +59,35 @@ public class ThoughtController : MonoBehaviour
     }
 
     string ConvertMemoryToFeeling() {
-      switch (MinigameController.controller.CurrentMemory) {
-      case MemoryEnum.BEN_WALLY_GET_TIPSY:
-      return "Guilt";
-      }
+        switch (MinigameController.controller.CurrentMemory) {
+            case MemoryEnum.BEN_PAST:
+                return "Regret";
+            case MemoryEnum.BEN_WALLY_GET_TIPSY:
+                return "Guilt";
+            case MemoryEnum.BEN_GUN_GOES_MISSING:
+                return "Guilt";
+            case MemoryEnum.TINA_SINGS_LA_CANTATA:
+                return "Friend";
+            case MemoryEnum.TINA_KEVIN_TOGETHER:
+                return "Love";
+            case MemoryEnum.TINA_BUSINESS_FAIL:
+                return "Anger";
+            case MemoryEnum.KEVIN_BEATS_VINNIE_POOL:
+                return "Fear";
+            case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+                return "Shame";
+            case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                return "Anxiety";
+            case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+                return "Anger";
+            case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+                return "Disdain";
+            case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
+                return "Pure Fear";
+            default:
+                Debug.LogError("Could not convert memory to feeling!");
+                return "";
+        }
+    }
 
 }
