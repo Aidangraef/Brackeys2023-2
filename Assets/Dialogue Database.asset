@@ -18458,8 +18458,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 30
+        x: 178.82352
+        y: 1
         width: 160
         height: 30
     - id: 1
@@ -18509,8 +18509,8 @@ MonoBehaviour:
       conditionsString: (Variable["SawNoMemory"] == false) and ((Variable["SawMemory4"]
         == true and Variable["SawMemory5"] == true) or (Variable["SawMemory6"] ==
         true) or (Variable["SawMemory10"] == true and Variable["SawMemory11"] ==
-        true) or (Variable["SawMemory12"] == true) or (Variable["SawMemory14"] ==
-        true))
+        true and Variable["SawMemory13"] == true and Variable["SawMemory14"] == true)
+        or (Variable["SawMemory12"] == true))
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19941,7 +19941,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 150.80852
+        x: 153.00633
         y: 1354.1915
         width: 160
         height: 30
@@ -20059,7 +20059,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.85000014
+    canvasZoom: 0.9100001
   syncInfo:
     syncActors: 0
     syncItems: 0
