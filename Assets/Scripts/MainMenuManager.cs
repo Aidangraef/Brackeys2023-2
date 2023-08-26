@@ -53,23 +53,27 @@ public class MainMenuManager : MonoBehaviour
     public void Credits()
     {
         menu.SetActive(false);
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         credits.SetActive(true);
     }
 
     public void Settings()
     {
         menu.SetActive(false);
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         settings.SetActive(true);
     }
 
     public void HowToPlay() {
         menu.SetActive(false);
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         howToPlay.SetActive(true);
     }
 
     public void Back()
     {
         menu.SetActive(true);
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         credits.SetActive(false);
         settings.SetActive(false);
         howToPlay.SetActive(false);
@@ -77,6 +81,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void Quit()
     {
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         Application.Quit();
     }
 }

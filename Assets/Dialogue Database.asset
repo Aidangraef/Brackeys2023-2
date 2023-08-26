@@ -40,7 +40,7 @@ MonoBehaviour:
     - title: Name
       value: Detective
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
