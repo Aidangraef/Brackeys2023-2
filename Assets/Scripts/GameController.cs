@@ -59,6 +59,8 @@ public class GameController : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        // For every scene loaded, reinitialize Dialogue Manager variables
+        PopulateDialogueVariables();
 
         switch ((UnityScenes)scene.buildIndex) {
             case UnityScenes.Bar:
@@ -106,6 +108,40 @@ public class GameController : MonoBehaviour
         DialogueLua.SetVariable("SawMemory14", false);
     }
 
+    public void PopulateDialogueVariables() {
+        if (memoriesSeen.Count > 0) {
+            DialogueLua.SetVariable("SawNoMemory", false);
+
+            foreach (MemoryEnum memory in memoriesSeen) {
+                switch (memory) {
+                    case MemoryEnum.BEN_WALLY_GET_TIPSY:
+                        DialogueLua.SetVariable("SawMemory4", true);
+                        break;
+                    case MemoryEnum.BEN_GUN_GOES_MISSING:
+                        DialogueLua.SetVariable("SawMemory5", true);
+                        break;
+                    case MemoryEnum.TINA_SINGS_LA_CANTATA:
+                        DialogueLua.SetVariable("SawMemory6", true);
+                        break;
+                    case MemoryEnum.KEVIN_HIDES_NERDY_SIDE:
+                        DialogueLua.SetVariable("SawMemory10", true);
+                        break;
+                    case MemoryEnum.KEVIN_KNOWS_DETECTIVE:
+                        DialogueLua.SetVariable("SawMemory11", true);
+                        break;
+                    case MemoryEnum.WALLY_LOSES_VINNIE_POKER:
+                        DialogueLua.SetVariable("SawMemory12", true);
+                        break;
+                    case MemoryEnum.WALLY_SUSPICIOUS_PHONE_CALL:
+                        DialogueLua.SetVariable("SawMemory13", true);
+                        break;
+                    case MemoryEnum.VINNIE_YOU_SHOT_VINNIE:
+                        DialogueLua.SetVariable("SawMemory14", true);
+                        break;
+                }
+            }
+        }
+    }
 
     public void NewMemorySeen(MemoryEnum memory) {
         if (!memoriesSeen.Contains(memory)) {

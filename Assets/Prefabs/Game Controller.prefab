@@ -367,6 +367,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 41e56bcbe52d0804fa27bf2b32ab15c3, type: 2}
   - {fileID: 11400000, guid: 5744761e07f71a84faefc49be3456292, type: 2}
   - {fileID: 11400000, guid: 7f96ca9a79e7b6843bbaa6d1aeb0afa4, type: 2}
+  - {fileID: 11400000, guid: ca43bc074f62eea4ea9f12ad7a98faff, type: 2}
   memoriesSeen: 
   didIJustShootSomeone: 0
   didIJustShootSomeoneGameObject: {fileID: 287020821}
