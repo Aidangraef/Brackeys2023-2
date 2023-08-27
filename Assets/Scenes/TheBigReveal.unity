@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barDelay: 2
 --- !u!4 &13525218
 Transform:
   m_ObjectHideFlags: 0
@@ -1359,8 +1360,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.02150011, y: 0.022900105, z: 0}
-    m_Extent: {x: 4.7903, y: 4.7917, z: 0}
+    m_Center: {x: -0.023800135, y: 0.026350021, z: 0}
+    m_Extent: {x: 4.7937, y: 4.78965, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1644,8 +1645,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15595001, y: 0.0045000017, z: 0}
-    m_Extent: {x: 1.1019499, y: 0.6021, z: 0}
+    m_Center: {x: -0.15579998, y: -0.004399985, z: 0}
+    m_Extent: {x: 1.1056, y: 0.60319996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2510,7 +2511,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - guid: cc8cf3a6-5618-4fb1-99bb-71ef920c64d5
+  - guid: e6436aa5-5d16-4bb4-b528-69533002f673
     onExecute:
       m_PersistentCalls:
         m_Calls:

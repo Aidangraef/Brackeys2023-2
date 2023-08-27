@@ -305,7 +305,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -16291,7 +16291,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 543.71136
-        y: 180.41237
+        y: 179.38142
         width: 160
         height: 30
     entryGroups: []
@@ -20088,8 +20088,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: It seems you got some info by talking to the patrons, let's hope that's
-          enough proof, right?!
+        value: It seems you got some info by talking to the patrons, but doesn't
+          look like enough proof.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -20097,7 +20097,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: cc8cf3a6-5618-4fb1-99bb-71ef920c64d5
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 22
@@ -20107,7 +20107,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 22
+        originDialogueID: 28
+        destinationConversationID: 22
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
       conditionsString: (Variable["SawNoMemory"] == false) and ((Variable["SawMemory4"]
         == false or Variable["SawMemory5"] == false) and (Variable["SawMemory6"]
         == false) and (Variable["SawMemory11"] == false or Variable["SawMemory13"]
@@ -20124,9 +20130,74 @@ MonoBehaviour:
         y: 192.5
         width: 160
         height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Considering your reputation, that was pretty disappointing.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: e6436aa5-5d16-4bb4-b528-69533002f673
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: CameraMover, Assembly-CSharp
+            m_MethodName: GoToCredits
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      canvasRect:
+        serializedVersion: 2
+        x: 455.74658
+        y: 269.6813
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 137.02554, y: 0}
+    canvasZoom: 0.7000003
   syncInfo:
     syncActors: 0
     syncItems: 0
