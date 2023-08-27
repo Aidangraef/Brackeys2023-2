@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barDelay: 4
 --- !u!4 &13525218
 Transform:
   m_ObjectHideFlags: 0
@@ -396,8 +397,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.023599863, y: 0.025749922, z: 0}
-    m_Extent: {x: 4.7892, y: 4.79325, z: 0}
+    m_Center: {x: -0.031149864, y: 0.032949924, z: 0}
+    m_Extent: {x: 4.79325, y: 4.79675, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

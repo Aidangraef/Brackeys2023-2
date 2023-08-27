@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    [SerializeField]
+    float barDelay = 2f;
 
     public void ReturnToBar()
     {
@@ -28,7 +30,7 @@ public class SceneController : MonoBehaviour
 
     IEnumerator WaitThenGoToBar()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(barDelay);
         // Start fade effect
         // TODO Make sure there's one Fade Effect in a Canvas, like in Scene BenDive1
         FindObjectOfType<ImageFadeEffect>().TargetAlpha = 1f;
