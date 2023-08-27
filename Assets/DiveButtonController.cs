@@ -20,7 +20,7 @@ public class DiveButtonController : MonoBehaviour
             Destroy(_diveButtonGo);
         }
         _diveButtonGo = Instantiate(diveButton,
-                new Vector3(-117, -74, 0),
+                new Vector3(-100, -74, 0),
                 Quaternion.identity); 
         _diveButtonGo.transform.SetParent(transform, false);
     }
