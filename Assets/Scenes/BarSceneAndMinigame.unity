@@ -384,8 +384,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15025002, y: 0.0045000017, z: 0}
-    m_Extent: {x: 1.09845, y: 0.6078, z: 0}
+    m_Center: {x: -0.15835002, y: 0.006650001, z: 0}
+    m_Extent: {x: 1.10195, y: 0.60815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -462,8 +462,8 @@ MonoBehaviour:
   - {x: 3.3044987, y: 0.4444654, z: 0}
   - {x: 3.3230057, y: 0.42557693, z: 0}
   m_ShapePathHash: 1574848357
-  m_Mesh: {fileID: 1364323484}
-  m_InstanceId: 118472
+  m_Mesh: {fileID: 1290827440}
+  m_InstanceId: 32954
   m_LocalBounds:
     m_Center: {x: 0.12495041, y: 0.4243523, z: 0}
     m_Extent: {x: 3.1980553, y: 0.04788053, z: 0}
@@ -533,8 +533,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.021149874, y: 0.026949883, z: 0}
-    m_Extent: {x: 4.7901497, y: 4.79395, z: 0}
+    m_Center: {x: -0.02519989, y: 0.03034997, z: 0}
+    m_Extent: {x: 4.7971, y: 4.79195, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3544,7 +3544,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!43 &1364323484
+--- !u!43 &1290827440
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4528,6 +4528,7 @@ GameObject:
   - component: {fileID: 1862635019}
   - component: {fileID: 1862635018}
   - component: {fileID: 1862635023}
+  - component: {fileID: 1862635024}
   m_Layer: 0
   m_Name: Tina Marino
   m_TagString: Untagged
@@ -4747,6 +4748,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1862635024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862635017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ac1ecdd4ba16b4cb63a4c8ef0ffb53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: -6.2, y: -0.45}
 --- !u!1 &1946906848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,6 +4823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a39778fbba9e38439022588285160c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barDelay: 2
 --- !u!4 &1999300581
 Transform:
   m_ObjectHideFlags: 0
