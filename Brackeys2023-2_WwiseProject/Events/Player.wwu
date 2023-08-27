@@ -104,6 +104,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{93D4D012-A2B6-40F6-A657-29B97701783B}" ShortID="719195867">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diving" ID="{FCBE2468-2E01-4FC6-B4CD-88DE294C845F}" WorkUnitID="{83D70DE6-9BBD-4CB9-A4EC-E4A1667EDD74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="divePop" ID="{DDE7DBD6-A793-4671-8BFB-2A10569242E1}">

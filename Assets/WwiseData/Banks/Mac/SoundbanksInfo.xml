@@ -60,7 +60,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E62DE69B-FBD0-39A5-55A1-7C11A2E18DEA}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{110DECC1-00EE-4404-77D5-5738ED77518C}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -346,7 +346,7 @@
 				</File>
 				<File Id="649754737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>cigExtinguish.wav</ShortName>
-					<CachePath>SFX/cigExtinguish_E15BDDB9.wem</CachePath>
+					<CachePath>SFX/cigExtinguish_BF49F236.wem</CachePath>
 				</File>
 				<File Id="650103668" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-005.wav</ShortName>
@@ -510,6 +510,9 @@
 					<MediaRefs>
 						<MediaRef Id="867402550"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="185713839" Id="2608492946" Name="diving"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1997425944" Name="divePop" DurationType="OneShot" DurationMin="1.9807397" DurationMax="2.2233055">
 					<MediaRefs>
@@ -857,7 +860,7 @@
 						<MediaRef Id="772547028"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="360445344" Name="smokeExtinguish" DurationType="OneShot" DurationMin="1.1678272" DurationMax="1.2735245">
+				<Event Id="360445344" Name="smokeExtinguish" DurationType="OneShot" DurationMin="1.9507103" DurationMax="2.1272645">
 					<MediaRefs>
 						<MediaRef Id="649754737"/>
 					</MediaRefs>
@@ -906,5 +909,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E6BE0C15-7611-1773-20A2-6F401672D929}</FileHash>
+	<FileHash>{A3F77AE0-75ED-3264-7DD8-AECC5E7168F0}</FileHash>
 </SoundBanksInfo>
