@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
     public int speed;
 
     public bool FacingRight { get => facingRight; set => facingRight = value; }
-    public bool IsDiving { get => isDiving; set => isDiving = value; }
+    public bool IsDiving { get => isDiving; }
 
     void Awake()
     {
@@ -25,7 +25,7 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         // Ignores update if into diving transition
-        if (IsDiving) {
+        if (isDiving) {
             return;
         }
 
@@ -70,5 +70,12 @@ public class CharacterController : MonoBehaviour
 
     bool PlayerHoldingBothDirections() {
         return (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.RightArrow));
+    }
+
+    public void StartDive() {
+        isDiving = true;
+
+        // Disable collider to avoid starting new conversation
+        GetComponent<Collider2D>().enabled = false;
     }
 }

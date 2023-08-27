@@ -16,7 +16,7 @@ public class DiveBtn : MonoBehaviour
         Invoke("GoToMiniGameScene", 3f);
 
         // Avoid player movement
-        FindObjectOfType<CharacterController>().IsDiving = true;
+        FindObjectOfType<CharacterController>().StartDive();
 
         // Play dive transition
         FindObjectOfType<DiveTransition>().enabled = true;
